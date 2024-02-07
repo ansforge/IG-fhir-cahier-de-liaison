@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDL"] ; # 
   fhir:title [ fhir:v "Cahier De Liaison"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-07T16:53:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-07T17:02:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -695,47 +695,6 @@
            fhir:title [ fhir:v "Flux 02" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "autres_ressources.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "autres_ressources.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Autres Ressources" ] ;
-         fhir:generation [ fhir:v "markdown" ] ;
-         fhir:page ( [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "securite.html"^^xsd:anyURI ]
-           ] ) ;
-           fhir:name [ fhir:v "securite.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Sécurité" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "downloads.html"^^xsd:anyURI ]
-           ] ) ;
-           fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Téléchargements et usages" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] )
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "tests.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "tests.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Tests" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "about.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "about.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "A propos de ce guide" ] ;
-         fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
      fhir:parameter ( [
