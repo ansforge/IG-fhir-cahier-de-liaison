@@ -14,7 +14,7 @@
     }
   },
   "externalDocs": {
-    "url": "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.GestionnaireCdL",
+    "url": "https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/GestionnaireCdL",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {

@@ -2,16 +2,9 @@
   {
     "id" : "ConsommateurContenu",
     "type" : "CapabilityStatement",
-    "url" : "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.ConsommateurContenu",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/ConsommateurContenu",
     "version" : "0.1.0",
     "name" : "ConsommateurContenu"
-  },
-  {
-    "id" : "GestionnaireCdL",
-    "type" : "CapabilityStatement",
-    "url" : "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.GestionnaireCdL",
-    "version" : "0.1.0",
-    "name" : "GestionnaireCdL"
   },
   {
     "id" : "CreateurContenu",
@@ -19,6 +12,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/CreateurContenu",
     "version" : "0.1.0",
     "name" : "CreateurContenu"
+  },
+  {
+    "id" : "GestionnaireCdL",
+    "type" : "CapabilityStatement",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/GestionnaireCdL",
+    "version" : "0.1.0",
+    "name" : "GestionnaireCdL"
   },
   {
     "id" : "ans.fhir.fr.cdl",

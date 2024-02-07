@@ -6,11 +6,11 @@
   "status" : "draft",
   "package-id" : "ans.fhir.fr.cdl",
   "ig-ver" : "0.1.0",
-  "date" : "Wed, 07 Feb, 2024 16:47:50 +0000",
-  "errs" : 16,
+  "date" : "Wed, 07 Feb, 2024 16:53:28 +0000",
+  "errs" : 12,
   "warnings" : 11,
   "hints" : 1,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1576848368
+  "maxMemory" : 1993112792
 }

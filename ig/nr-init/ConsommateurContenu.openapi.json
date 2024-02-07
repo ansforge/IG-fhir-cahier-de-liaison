@@ -14,7 +14,7 @@
     }
   },
   "externalDocs": {
-    "url": "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.ConsommateurContenu",
+    "url": "https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/ConsommateurContenu",
     "description": "FHIR CapabilityStatement"
   },
   "components": {
