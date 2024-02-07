@@ -1,9 +1,9 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.[code]
-canonical: https://interop.esante.gouv.fr/ig/fhir/[code] # the last part of canonical and id must be the same
-name: ExampleIG
-title: ANS IG Example
+id: ans.fhir.fr.cdl
+canonical: https://interop.esante.gouv.fr/ig/fhir/cdl # the last part of canonical and id must be the same
+name: CDL
+title: Cahier De Liaison
 publisher:
   name: ANS
   url: https://esante.gouv.fr
@@ -16,7 +16,10 @@ releaseLabel: ci-build
 parameters:
     shownav: 'true'
 
-
+dependencies:
+  ans.fhir.fr.annuaire: 1.0.0-ballot-3
+  hl7.fhir.fr.core: 1.1.0
+  ans.fr.nos: 1.1.0
 
 pages:
     index.md:
