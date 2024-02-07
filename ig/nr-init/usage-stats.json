@@ -18,6 +18,10 @@
         "title": "Bundle de Creation de note"
       },
       {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note",
+        "title": "Bundle de mise à jour d\u0027une note"
+      },
+      {
         "url": "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-resultat-recherche-notes",
         "title": "Bundle résultat recherche notes"
       }

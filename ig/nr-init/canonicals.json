@@ -7,18 +7,18 @@
     "name" : "ConsommateurContenu"
   },
   {
-    "id" : "CreateurContenu",
-    "type" : "CapabilityStatement",
-    "url" : "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.CreateurContenu",
-    "version" : "0.1.0",
-    "name" : "CreateurContenu"
-  },
-  {
     "id" : "GestionnaireCdL",
     "type" : "CapabilityStatement",
     "url" : "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.GestionnaireCdL",
     "version" : "0.1.0",
     "name" : "GestionnaireCdL"
+  },
+  {
+    "id" : "CreateurContenu",
+    "type" : "CapabilityStatement",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/CreateurContenu",
+    "version" : "0.1.0",
+    "name" : "CreateurContenu"
   },
   {
     "id" : "ans.fhir.fr.cdl",
@@ -33,6 +33,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note",
     "version" : "0.1.0",
     "name" : "CdL_BundleCreationNoteCdL"
+  },
+  {
+    "id" : "cdl-bundle-maj-note",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note",
+    "version" : "0.1.0",
+    "name" : "CdL_BundleMAJNoteCdL"
   },
   {
     "id" : "cdl-bundle-resultat-recherche-notes",

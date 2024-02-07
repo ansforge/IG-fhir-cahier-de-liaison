@@ -1,15 +1,16 @@
 CDL : Validation Results
 =========================================
 
-err = 18, warn = 10, info = 1
+err = 16, warn = 11, info = 1
 IG Publisher Version: 1.5.16
-Generated Wed Feb 07 16:04:31 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cdl#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/cdl)
+Generated Wed Feb 07 16:48:38 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cdl#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/cdl)
  Build Errors : 0 / 6 / 0
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/CapabilityStatement-ConsommateurContenu : 2 / 0 / 1
- /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/CapabilityStatement-CreateurContenu : 2 / 0 / 1
+ /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/CapabilityStatement-CreateurContenu : 0 / 0 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/CapabilityStatement-GestionnaireCdL : 2 / 0 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cdl : 0 / 0 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note : 12 / 1 / 1
+ /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note : 0 / 1 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes : 0 / 1 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/StructureDefinition-cdl-document-reference : 0 / 1 / 2
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency : 0 / 1 / 1
@@ -25,8 +26,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 ERROR: CapabilityStatement.where(url = 'http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.ConsommateurContenu'): Conformance resource /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/CapabilityStatement-ConsommateurContenu.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/ConsommateurContenu) does not match the URL (http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.ConsommateurContenu)
 ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/CapabilityStatement-ConsommateurContenu: URL Mismatch https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/ConsommateurContenu vs http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.ConsommateurContenu
 == fsh-generated/resources/CapabilityStatement-CreateurContenu.json ==
-ERROR: CapabilityStatement.where(url = 'http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.CreateurContenu'): Conformance resource /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/CapabilityStatement-CreateurContenu.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/CreateurContenu) does not match the URL (http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.CreateurContenu)
-ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/CapabilityStatement-CreateurContenu: URL Mismatch https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/CreateurContenu vs http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.CreateurContenu
 == fsh-generated/resources/CapabilityStatement-GestionnaireCdL.json ==
 ERROR: CapabilityStatement.where(url = 'http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.GestionnaireCdL'): Conformance resource /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/CapabilityStatement-GestionnaireCdL.json - the canonical URL (https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/GestionnaireCdL) does not match the URL (http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.GestionnaireCdL)
 ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/fsh-generated/resources/CapabilityStatement-GestionnaireCdL: URL Mismatch https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/GestionnaireCdL vs http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.GestionnaireCdL
@@ -45,6 +44,8 @@ ERROR: StructureDefinition/cdl-bundle-creation-note: StructureDefinition.differe
 ERROR: StructureDefinition/cdl-bundle-creation-note: StructureDefinition.differential.element[25].constraint[0]: The invariant ele-1 defined in the differential must have no source, or the source must be the same as the profile
 ERROR: StructureDefinition/cdl-bundle-creation-note: StructureDefinition.differential.element[29].constraint[0]: The invariant ele-1 defined in the differential must have no source, or the source must be the same as the profile
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note.json ==
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-resultat-recherche-notes'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cdl-document-reference.json ==

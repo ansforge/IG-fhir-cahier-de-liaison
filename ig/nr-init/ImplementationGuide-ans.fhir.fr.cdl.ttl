@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDL"] ; # 
   fhir:title [ fhir:v "Cahier De Liaison"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-07T16:03:52+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-07T16:47:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -562,6 +562,18 @@
        ] ;
        fhir:name [ fhir:v "Bundle de Creation de note" ] ;
        fhir:description [ fhir:v "Profil du bundle représentant le flux 1 de création de note du volet CdL" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note> ;
+         fhir:reference [ fhir:v "StructureDefinition/cdl-bundle-maj-note" ]
+       ] ;
+       fhir:name [ fhir:v "Bundle de mise à jour d'une note" ] ;
+       fhir:description [ fhir:v "StructureDefinition du bundle représentant le flux 2 de mise à jour d'une note du volet CdL" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
