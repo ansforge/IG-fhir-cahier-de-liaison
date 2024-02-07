@@ -20,7 +20,7 @@ Usage: #definition
 * rest.security.cors = false
 * rest.security.description = "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S\n) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes\nd’information de santé (CI-SIS)"
 * rest.resource[0].type = #DocumentReference
-* rest.resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_DocumentReferenceCdL"
+* rest.resource[=].profile = Canonical(cdl-document-reference)
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].searchParam[0].name = "date"
@@ -76,7 +76,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Nom de la personne de confiance"
 * rest.resource[+].type = #Practitioner
-* rest.resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPractitioner"
+* rest.resource[=].profile = Canonical(as-practitioner)
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].searchParam[0].name = "identifier"
@@ -96,7 +96,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Nom du patient"
 * rest.resource[+].type = #Organization
-* rest.resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrOrganization"
+* rest.resource[=].profile = Canonical(as-organization)
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].searchParam.name = "identifier"

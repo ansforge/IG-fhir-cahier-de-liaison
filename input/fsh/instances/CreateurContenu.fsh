@@ -1,8 +1,6 @@
 Instance: CreateurContenu
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.CreateurContenu"
-* version = "2.3"
 * name = "CreateurContenu"
 * title = "CI-SIS Cahier-de-Liaison - CreateurContenu"
 * status = #active
@@ -14,25 +12,25 @@ Usage: #definition
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* implementationGuide = "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/CI-SIS.CahierDeLiaison"
+* implementationGuide = "http://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuides/ans.fhir.fr.cdl"
+
 * rest[0].mode = #client
 * rest[=].documentation = "Alimente le cahier de liaison avec une nouvelle note"
 * rest[=].security.cors = false
 * rest[=].security.description = "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S\n) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes\nd’information de santé (CI-SIS)"
 * rest[=].resource[0].type = #Bundle
-* rest[=].resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_BundleCreationNoteCdL"
+* rest[=].resource[=].profile = Canonical(cdl-bundle-creation-note)
 * rest[=].resource[=].interaction.code = #create
 * rest[=].resource[+].type = #Patient
 * rest[=].resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPatient"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #Practitioner
-* rest[=].resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPractitioner"
+* rest[=].resource[=].profile = Canonical(as-practitioner)
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #PractitionerRole
-* rest[=].resource[=].profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"
-* rest[=].resource[=].supportedProfile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass"
+* rest[=].resource[=].profile = Canonical(as-practitionerrole)
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #RelatedPerson
@@ -40,7 +38,7 @@ Usage: #definition
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #Organization
-* rest[=].resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrOrganization"
+* rest[=].resource[=].profile = Canonical(as-organization)
 * rest[=].resource[=].supportedProfile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_Organization-OrgaInt"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
@@ -57,27 +55,26 @@ Usage: #definition
 * rest[=].resource[=].interaction[=].code = #delete
 * rest[=].resource[=].conditionalDelete = #single
 * rest[=].interaction[0].code = #transaction
-* rest[=].interaction[=].documentation = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_BundleCreationNoteCdL"
+* rest[=].interaction[=].documentation = Canonical(cdl-bundle-creation-note)
 * rest[=].interaction[+].code = #transaction
-* rest[=].interaction[=].documentation = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_BundleMAJNoteCdL"
+* rest[=].interaction[=].documentation = Canonical(cdl-bundle-maj-note)
 * rest[+].mode = #client
 * rest[=].documentation = "Alimente le cahier de liaison avec une nouvelle note"
 * rest[=].security.cors = false
 * rest[=].security.description = "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S\n) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes\nd’information de santé (CI-SIS)"
 * rest[=].resource[0].type = #Bundle
-* rest[=].resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_BundleCreationNoteCdL"
+* rest[=].resource[=].profile = Canonical(cdl-bundle-creation-note)
 * rest[=].resource[=].interaction.code = #create
 * rest[=].resource[+].type = #Patient
 * rest[=].resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPatient"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #Practitioner
-* rest[=].resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPractitioner"
+* rest[=].resource[=].profile = Canonical(as-practitioner)
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #PractitionerRole
-* rest[=].resource[=].profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"
-* rest[=].resource[=].supportedProfile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass"
+* rest[=].resource[=].profile = Canonical(as-practitionerrole)
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #RelatedPerson
@@ -89,12 +86,12 @@ Usage: #definition
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #Organization
-* rest[=].resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrOrganization"
+* rest[=].resource[=].profile = Canonical(as-organization)
 * rest[=].resource[=].supportedProfile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_Organization-OrgaInt"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #DocumentReference
-* rest[=].resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_DocumentReferenceCdL"
+* rest[=].resource[=].profile = Canonical(cdl-document-reference)
 * rest[=].resource[=].interaction[0].code = #update
 * rest[=].resource[=].interaction[+].code = #delete
 * rest[=].resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
@@ -102,6 +99,6 @@ Usage: #definition
 * rest[=].resource[=].interaction[=].code = #delete
 * rest[=].resource[=].conditionalDelete = #single
 * rest[=].interaction[0].code = #transaction
-* rest[=].interaction[=].documentation = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_BundleCreationNoteCdL"
+* rest[=].interaction[=].documentation = Canonical(cdl-bundle-creation-note)
 * rest[=].interaction[+].code = #transaction
-* rest[=].interaction[=].documentation = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_BundleMAJNoteCdL"
+* rest[=].interaction[=].documentation = Canonical(cdl-bundle-maj-note)

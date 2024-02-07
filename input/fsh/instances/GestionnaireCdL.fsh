@@ -20,7 +20,7 @@ Usage: #definition
 * rest.security.cors = false
 * rest.security.description = "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S\n) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes\nd’information de santé (CI-SIS)"
 * rest.resource[0].type = #Bundle
-* rest.resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_BundleCreationNoteCdL"
+* rest.resource[=].profile = Canonical(cdl-bundle-creation-note)
 * rest.resource[=].interaction.code = #create
 * rest.resource[+].type = #Patient
 * rest.resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPatient"
@@ -59,7 +59,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Nom de la personne de confiance"
 * rest.resource[+].type = #Practitioner
-* rest.resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPractitioner"
+* rest.resource[=].profile = Canonical(as-practitioner)
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].searchParam[0].name = "identifier"
@@ -79,7 +79,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Nom du patient"
 * rest.resource[+].type = #Organization
-* rest.resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrOrganization"
+* rest.resource[=].profile = Canonical(as-organization)
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
@@ -99,7 +99,7 @@ Usage: #definition
 * rest.resource[=].searchParam.type = #token
 * rest.resource[=].searchParam.documentation = "Identifiant de l'équipement"
 * rest.resource[+].type = #DocumentReference
-* rest.resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_DocumentReferenceCdL"
+* rest.resource[=].profile = Canonical(cdl-document-reference)
 * rest.resource[=].interaction[0].code = #update
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #delete
@@ -124,6 +124,6 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "degré de restriction de l'audience de la note"
 * rest.interaction[0].code = #transaction
-* rest.interaction[=].documentation = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_BundleCreationNoteCdL"
+* rest.interaction[=].documentation = Canonical(cdl-bundle-creation-note)
 * rest.interaction[+].code = #transaction
-* rest.interaction[=].documentation = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_BundleMAJNoteCdL"
+* rest.interaction[=].documentation = Canonical(cdl-bundle-maj-note)
