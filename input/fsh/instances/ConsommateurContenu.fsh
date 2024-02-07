@@ -1,8 +1,6 @@
 Instance: ConsommateurContenu
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.ConsommateurContenu"
-* version = "2.3"
 * name = "ConsommateurContenu"
 * title = "CI-SIS Cahier-de-Liaison - ConsommateurContenu"
 * status = #active
@@ -14,7 +12,7 @@ Usage: #definition
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* implementationGuide = "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/CI-SIS.CahierDeLiaison"
+* implementationGuide = "http://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuides/ans.fhir.fr.cdl"
 * rest.mode = #client
 * rest.documentation = "Le consommateur de contenu envoie une demande de recherche de notes au gestionnaire de CdL"
 * rest.security.cors = false

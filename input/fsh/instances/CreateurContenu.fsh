@@ -47,7 +47,7 @@ Usage: #definition
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #DocumentReference
-* rest[=].resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CdL_DocumentReferenceCdL"
+* rest[=].resource[=].profile = Canonical(cdl-document-reference)
 * rest[=].resource[=].interaction[0].code = #update
 * rest[=].resource[=].interaction[+].code = #delete
 * rest[=].resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"

@@ -1,8 +1,6 @@
 Instance: GestionnaireCdL
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdL.GestionnaireCdL"
-* version = "2.3"
 * name = "GestionnaireCdL"
 * title = "CI-SIS Cahier-de-Liaison - GestionnaireCdL"
 * status = #active
@@ -14,7 +12,7 @@ Usage: #definition
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* implementationGuide = "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/CI-SIS.CahierDeLiaison"
+* implementationGuide = "http://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuides/ans.fhir.fr.cdl"
 * rest.mode = #server
 * rest.documentation = "Système d'information ou composant de système d'information qui implémente le cahier de liaison"
 * rest.security.cors = false
