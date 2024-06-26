@@ -1,8 +1,8 @@
 Profile: CdL_BundleCreationNoteCdL
 Parent: Bundle
 Id: cdl-bundle-creation-note
-Title: "Bundle de Creation de note"
-Description: "Profil du bundle représentant le flux 1 de création de note du volet CdL"
+Title: "Bundle de création d'une note"
+Description: "Profil du bundle pour le flux 1 de création de note du volet CdL"
 
 * type = #transaction
 

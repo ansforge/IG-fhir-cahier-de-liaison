@@ -1,6 +1,7 @@
 Profile: CdL_DocumentReferenceCdL
 Parent: DocumentReference
 Id: cdl-document-reference
+Title: "DocumentReference Cahier de Liaison"
 Description: "Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note."
 
 * extension ^slicing.discriminator.type = #value
