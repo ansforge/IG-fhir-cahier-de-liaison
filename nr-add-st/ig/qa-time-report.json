@@ -1,0 +1,490 @@
+{
+  "date" : "Wed, 26 Jun, 2024 11:55:14 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cdl.json",
+      "size" : 5551,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 15
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 53
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 732
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 99
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 82
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 71,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 80,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CapabilityStatement-ConsommateurContenu.json",
+      "size" : 7397,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 29
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 92
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 3436
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 71
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 62
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 64,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CapabilityStatement-CreateurContenu.json",
+      "size" : 8562,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 25
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 12
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 77
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 51
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 123
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 41
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CapabilityStatement-GestionnaireCdL.json",
+      "size" : 8648,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 26
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 57
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 42
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 73
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 48
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note.json",
+      "size" : 8779,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 25
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 13
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 35,
+          "length" : 310
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 122
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 1887
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generateLogicalMaps",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 46,
+          "length" : 1104
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 4328
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 29
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 80,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note.json",
+      "size" : 8746,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 36
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 35,
+          "length" : 201
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 82
+        },
+        {
+          "activity" : "validate",
+          "start" : 38,
+          "length" : 886
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 1066
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 1691
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 28
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 80,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes.json",
+      "size" : 7316,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 22
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 188
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 36,
+          "length" : 117
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 1135
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 1078
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 1113
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 30
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 80,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-cdl-document-reference.json",
+      "size" : 6699,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 52
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 40,
+          "length" : 239
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 347
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 621
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 80,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency.json",
+      "size" : 1055,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 35,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 36,
+          "length" : 43
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 37,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 29
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 59
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 200
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

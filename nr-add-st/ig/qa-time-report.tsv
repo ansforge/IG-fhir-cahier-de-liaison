@@ -1,0 +1,10 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cdl.json	5551	-	0	0	0	0	0	0	4	53	0	0	0	0	0	0	0	0	0	0	99	82	0	0	0	3	0	1
+fsh-generated/resources/CapabilityStatement-ConsommateurContenu.json	7397	29	1	0	0	0	0	0	0	92	0	0	0	0	0	0	0	0	0	0	71	62	0	1	0	2	0	0
+fsh-generated/resources/CapabilityStatement-CreateurContenu.json	8562	25	0	0	0	0	0	0	1	77	0	0	0	0	0	0	0	0	0	0	123	41	0	0	0	3	0	0
+fsh-generated/resources/CapabilityStatement-GestionnaireCdL.json	8648	26	0	0	0	0	0	0	0	57	0	0	0	0	0	0	0	0	0	0	73	48	0	0	0	7	0	0
+fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note.json	8779	25	0	0	0	0	0	310	1	122	0	0	1	0	0	1	0	4	0	0	1104	4328	0	0	0	29	0	3
+fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note.json	8746	36	0	0	0	0	0	201	0	82	0	0	0	0	0	0	0	2	0	0	1066	1691	0	0	0	28	0	2
+fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes.json	7316	22	1	0	0	0	0	188	0	117	0	0	1	0	0	0	0	2	0	0	1078	1113	0	0	0	30	0	1
+fsh-generated/resources/StructureDefinition-cdl-document-reference.json	6699	5	0	0	0	0	0	52	0	37	0	0	0	0	0	0	0	1	0	0	347	621	0	0	0	10	0	1
+fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency.json	1055	4	0	0	0	0	0	43	0	11	0	0	0	0	0	0	0	0	0	0	59	200	0	0	0	1	0	0
