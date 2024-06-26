@@ -17,32 +17,38 @@ Description: "StructureDefinition du bundle représentant le flux 2 de mise à j
     PractitionerRole 0..* and
     Organization 0..1 and
     RelatedPerson 0..1 and
-    Device 0..1 and
-    PractitionerRoleOrga 0..*
+    Device 0..1
+
 * entry[DocumentReference].resource 1..
 * entry[DocumentReference].resource only cdl-document-reference
 * entry[DocumentReference].request.method = #PUT
 * entry[DocumentReference].response ..0
+
 * entry[Patient].resource 1..
-* entry[Patient].resource only $FrPatient
+* entry[Patient].resource only FRCorePatientProfile
 * entry[Patient].request.method obeys req-met-1
 * entry[Patient].response ..0
+
 * entry[Practitioner].resource 1..
 * entry[Practitioner].resource only as-practitioner
 * entry[Practitioner].request.method obeys req-met-1
 * entry[Practitioner].response ..0
+
 * entry[PractitionerRole].resource 1..
 * entry[PractitionerRole].resource only as-practitionerrole
 * entry[PractitionerRole].request.method obeys req-met-1
 * entry[PractitionerRole].response ..0
+
 * entry[Organization].resource 1..
 * entry[Organization].resource only as-organization
 * entry[Organization].request.method obeys req-met-1
 * entry[Organization].response ..0
+
 * entry[RelatedPerson].resource 1..
-* entry[RelatedPerson].resource only $FrRelatedPerson
+* entry[RelatedPerson].resource only FRCoreRelatedPersonProfile
 * entry[RelatedPerson].request.method obeys req-met-1
 * entry[RelatedPerson].response ..0
+
 * entry[Device].resource 1..
 * entry[Device].resource only Device
 * entry[Device].request.method obeys req-met-1
