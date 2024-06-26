@@ -2,8 +2,11 @@ CDL
 =========================================
 
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/cdl-ext-is-emergency.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
-Generic: line 0, col 0, Error - The link 'st_flux1.html' for "flux 01" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'st_flux2.html' for "flux 02" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The image source 'gestion-acteurs.png' cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The image source '1b-2b-restful.png' cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The image source '1c-2c-transaction.png' cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The image source 'recherche.png' cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The image source '3-suppr.png' cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)

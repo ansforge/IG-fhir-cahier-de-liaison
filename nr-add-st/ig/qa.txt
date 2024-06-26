@@ -3,8 +3,8 @@ CDL : Validation Results
 
 err = 0, warn = 9, info = 0
 IG Publisher Version: 1.6.11
-Generated Wed Jun 26 11:57:10 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cdl#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/cdl)
- Build Errors : 2 / 4 / 0
+Generated Wed Jun 26 14:26:37 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cdl#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/cdl)
+ Build Errors : 5 / 4 / 0
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-ConsommateurContenu : 0 / 0 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-CreateurContenu : 0 / 0 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-GestionnaireCdL : 0 / 0 / 1
@@ -17,8 +17,11 @@ Generated Wed Jun 26 11:57:10 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cdl#0
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/cdl-ext-is-emergency.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/construction_des_flux.html#/html/body/div/div/div/div/div/p/a at Line 187, column 68: The link 'st_flux1.html' for "flux 01" cannot be resolved
-ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/construction_des_flux.html#/html/body/div/div/div/div/div/p/a at Line 191, column 68: The link 'st_flux2.html' for "flux 02" cannot be resolved
+ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/creation_note.html#/html/body/div/div/div/div/div/div/img at Line 239, column 6: The image source 'gestion-acteurs.png' cannot be resolved
+ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/maj_note.html#/html/body/div/div/div/div/div/div/img at Line 195, column 6: The image source '1b-2b-restful.png' cannot be resolved
+ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/maj_note.html#/html/body/div/div/div/div/div/div/img at Line 217, column 6: The image source '1c-2c-transaction.png' cannot be resolved
+ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/recherche_note.html#/html/body/div/div/div/div/div/div/img at Line 311, column 6: The image source 'recherche.png' cannot be resolved
+ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/suppr_note.html#/html/body/div/div/div/div/div/div/img at Line 194, column 6: The image source '3-suppr.png' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide

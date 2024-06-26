@@ -1,6 +1,6 @@
 {
-  "version" : "0.1.0",
+  "version" : "3.0.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20240626115549",
+  "date" : "20240626142508",
   "name" : "ans.fhir.fr.cdl"
 }

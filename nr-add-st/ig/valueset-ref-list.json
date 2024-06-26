@@ -14,7 +14,7 @@
       "sources" : ["1.2.250.1.213.1.1.5.480"],
       "uses" : {
       },
-      "StructureDefinition-cdl-document-reference.html" : "CdL_DocumentReferenceCdL"
+      "StructureDefinition-cdl-document-reference.html" : "DocumentReference Cahier de Liaison"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS",
@@ -30,7 +30,7 @@
       "sources" : ["1.2.250.1.213.1.1.5.98"],
       "uses" : {
       },
-      "StructureDefinition-cdl-document-reference.html" : "CdL_DocumentReferenceCdL"
+      "StructureDefinition-cdl-document-reference.html" : "DocumentReference Cahier de Liaison"
     }
   ]
 }

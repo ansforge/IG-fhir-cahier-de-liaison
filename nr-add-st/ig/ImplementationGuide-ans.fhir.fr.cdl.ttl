@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "3.0.0"] ; # 
   fhir:name [ fhir:v "CDL"] ; # 
   fhir:title [ fhir:v "Cahier De Liaison"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-26T11:56:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-26T14:25:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -560,8 +560,8 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note> ;
          fhir:reference [ fhir:v "StructureDefinition/cdl-bundle-creation-note" ]
        ] ;
-       fhir:name [ fhir:v "Bundle de Creation de note" ] ;
-       fhir:description [ fhir:v "Profil du bundle représentant le flux 1 de création de note du volet CdL" ] ;
+       fhir:name [ fhir:v "Bundle de création d'une note" ] ;
+       fhir:description [ fhir:v "Profil du bundle pour le flux 1 de création de note du volet CdL" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -573,7 +573,7 @@
          fhir:reference [ fhir:v "StructureDefinition/cdl-bundle-maj-note" ]
        ] ;
        fhir:name [ fhir:v "Bundle de mise à jour d'une note" ] ;
-       fhir:description [ fhir:v "Profil du bundle représentant le flux 2 de mise à jour d'une note du volet CdL" ] ;
+       fhir:description [ fhir:v "Profil du bundle pour le flux 2 de mise à jour d'une note du volet CdL" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -586,18 +586,6 @@
        ] ;
        fhir:name [ fhir:v "Bundle résultat recherche notes" ] ;
        fhir:description [ fhir:v "Profil du bundle de resultat de recherches d'une note" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference> ;
-         fhir:reference [ fhir:v "StructureDefinition/cdl-document-reference" ]
-       ] ;
-       fhir:name [ fhir:v "CdL_DocumentReferenceCdL" ] ;
-       fhir:description [ fhir:v "Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -645,6 +633,18 @@
        ] ;
        fhir:name [ fhir:v "CI-SIS Cahier-de-Liaison - GestionnaireCdL" ] ;
        fhir:description [ fhir:v "Le gestionnaire de cahier de liaison implémente le cahier de liaison" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference> ;
+         fhir:reference [ fhir:v "StructureDefinition/cdl-document-reference" ]
+       ] ;
+       fhir:name [ fhir:v "DocumentReference Cahier de Liaison" ] ;
+       fhir:description [ fhir:v "Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

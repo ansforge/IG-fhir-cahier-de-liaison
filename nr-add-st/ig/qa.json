@@ -5,9 +5,9 @@
   "description" : null,
   "status" : "draft",
   "package-id" : "ans.fhir.fr.cdl",
-  "ig-ver" : "0.1.0",
-  "date" : "Wed, 26 Jun, 2024 11:56:25 +0000",
-  "dateISO8601" : "2024-06-26T11:56:25+00:00",
+  "ig-ver" : "3.0.0",
+  "date" : "Wed, 26 Jun, 2024 14:25:47 +0000",
+  "dateISO8601" : "2024-06-26T14:25:47+00:00",
   "errs" : 0,
   "warnings" : 9,
   "hints" : 0,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2421731328
+  "maxMemory" : 3356362816
 }

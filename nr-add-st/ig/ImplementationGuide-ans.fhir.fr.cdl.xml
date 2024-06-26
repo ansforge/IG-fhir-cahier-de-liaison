@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl"/>
-  <version value="0.1.0"/>
+  <version value="3.0.0"/>
   <name value="CDL"/>
   <title value="Cahier De Liaison"/>
   <status value="draft"/>
-  <date value="2024-06-26T11:56:25+00:00"/>
+  <date value="2024-06-26T14:25:47+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -480,8 +480,8 @@
       <reference>
         <reference value="StructureDefinition/cdl-bundle-creation-note"/>
       </reference>
-      <name value="Bundle de Creation de note"/>
-      <description value="Profil du bundle représentant le flux 1 de création de note du volet CdL"/>
+      <name value="Bundle de création d'une note"/>
+      <description value="Profil du bundle pour le flux 1 de création de note du volet CdL"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -492,7 +492,7 @@
         <reference value="StructureDefinition/cdl-bundle-maj-note"/>
       </reference>
       <name value="Bundle de mise à jour d'une note"/>
-      <description value="Profil du bundle représentant le flux 2 de mise à jour d'une note du volet CdL"/>
+      <description value="Profil du bundle pour le flux 2 de mise à jour d'une note du volet CdL"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -504,17 +504,6 @@
       </reference>
       <name value="Bundle résultat recherche notes"/>
       <description value="Profil du bundle de resultat de recherches d'une note"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cdl-document-reference"/>
-      </reference>
-      <name value="CdL_DocumentReferenceCdL"/>
-      <description value="Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -558,6 +547,17 @@
       </reference>
       <name value="CI-SIS Cahier-de-Liaison - GestionnaireCdL"/>
       <description value="Le gestionnaire de cahier de liaison implémente le cahier de liaison"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cdl-document-reference"/>
+      </reference>
+      <name value="DocumentReference Cahier de Liaison"/>
+      <description value="Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

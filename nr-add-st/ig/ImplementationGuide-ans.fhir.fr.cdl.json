@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl",
-  "version" : "0.1.0",
+  "version" : "3.0.0",
   "name" : "CDL",
   "title" : "Cahier De Liaison",
   "status" : "draft",
-  "date" : "2024-06-26T11:56:25+00:00",
+  "date" : "2024-06-26T14:25:47+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -645,8 +645,8 @@
       "reference" : {
         "reference" : "StructureDefinition/cdl-bundle-creation-note"
       },
-      "name" : "Bundle de Creation de note",
-      "description" : "Profil du bundle représentant le flux 1 de création de note du volet CdL",
+      "name" : "Bundle de création d'une note",
+      "description" : "Profil du bundle pour le flux 1 de création de note du volet CdL",
       "exampleBoolean" : false
     },
     {
@@ -658,7 +658,7 @@
         "reference" : "StructureDefinition/cdl-bundle-maj-note"
       },
       "name" : "Bundle de mise à jour d'une note",
-      "description" : "Profil du bundle représentant le flux 2 de mise à jour d'une note du volet CdL",
+      "description" : "Profil du bundle pour le flux 2 de mise à jour d'une note du volet CdL",
       "exampleBoolean" : false
     },
     {
@@ -671,18 +671,6 @@
       },
       "name" : "Bundle résultat recherche notes",
       "description" : "Profil du bundle de resultat de recherches d'une note",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/cdl-document-reference"
-      },
-      "name" : "CdL_DocumentReferenceCdL",
-      "description" : "Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note.",
       "exampleBoolean" : false
     },
     {
@@ -730,6 +718,18 @@
       },
       "name" : "CI-SIS Cahier-de-Liaison - GestionnaireCdL",
       "description" : "Le gestionnaire de cahier de liaison implémente le cahier de liaison",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cdl-document-reference"
+      },
+      "name" : "DocumentReference Cahier de Liaison",
+      "description" : "Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note.",
       "exampleBoolean" : false
     }],
     "page" : {
