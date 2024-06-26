@@ -23,7 +23,6 @@ Description: "Profil de la ressource DocumentReference pour le cahier de liaison
 
 * type 1..
 * type from $JDV-J23-TypeNoteCahierLiaison-CISIS (required)
-* type ^short = "Kind of document"
 * type MS
 
 * subject 1..
