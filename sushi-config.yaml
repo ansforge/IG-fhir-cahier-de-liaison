@@ -28,17 +28,22 @@ pages:
         title: Spécifications fonctionnelles
     specifications_techniques.md:
         construction_des_flux.md:
-        st_flux1.md:
-            title: Flux 01
-        st_flux2.md:
-            title: Flux 02
-
+        creation_note.md:
+            title: Création d'une note
+        maj_note.md:
+            title: M-à-j d'une note
+        suppr_note.md:
+            title: Suppression d'une note
+        recherche_note.md:
+            title: Recherche d'une note
 menu:
     Accueil: index.html
     Volume 1 - Etude fonctionnelle: specifications_fonctionnelles.html
     Volume 2 - Détail des transactions:
         Construction des flux: construction_des_flux.html
-        Flux 01: st_flux1.html
-        Flux 02: st_flux2.html
+        Création d'une note: creation_note.html
+        M-à-j d'une note: maj_note.html
+        Suppression d'une note: suppr_note.html
+        Recherche d'une note: recherche_note.html
     Ressources de conformité: artifacts.html
     Documentation des IGs: new-tab https://interop.esante.gouv.fr/ig/documentation
