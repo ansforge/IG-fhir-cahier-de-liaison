@@ -31,7 +31,6 @@ pages:
         st_flux2.md:
             title: Flux 02
 
-
 menu:
     Accueil: index.html
     Description des flux:
