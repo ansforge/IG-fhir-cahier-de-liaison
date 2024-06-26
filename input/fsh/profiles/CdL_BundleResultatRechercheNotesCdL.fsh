@@ -2,6 +2,7 @@ Profile: CdL_BundleResultatRechercheNotesCdL
 Parent: Bundle
 Id: cdl-bundle-resultat-recherche-notes
 Title: "Bundle résultat recherche notes"
+Description: "Profil du bundle de resultat de recherches d'une note"
 * type = #searchset
 * entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "resource"
