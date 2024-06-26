@@ -17,10 +17,10 @@ Description: "Profil de la ressource DocumentReference pour le cahier de liaison
 * type ^short = "Kind of document"
 
 * subject 1..
-* subject only Reference($FrPatient)
+* subject only Reference(FRCorePatientProfile)
 
 * author 1..
-* author only Reference(Device or $FrRelatedPerson or $FrPatient or as-practitioner or as-practitionerrole or as-organization)
+* author only Reference(Device or FRCoreRelatedPersonProfile or FRCorePatientProfile or as-practitioner or as-practitionerrole or as-organization)
 
 * authenticator ..0
 * custodian ..0

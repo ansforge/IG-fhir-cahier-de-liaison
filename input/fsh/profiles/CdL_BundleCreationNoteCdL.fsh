@@ -24,7 +24,7 @@ Description: "Profil du bundle représentant le flux 1 de création de note du v
 * entry[DocumentReference].response ..0
 
 * entry[Patient].resource 1..
-* entry[Patient].resource only FrPatient
+* entry[Patient].resource only FRCorePatientProfile
 * entry[Patient].request.method obeys req-met-1
 // WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
 // Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
@@ -56,7 +56,7 @@ Description: "Profil du bundle représentant le flux 1 de création de note du v
 * entry[Organization].response ..0
 
 * entry[RelatedPerson].resource 1..
-* entry[RelatedPerson].resource only $FrRelatedPerson
+* entry[RelatedPerson].resource only FRCoreRelatedPersonProfile
 * entry[RelatedPerson].request.method obeys req-met-1
 // WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
 // Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
