@@ -1,9 +1,9 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.[code]
-canonical: https://interop.esante.gouv.fr/ig/fhir/[code] # the last part of canonical and id must be the same
-name: ExampleIG
-title: ANS IG Example
+id: ans.fhir.fr.cdl
+canonical: https://interop.esante.gouv.fr/ig/fhir/cdl # the last part of canonical and id must be the same
+name: CDL
+title: Cahier De Liaison
 publisher:
   name: ANS
   url: https://esante.gouv.fr
@@ -16,7 +16,10 @@ releaseLabel: ci-build
 parameters:
     shownav: 'true'
 
-
+dependencies:
+  ans.fhir.fr.annuaire: 1.0.0-ballot-3
+  hl7.fhir.fr.core: 1.1.0
+  ans.fr.nos: 1.1.0
 
 pages:
     index.md:
@@ -27,17 +30,6 @@ pages:
             title: Flux 01
         st_flux2.md:
             title: Flux 02
-    autres_ressources.md:
-        title: Autres Ressources
-        securite.md:
-            title: Sécurité
-        downloads.md:
-            title: Téléchargements et usages
-
-    tests.md:
-        title: Tests      
-    about.md:
-        title: A propos de ce guide
 
 menu:
     Accueil: index.html
@@ -46,11 +38,4 @@ menu:
         Flux 01: st_flux1.html
         Flux 02: st_flux2.html
     Ressources de conformité: artifacts.html
-    Tests:   tests.html
-    Autres ressources:
-        Sécurité: securite.html
-        Téléchargements et usage: downloads.html
-        "Documentation sur les IG": new-tab https://interop.esante.gouv.fr/ig/documentation/
-        "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
-        "Site de l'ANS ": new-tab https://esante.gouv.fr/
-    A propos de ce guide: about.html
+    Documentation des IGs: new-tab https://interop.esante.gouv.fr/ig/documentation
