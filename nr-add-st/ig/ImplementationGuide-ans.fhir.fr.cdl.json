@@ -2,15 +2,15 @@
   "resourceType" : "ImplementationGuide",
   "id" : "ans.fhir.fr.cdl",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.cdl</b></p><a name=\"ans.fhir.fr.cdl\"> </a><a name=\"hcans.fhir.fr.cdl\"> </a><a name=\"hcans.fhir.fr.cdl-en-US\"> </a><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl",
   "version" : "3.0.0",
   "name" : "CDL",
   "title" : "Cahier De Liaison",
   "status" : "draft",
-  "date" : "2024-06-26T14:25:47+00:00",
+  "date" : "2024-06-27T12:12:34+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -640,6 +640,17 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/0d920958-b596-4b91-af67-9bafc707820b"
+      },
+      "name" : "0d920958-b596-4b91-af67-9bafc707820b",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -672,6 +683,17 @@
       "name" : "Bundle résultat recherche notes",
       "description" : "Profil du bundle de resultat de recherches d'une note",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/cdl-bundle-creation-note"
+      },
+      "name" : "cdl-bundle-creation-note",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"
     },
     {
       "extension" : [{

@@ -9,15 +9,15 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ans.fhir.fr.cdl"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>"
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.cdl</b></p><a name=\"ans.fhir.fr.cdl\"> </a><a name=\"hcans.fhir.fr.cdl\"> </a><a name=\"hcans.fhir.fr.cdl-en-US\"> </a><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "3.0.0"] ; # 
   fhir:name [ fhir:v "CDL"] ; # 
   fhir:title [ fhir:v "Cahier De Liaison"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-26T14:25:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-27T12:12:34+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -554,6 +554,17 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/Patient/0d920958-b596-4b91-af67-9bafc707820b> ;
+         fhir:reference [ fhir:v "Patient/0d920958-b596-4b91-af67-9bafc707820b" ]
+       ] ;
+       fhir:name [ fhir:v "0d920958-b596-4b91-af67-9bafc707820b" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -587,6 +598,20 @@
        fhir:name [ fhir:v "Bundle résultat recherche notes" ] ;
        fhir:description [ fhir:v "Profil du bundle de resultat de recherches d'une note" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/Bundle/cdl-bundle-creation-note> ;
+         fhir:reference [ fhir:v "Bundle/cdl-bundle-creation-note" ]
+       ] ;
+       fhir:name [ fhir:v "cdl-bundle-creation-note" ] ;
+       fhir:example [
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

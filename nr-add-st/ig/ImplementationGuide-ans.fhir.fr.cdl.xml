@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ans.fhir.fr.cdl"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.cdl</b></p><a name="ans.fhir.fr.cdl"> </a><a name="hcans.fhir.fr.cdl"> </a><a name="hcans.fhir.fr.cdl-en-US"> </a><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl"/>
   <version value="3.0.0"/>
   <name value="CDL"/>
   <title value="Cahier De Liaison"/>
   <status value="draft"/>
-  <date value="2024-06-26T14:25:47+00:00"/>
+  <date value="2024-06-27T12:12:34+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -475,6 +475,16 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/0d920958-b596-4b91-af67-9bafc707820b"/>
+      </reference>
+      <name value="0d920958-b596-4b91-af67-9bafc707820b"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -505,6 +515,16 @@
       <name value="Bundle résultat recherche notes"/>
       <description value="Profil du bundle de resultat de recherches d'une note"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/cdl-bundle-creation-note"/>
+      </reference>
+      <name value="cdl-bundle-creation-note"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
