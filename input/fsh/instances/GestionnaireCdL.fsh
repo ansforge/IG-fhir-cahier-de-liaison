@@ -21,7 +21,7 @@ Usage: #definition
 * rest.resource[=].profile = Canonical(cdl-bundle-creation-note)
 * rest.resource[=].interaction.code = #create
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPatient"
+* rest.resource[=].profile = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update
@@ -43,7 +43,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Nom du patient"
 * rest.resource[+].type = #RelatedPerson
-* rest.resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"
+* rest.resource[=].profile = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #create
 * rest.resource[=].interaction[+].code = #update

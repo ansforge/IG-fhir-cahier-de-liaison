@@ -22,7 +22,7 @@ Usage: #definition
 * rest[=].resource[=].profile = Canonical(cdl-bundle-creation-note)
 * rest[=].resource[=].interaction.code = #create
 * rest[=].resource[+].type = #Patient
-* rest[=].resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPatient"
+* rest[=].resource[=].profile = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #Practitioner
@@ -34,12 +34,12 @@ Usage: #definition
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #RelatedPerson
-* rest[=].resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_FrRelatedPerson"
+* rest[=].resource[=].profile = "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #Organization
 * rest[=].resource[=].profile = Canonical(as-organization)
-* rest[=].resource[=].supportedProfile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_Organization-OrgaInt"
+* rest[=].resource[=].supportedProfile = "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #Device
@@ -66,7 +66,7 @@ Usage: #definition
 * rest[=].resource[=].profile = Canonical(cdl-bundle-creation-note)
 * rest[=].resource[=].interaction.code = #create
 * rest[=].resource[+].type = #Patient
-* rest[=].resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPatient"
+* rest[=].resource[=].profile = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #Practitioner
@@ -78,7 +78,7 @@ Usage: #definition
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #RelatedPerson
-* rest[=].resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_FrRelatedPerson"
+* rest[=].resource[=].profile = "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #Device
@@ -87,7 +87,7 @@ Usage: #definition
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #Organization
 * rest[=].resource[=].profile = Canonical(as-organization)
-* rest[=].resource[=].supportedProfile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_Organization-OrgaInt"
+* rest[=].resource[=].supportedProfile = "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"
 * rest[=].resource[=].interaction[0].code = #create
 * rest[=].resource[=].interaction[+].code = #update
 * rest[=].resource[+].type = #DocumentReference
