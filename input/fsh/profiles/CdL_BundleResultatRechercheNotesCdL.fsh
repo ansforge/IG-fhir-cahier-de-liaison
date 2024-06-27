@@ -2,6 +2,7 @@ Profile: CdL_BundleResultatRechercheNotesCdL
 Parent: Bundle
 Id: cdl-bundle-resultat-recherche-notes
 Title: "Bundle résultat recherche notes"
+Description: "Profil du bundle de resultat de recherches d'une note"
 * type = #searchset
 * entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "resource"
@@ -22,7 +23,7 @@ Title: "Bundle résultat recherche notes"
 * entry[DocumentReference].response ..0
 
 * entry[Patient].resource 1..
-* entry[Patient].resource only $FrPatient
+* entry[Patient].resource only FRCorePatientProfile
 * entry[Patient].search.mode = #include
 * entry[Patient].request ..0
 * entry[Patient].response ..0
@@ -46,7 +47,7 @@ Title: "Bundle résultat recherche notes"
 * entry[Organization].response ..0
 
 * entry[RelatedPerson].resource 1..
-* entry[RelatedPerson].resource only $FrRelatedPerson
+* entry[RelatedPerson].resource only FRCoreRelatedPersonProfile
 * entry[RelatedPerson].search.mode = #include
 * entry[RelatedPerson].request ..0
 * entry[RelatedPerson].response ..0

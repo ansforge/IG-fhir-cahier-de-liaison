@@ -6,5 +6,4 @@
 
 ## Preview
 
-https://ansforge.github.io/IG-fhir-cahier-de-liaison/ig/[ajouter_nom_de_la_branche] 
-
+https://ansforge.github.io/IG-fhir-cahier-de-liaison/[ajouter_nom_de_la_branche]/ig
