@@ -1,5 +1,3 @@
-
-
 Profile: CdL_BundleMAJNoteCdL
 Parent: Bundle
 Id: cdl-bundle-maj-note
