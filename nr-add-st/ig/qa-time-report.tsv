@@ -1,12 +1,12 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cdl.json	6026	-	0	0	0	0	0	0	4	91	0	0	0	0	0	0	0	1	0	0	109	85	0	0	0	3	0	1
-fsh-generated/resources/Bundle-cdl-bundle-creation-note.json	6247	36	0	0	0	0	25	0	1	843	0	0	0	0	0	0	0	0	0	0	50	41	0	0	0	0	0	0
-fsh-generated/resources/CapabilityStatement-ConsommateurContenu.json	7397	12	1	0	0	0	0	0	0	82	0	0	0	0	0	0	0	0	0	0	94	74	0	0	0	2	0	0
-fsh-generated/resources/CapabilityStatement-CreateurContenu.json	8562	14	0	0	0	0	0	0	1	45	0	0	0	0	0	0	0	0	0	0	136	70	0	0	0	2	0	0
-fsh-generated/resources/CapabilityStatement-GestionnaireCdL.json	8648	7	0	0	0	0	0	0	1	37	0	0	0	0	0	0	0	1	0	0	145	73	0	0	0	2	0	0
-fsh-generated/resources/Patient-0d920958-b596-4b91-af67-9bafc707820b.json	2057	11	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	27	21	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note.json	8774	12	0	0	0	0	0	295	0	88	0	0	1	0	0	0	0	4	0	0	1120	3875	0	0	0	31	0	3
-fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note.json	8737	13	1	0	0	0	0	211	0	102	0	0	0	0	0	0	0	3	0	0	1116	1755	0	0	0	32	0	2
-fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes.json	7316	12	0	0	0	0	0	194	1	64	0	0	1	0	0	0	0	3	0	0	1165	1321	0	0	0	31	0	1
-fsh-generated/resources/StructureDefinition-cdl-document-reference.json	6712	11	0	0	0	0	0	54	0	86	0	0	0	0	0	0	0	1	0	0	391	612	0	1	0	11	0	1
-fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency.json	1055	10	0	0	0	0	0	40	0	26	0	0	0	0	0	0	0	1	0	0	50	119	0	0	0	2	0	0
+/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cdl.json	6026	-	0	0	0	0	0	0	5	67	0	0	0	0	0	0	0	0	0	0	92	82	0	0	0	4	0	0
+fsh-generated/resources/Bundle-cdl-bundle-creation-note.json	6247	39	0	0	0	0	22	0	0	555	0	0	0	0	0	0	0	0	0	0	46	36	0	0	0	0	0	0
+fsh-generated/resources/CapabilityStatement-ConsommateurContenu.json	7401	31	1	0	0	0	0	0	1	87	0	0	0	0	0	0	0	0	0	0	89	69	0	1	0	2	0	0
+fsh-generated/resources/CapabilityStatement-CreateurContenu.json	8592	36	0	0	0	0	0	0	1	61	0	0	0	0	0	0	0	1	0	0	132	64	0	0	0	3	0	0
+fsh-generated/resources/CapabilityStatement-GestionnaireCdL.json	8659	11	0	0	0	0	0	0	0	58	0	0	0	0	0	0	0	0	0	0	92	68	0	0	0	4	0	0
+fsh-generated/resources/Patient-0d920958-b596-4b91-af67-9bafc707820b.json	2057	9	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	21	19	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note.json	8774	10	0	0	0	0	0	292	0	131	0	0	1	0	0	1	0	4	0	0	1169	4455	0	0	0	29	0	4
+fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note.json	8737	11	0	0	0	0	0	209	0	111	0	0	0	0	0	0	0	4	0	0	1143	1706	0	0	0	30	0	1
+fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes.json	7316	10	0	0	0	0	0	237	0	105	0	0	1	0	0	0	0	4	0	0	1204	1426	0	0	0	35	0	1
+fsh-generated/resources/StructureDefinition-cdl-document-reference.json	6712	6	1	0	0	0	0	52	0	34	0	0	0	0	0	0	0	1	0	0	394	581	0	0	0	11	1	1
+fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency.json	1055	4	0	0	0	0	0	35	0	10	0	0	0	0	0	0	0	0	0	0	49	102	0	0	0	1	0	0
