@@ -4,7 +4,7 @@ Alias: $fr-v2-0445 = http://interopsante.org/fhir/CodeSystem/fr-v2-0445
 Alias: $fr-v2-0203 = http://interopsante.org/fhir/CodeSystem/fr-v2-0203
 
 Instance: cdl-bundle-creation-note
-InstanceOf: CdL_BundleCreationNoteCdL
+InstanceOf: CdLBundleCreationNote
 Usage: #example
 * type = #transaction
 * entry[DocumentReference].fullUrl = "urn:uuid:04886b69-ef36-4584-819e-4590cd3888a4"
@@ -25,7 +25,7 @@ Usage: #example
 * entry[Patient].request.url = "Patient/0d920958-b596-4b91-af67-9bafc707820b"
 
 Instance: 04886b69-ef36-4584-819e-4590cd3888a4
-InstanceOf: CdL_DocumentReferenceCdL
+InstanceOf: CdLDocumentReference
 Usage: #inline
 * status = #current
 * type = $TRE-R234-TypeNote#DEM-AVIS "Demande d'avis"

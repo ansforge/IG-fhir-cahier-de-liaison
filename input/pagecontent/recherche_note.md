@@ -2,99 +2,27 @@
 
 Ce flux intervient dans le processus de consultation de notes d’un cahier de liaison. Il permet de communiquer un ensemble de critères de recherche de notes au système gestionnaire du cahier de liaison.
 
+Le flux 4 de recherche de notes est une requête HTTP GET accompagnée des paramètres listés dans le tableau ci-dessous. Ces critères de recherche ont été définis lors de l'étude métier de ce volet.
 
-Le flux 4 de recherche de notes est une requête HTTP GET accompagnée des
-paramètres listés dans le tableau ci-dessous. Ces critères de recherche
-ont été définis lors de l'étude métier de ce volet.
+| Critère de recherche |                | Paramètre     | Type du paramètre |
+| ---                  | ---            | ---           | ---                |
+| Identifiant de la personne prise en charge   | | subject:Patient.identifier ou patient.identifier ou subject.identifier | token |
+| Identifiant de l'auteur de la note   | S’il s’agit d’un professionnel             | author:Prctitioner.identifier | token       |
+|                                      | S’il s’agit de la personne prise en charge | author:Patient.identifier | token |
+|                                      | S’il s’agit d’une personne tierce          | author:RelatedPerson.identifier | token |
+|                                      | S’il s’agit d’un établissement             | author:Organization.identifier | token |
+|                                      | S’il s’agit d’un équipement                | author:Device.identifier | token |
+| Nom de famille de l’auteur de la note | S’il s’agit d’un professionnel | author:Practitioner.family ou author:Practitioner.name | string |
+|                                       | S’il s’agit de la personne prise en charge |author:Patient.family ou author:Patient.name| string |
+|                                       | S’il s’agit d’une personne tierce | author:RelatedPerson.name | string |
+| Prénom de l’auteur de la note | S’il s’agit d’un professionnel | author:Practitioner.given ou author:Practitioner.name | string |
+|                               | S’il s’agit de la personne prise en charge | author:Patient.given ou author:Patient.name | string |
+|                               | S’il s’agit d’une personne tierce | author:RelatedPerson.name | string |
+| Date de création de la note | | date | date |
+| Type de la note | | type | token |
+| Degré de restriction de l’audience de la note | | security-label | token |
 
-+---------------+----------------+----------------------+-------------+
-| Critère de    |                | Paramètre            | Type du     |
-| recherche     |                |                      | paramètre   |
-+===============+================+======================+=============+
-| Identifiant   |                | subjec               | token       |
-| de la         |                | t:Patient.identifier |             |
-| personnes     |                |                      |             |
-| prise en      |                | ou                   |             |
-| charge        |                |                      |             |
-|               |                | patient.identifier   |             |
-|               |                |                      |             |
-|               |                | ou                   |             |
-|               |                |                      |             |
-|               |                | subject.identifier   |             |
-+---------------+----------------+----------------------+-------------+
-| Identifiant   | S'il s'agit    | author:Pra           | token       |
-| de l'auteur   | d'un           | ctitioner.identifier |             |
-| de la note    | professionnel  |                      |             |
-+---------------+----------------+----------------------+-------------+
-|               | S'il s'agit de | autho                | token       |
-|               | la personne    | r:Patient.identifier |             |
-|               | prise en       |                      |             |
-|               | charge         |                      |             |
-+---------------+----------------+----------------------+-------------+
-|               | S'il s'agit    | author:Rela          | token       |
-|               | d'une personne | tedPerson.identifier |             |
-|               | tierce         |                      |             |
-+---------------+----------------+----------------------+-------------+
-|               | S'il s'agit    | author:Org           | token       |
-|               | d'un           | anization.identifier |             |
-|               | établissement  |                      |             |
-+---------------+----------------+----------------------+-------------+
-|               | S'il s'agit    | auth                 | token       |
-|               | d'un           | or:Device.identifier |             |
-|               | équipement     |                      |             |
-+---------------+----------------+----------------------+-------------+
-| Nom de        | S'il s'agit    | author               | string      |
-| famille de    | d'un           | :Practitioner.family |             |
-| l'auteur de   | professionnel  |                      |             |
-| la note       |                | ou                   |             |
-|               |                |                      |             |
-|               |                | auth                 |             |
-|               |                | or:Practitioner.name |             |
-+---------------+----------------+----------------------+-------------+
-|               | S'il s'agit de | a                    | string      |
-|               | la personne    | uthor:Patient.family |             |
-|               | prise en       |                      |             |
-|               | charge         | ou                   |             |
-|               |                |                      |             |
-|               |                | author:Patient.name  |             |
-+---------------+----------------+----------------------+-------------+
-|               | S'il s'agit    | autho                | string      |
-|               | d'une personne | r:RelatedPerson.name |             |
-|               | tierce         |                      |             |
-+---------------+----------------+----------------------+-------------+
-| Prénom de     | S'il s'agit    | autho                | string      |
-| l'auteur de   | d'un           | r:Practitioner.given |             |
-| la note       | professionnel  |                      |             |
-|               |                | ou                   |             |
-|               |                |                      |             |
-|               |                | auth                 |             |
-|               |                | or:Practitioner.name |             |
-+---------------+----------------+----------------------+-------------+
-|               | S'il s'agit de | author:Patient.given | string      |
-|               | la personne    |                      |             |
-|               | prise en       | ou                   |             |
-|               | charge         |                      |             |
-|               |                | author:Patient.name  |             |
-+---------------+----------------+----------------------+-------------+
-|               | S'il s'agit    | autho                | string      |
-|               | d'une personne | r:RelatedPerson.name |             |
-|               | tierce         |                      |             |
-+---------------+----------------+----------------------+-------------+
-| Date de       |                | date                 | date        |
-| création de   |                |                      |             |
-| la note       |                |                      |             |
-+---------------+----------------+----------------------+-------------+
-| Type de la    |                | type                 | token       |
-| note          |                |                      |             |
-+---------------+----------------+----------------------+-------------+
-| Degré de      |                | security-label       | token       |
-| restriction   |                |                      |             |
-| de l'audience |                |                      |             |
-| de la note    |                |                      |             |
-+---------------+----------------+----------------------+-------------+
-
-
-Le paramètre « \_include »[^27] doit pouvoir être utilisé pour demander le renvoi des ressources référencées par les éléments de la ressource « DocumentReference », particulièrement par les éléments « subject » et « author ».
+Le paramètre « \_include » doit pouvoir être utilisé pour demander le renvoi des ressources référencées par les éléments de la ressource « DocumentReference », particulièrement par les éléments « subject » et « author ».
 
 Exemples de requêtes
 
@@ -109,8 +37,6 @@ Rechercher les ressources de type DocumentReference dont l'auteur a comme nom de
 GET http://targetsystem.com/API/DocumentReference?\_include=\*&date=ge2013-03-16&type=urn:oid:1.2.250.1.213.1.1.5.98\|OBS
 
 Rechercher les ressources de type DocumentReference ayant été créées depuis le 16/03/2013 inclus et ayant comme type « Note d'observation » (code OBS du jeu de valeurs portant l'OID 1.2.250.1.213.1.1.5.98). Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par les ressources DocumentReference retournées.
-
-
 
 ### Flux 5 : Résultat de recherche de notes
 

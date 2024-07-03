@@ -1,4 +1,4 @@
-Profile: CdL_DocumentReferenceCdL
+Profile: CdLDocumentReference
 Parent: DocumentReference
 Id: cdl-document-reference
 Title: "DocumentReference Cahier de Liaison"
@@ -56,3 +56,20 @@ Description: "Profil de la ressource DocumentReference pour le cahier de liaison
 * content.attachment.creation MS
 
 * context MS
+
+
+Mapping:  CdLDocumentReferenceToMOSNote
+Source:   CdLDocumentReference
+Target:   "https://mos.esante.gouv.fr"
+Id:       cdl-documentreference-to-mos-note
+Title:    "CdLDocumentReference to MOS - Note"
+* -> "Note"
+* masterIdentifier -> "Note.idNote"
+* type -> "Note.type"
+* securityLabel -> "Note.restrictionAudience"
+* date -> "Note.dateHeureCreation"
+* description -> "description"
+* content.attachment -> "Note.pieceJointe"
+* extension[isEmergency] -> "Note.urgenceNote"
+* author -> "Note.auteurNote"
+* subject -> "Note.personnePriseEnCharge"

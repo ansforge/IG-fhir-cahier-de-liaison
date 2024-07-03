@@ -1,4 +1,4 @@
-Profile: CdL_BundleMAJNoteCdL
+Profile: CdLBundleMAJNote
 Parent: Bundle
 Id: cdl-bundle-maj-note
 Title: "Bundle de mise à jour d'une note"

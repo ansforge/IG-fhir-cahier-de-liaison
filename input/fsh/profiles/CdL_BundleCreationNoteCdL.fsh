@@ -1,4 +1,4 @@
-Profile: CdL_BundleCreationNoteCdL
+Profile: CdLBundleCreationNote
 Parent: Bundle
 Id: cdl-bundle-creation-note
 Title: "Bundle de création d'une note"

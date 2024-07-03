@@ -1,4 +1,4 @@
-Profile: CdL_BundleResultatRechercheNotesCdL
+Profile: CdLBundleResultatRechercheNotes
 Parent: Bundle
 Id: cdl-bundle-resultat-recherche-notes
 Title: "Bundle résultat recherche notes"
@@ -17,7 +17,7 @@ Description: "Profil du bundle de resultat de recherches d'une note"
     Device 0..*
 
 * entry[DocumentReference].resource 1..
-* entry[DocumentReference].resource only CdL_DocumentReferenceCdL
+* entry[DocumentReference].resource only CdLDocumentReference
 * entry[DocumentReference].search.mode = #match
 * entry[DocumentReference].request ..0
 * entry[DocumentReference].response ..0
