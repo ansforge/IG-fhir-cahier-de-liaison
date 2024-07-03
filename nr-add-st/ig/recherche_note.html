@@ -186,97 +186,112 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Ce flux intervient dans le processus de consultation de notes d’un cahier de liaison. Il permet de communiquer un ensemble de critères de recherche de notes au système gestionnaire du cahier de liaison.</p>
 
-<p>Le flux 4 de recherche de notes est une requête HTTP GET accompagnée des
-paramètres listés dans le tableau ci-dessous. Ces critères de recherche
-ont été définis lors de l’étude métier de ce volet.</p>
+<p>Le flux 4 de recherche de notes est une requête HTTP GET accompagnée des paramètres listés dans le tableau ci-dessous. Ces critères de recherche ont été définis lors de l’étude métier de ce volet.</p>
 
-<p>+—————+—————-+———————-+————-+
-| Critère de    |                | Paramètre            | Type du     |
-| recherche     |                |                      | paramètre   |
-+===============+================+======================+=============+
-| Identifiant   |                | subjec               | token       |
-| de la         |                | t:Patient.identifier |             |
-| personnes     |                |                      |             |
-| prise en      |                | ou                   |             |
-| charge        |                |                      |             |
-|               |                | patient.identifier   |             |
-|               |                |                      |             |
-|               |                | ou                   |             |
-|               |                |                      |             |
-|               |                | subject.identifier   |             |
-+—————+—————-+———————-+————-+
-| Identifiant   | S’il s’agit    | author:Pra           | token       |
-| de l’auteur   | d’un           | ctitioner.identifier |             |
-| de la note    | professionnel  |                      |             |
-+—————+—————-+———————-+————-+
-|               | S’il s’agit de | autho                | token       |
-|               | la personne    | r:Patient.identifier |             |
-|               | prise en       |                      |             |
-|               | charge         |                      |             |
-+—————+—————-+———————-+————-+
-|               | S’il s’agit    | author:Rela          | token       |
-|               | d’une personne | tedPerson.identifier |             |
-|               | tierce         |                      |             |
-+—————+—————-+———————-+————-+
-|               | S’il s’agit    | author:Org           | token       |
-|               | d’un           | anization.identifier |             |
-|               | établissement  |                      |             |
-+—————+—————-+———————-+————-+
-|               | S’il s’agit    | auth                 | token       |
-|               | d’un           | or:Device.identifier |             |
-|               | équipement     |                      |             |
-+—————+—————-+———————-+————-+
-| Nom de        | S’il s’agit    | author               | string      |
-| famille de    | d’un           | :Practitioner.family |             |
-| l’auteur de   | professionnel  |                      |             |
-| la note       |                | ou                   |             |
-|               |                |                      |             |
-|               |                | auth                 |             |
-|               |                | or:Practitioner.name |             |
-+—————+—————-+———————-+————-+
-|               | S’il s’agit de | a                    | string      |
-|               | la personne    | uthor:Patient.family |             |
-|               | prise en       |                      |             |
-|               | charge         | ou                   |             |
-|               |                |                      |             |
-|               |                | author:Patient.name  |             |
-+—————+—————-+———————-+————-+
-|               | S’il s’agit    | autho                | string      |
-|               | d’une personne | r:RelatedPerson.name |             |
-|               | tierce         |                      |             |
-+—————+—————-+———————-+————-+
-| Prénom de     | S’il s’agit    | autho                | string      |
-| l’auteur de   | d’un           | r:Practitioner.given |             |
-| la note       | professionnel  |                      |             |
-|               |                | ou                   |             |
-|               |                |                      |             |
-|               |                | auth                 |             |
-|               |                | or:Practitioner.name |             |
-+—————+—————-+———————-+————-+
-|               | S’il s’agit de | author:Patient.given | string      |
-|               | la personne    |                      |             |
-|               | prise en       | ou                   |             |
-|               | charge         |                      |             |
-|               |                | author:Patient.name  |             |
-+—————+—————-+———————-+————-+
-|               | S’il s’agit    | autho                | string      |
-|               | d’une personne | r:RelatedPerson.name |             |
-|               | tierce         |                      |             |
-+—————+—————-+———————-+————-+
-| Date de       |                | date                 | date        |
-| création de   |                |                      |             |
-| la note       |                |                      |             |
-+—————+—————-+———————-+————-+
-| Type de la    |                | type                 | token       |
-| note          |                |                      |             |
-+—————+—————-+———————-+————-+
-| Degré de      |                | security-label       | token       |
-| restriction   |                |                      |             |
-| de l’audience |                |                      |             |
-| de la note    |                |                      |             |
-+—————+—————-+———————-+————-+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Critère de recherche</th>
+      <th>&nbsp;</th>
+      <th>Paramètre</th>
+      <th>Type du paramètre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Identifiant de la personne prise en charge</td>
+      <td>&nbsp;</td>
+      <td>subject:Patient.identifier ou patient.identifier ou subject.identifier</td>
+      <td>token</td>
+    </tr>
+    <tr>
+      <td>Identifiant de l’auteur de la note</td>
+      <td>S’il s’agit d’un professionnel</td>
+      <td>author:Prctitioner.identifier</td>
+      <td>token</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>S’il s’agit de la personne prise en charge</td>
+      <td>author:Patient.identifier</td>
+      <td>token</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>S’il s’agit d’une personne tierce</td>
+      <td>author:RelatedPerson.identifier</td>
+      <td>token</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>S’il s’agit d’un établissement</td>
+      <td>author:Organization.identifier</td>
+      <td>token</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>S’il s’agit d’un équipement</td>
+      <td>author:Device.identifier</td>
+      <td>token</td>
+    </tr>
+    <tr>
+      <td>Nom de famille de l’auteur de la note</td>
+      <td>S’il s’agit d’un professionnel</td>
+      <td>author:Practitioner.family ou author:Practitioner.name</td>
+      <td>string&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>S’il s’agit de la personne prise en charge&nbsp;</td>
+      <td>author:Patient.family ou author:Patient.name</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>S’il s’agit d’une personne tierce&nbsp;</td>
+      <td>author:RelatedPerson.name</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>Prénom de l’auteur de la note</td>
+      <td>S’il s’agit d’un professionnel</td>
+      <td>author:Practitioner.given ou author:Practitioner.name</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>S’il s’agit de la personne prise en charge</td>
+      <td>author:Patient.given ou author:Patient.name</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>S’il s’agit d’une personne tierce</td>
+      <td>author:RelatedPerson.name</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>Date de création de la note</td>
+      <td>&nbsp;</td>
+      <td>date</td>
+      <td>date</td>
+    </tr>
+    <tr>
+      <td>Type de la note</td>
+      <td>&nbsp;</td>
+      <td>type</td>
+      <td>token</td>
+    </tr>
+    <tr>
+      <td>Degré de restriction de l’audience de la note</td>
+      <td>&nbsp;</td>
+      <td>security-label</td>
+      <td>token</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>Le paramètre «&nbsp;_include&nbsp;»[^27] doit pouvoir être utilisé pour demander le renvoi des ressources référencées par les éléments de la ressource «&nbsp;DocumentReference&nbsp;», particulièrement par les éléments «&nbsp;subject&nbsp;» et «&nbsp;author&nbsp;».</p>
+<p>Le paramètre «&nbsp;_include&nbsp;» doit pouvoir être utilisé pour demander le renvoi des ressources référencées par les éléments de la ressource «&nbsp;DocumentReference&nbsp;», particulièrement par les éléments «&nbsp;subject&nbsp;» et «&nbsp;author&nbsp;».</p>
 
 <p>Exemples de requêtes</p>
 
@@ -307,7 +322,7 @@ Le contenu de ce flux est similaire à celui du flux 1 de création de note mais
 
 <p>Les recherches sont soumises au gestionnaire qui retourne les résultats au consommateur :</p>
 
-<div><a name="l378">​</a>
+<div><a name="l624">​</a>
     <img src="recherche.png" alt="Recherche d'une note" width="60%"/>
     <p>Recherche d'une note</p>
     <p></p>
@@ -354,7 +369,7 @@ Le contenu de ce flux est similaire à celui du flux 1 de création de note mais
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 27, 2024 12:38+0000">2024-06-27</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 3, 2024 12:11+0000">2024-07-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

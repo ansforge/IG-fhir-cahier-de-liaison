@@ -32,28 +32,28 @@
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note",
     "version" : "3.0.0",
-    "name" : "CdL_BundleCreationNoteCdL"
+    "name" : "CdLBundleCreationNote"
   },
   {
     "id" : "cdl-bundle-maj-note",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note",
     "version" : "3.0.0",
-    "name" : "CdL_BundleMAJNoteCdL"
+    "name" : "CdLBundleMAJNote"
   },
   {
     "id" : "cdl-bundle-resultat-recherche-notes",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-resultat-recherche-notes",
     "version" : "3.0.0",
-    "name" : "CdL_BundleResultatRechercheNotesCdL"
+    "name" : "CdLBundleResultatRechercheNotes"
   },
   {
     "id" : "cdl-document-reference",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference",
     "version" : "3.0.0",
-    "name" : "CdL_DocumentReferenceCdL"
+    "name" : "CdLDocumentReference"
   },
   {
     "id" : "cdl-ext-is-emergency",

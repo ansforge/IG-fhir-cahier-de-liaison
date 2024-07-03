@@ -29,7 +29,7 @@ WARNING: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/i
 ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/creation_note.html#/html/body/div/div/div/div/div/div/img at Line 239, column 6: The image source 'gestion-acteurs.png' cannot be resolved
 ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/maj_note.html#/html/body/div/div/div/div/div/div/img at Line 195, column 6: The image source '1b-2b-restful.png' cannot be resolved
 ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/maj_note.html#/html/body/div/div/div/div/div/div/img at Line 217, column 6: The image source '1c-2c-transaction.png' cannot be resolved
-ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/recherche_note.html#/html/body/div/div/div/div/div/div/img at Line 311, column 6: The image source 'recherche.png' cannot be resolved
+ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/recherche_note.html#/html/body/div/div/div/div/div/div/img at Line 326, column 6: The image source 'recherche.png' cannot be resolved
 ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/suppr_note.html#/html/body/div/div/div/div/div/div/img at Line 194, column 6: The image source '3-suppr.png' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide

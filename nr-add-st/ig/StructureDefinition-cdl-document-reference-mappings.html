@@ -220,7 +220,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: CdL_DocumentReferenceCdL - Mappings</h2>
+<h2 id="root">Resource Profile: CdLDocumentReference - Mappings</h2>
 
   <table class="colsd">
     <tr>
@@ -229,7 +229,7 @@
         
           Draft
           
-            as of 2024-06-27
+            as of 2024-07-03
           
         
       </td>
@@ -245,8 +245,22 @@
 
 
 
-  <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>CdL_DocumentReferenceCdL</b></td></tr>
+  <a name="cdl-documentreference-to-mos-note"> </a><h3>Mappings for CdLDocumentReference to MOS - Note (https://mos.esante.gouv.fr)</h3><table class="grid">
+ <tr><td colspan="3"><b>CdLDocumentReference</b></td></tr>
+ <tr><td>DocumentReference</td><td>Note</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (isEmergency)</td><td>Note.urgenceNote</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;masterIdentifier</td><td>Note.idNote</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>Note.type</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Note.personnePriseEnCharge</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>Note.dateHeureCreation</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;author</td><td>Note.auteurNote</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;description</td><td>description</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;securityLabel</td><td>Note.restrictionAudience</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;content</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attachment</td><td>Note.pieceJointe</td> </tr>
+</table>
+<a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>CdLDocumentReference</b></td></tr>
  <tr><td>DocumentReference</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;masterIdentifier</td><td>Event.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
@@ -259,7 +273,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;encounter</td><td>Event.context</td> </tr>
 </table>
 <a name="fhircomposition"> </a><h3>Mappings for FHIR Composition (http://hl7.org/fhir/composition)</h3><table class="grid">
- <tr><td colspan="3"><b>CdL_DocumentReferenceCdL</b></td></tr>
+ <tr><td colspan="3"><b>CdLDocumentReference</b></td></tr>
  <tr><td>DocumentReference</td><td>when describing a Composition</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;masterIdentifier</td><td>Composition.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>Composition.type</td> </tr>
@@ -286,7 +300,7 @@ Composition.date</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related</td><td>Composition.event.detail</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>CdL_DocumentReferenceCdL</b></td></tr>
+ <tr><td colspan="3"><b>CdLDocumentReference</b></td></tr>
  <tr><td>DocumentReference</td><td>Entity. Role, or Act, Document[classCode=&quot;DOC&quot; and moodCode=&quot;EVN&quot;]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
@@ -337,7 +351,7 @@ Composition.date</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related</td><td>./outboundRelationship[typeCode=&quot;PERT&quot; and isNormalActRelationship()] / target[isNormalAct]</td> </tr>
 </table>
 <a name="cda"> </a><h3>Mappings for CDA (R2) (<a href="http://hl7.org/comparison-cda.html">http://hl7.org/v3/cda</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>CdL_DocumentReferenceCdL</b></td></tr>
+ <tr><td colspan="3"><b>CdLDocumentReference</b></td></tr>
  <tr><td>DocumentReference</td><td>when describing a CDA</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;masterIdentifier</td><td>ClinicalDocument/id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>ClinicalDocument/code/@code 
@@ -362,7 +376,7 @@ serviceEvent/effectiveTime/high/
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;related</td><td>ClinicalDocument/relatedDocument</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>CdL_DocumentReferenceCdL</b></td></tr>
+ <tr><td colspan="3"><b>CdLDocumentReference</b></td></tr>
  <tr><td>DocumentReference</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;masterIdentifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
@@ -375,7 +389,7 @@ serviceEvent/effectiveTime/high/
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;encounter</td><td>FiveWs.context</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>CdL_DocumentReferenceCdL</b></td></tr>
+ <tr><td colspan="3"><b>CdLDocumentReference</b></td></tr>
  <tr><td>DocumentReference</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;masterIdentifier</td><td>TXA-12</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>TXA-16?</td> </tr>
@@ -392,7 +406,7 @@ serviceEvent/effectiveTime/high/
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>RP.1+RP.2 - if they refer to a URL (see v2.6)</td> </tr>
 </table>
 <a name="xds"> </a><h3>Mappings for XDS metadata equivalent (http://ihe.net/xds)</h3><table class="grid">
- <tr><td colspan="3"><b>CdL_DocumentReferenceCdL</b></td></tr>
+ <tr><td colspan="3"><b>CdLDocumentReference</b></td></tr>
  <tr><td>DocumentReference</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;masterIdentifier</td><td>DocumentEntry.uniqueId</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>DocumentEntry.entryUUID</td> </tr>
@@ -465,7 +479,7 @@ serviceEvent/effectiveTime/high/
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 27, 2024 12:38+0000">2024-06-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 3, 2024 12:11+0000">2024-07-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
