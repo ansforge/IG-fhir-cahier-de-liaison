@@ -55,7 +55,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_04886b69-ef36-4584-819e-4590cd3888a4\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference 04886b69-ef36-4584-819e-4590cd3888a4</b></p><a name=\"04886b69-ef36-4584-819e-4590cd3888a4\"> </a><a name=\"hc04886b69-ef36-4584-819e-4590cd3888a4\"> </a><a name=\"04886b69-ef36-4584-819e-4590cd3888a4-en-US\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R234-TypeNote/FHIR/TRE-R234-TypeNote DEM-AVIS}\">Demande d'avis</span></p><p><b>subject</b>: <a href=\"Bundle-cdl-bundle-creation-note.html#urn-uuid-0d920958-b596-4b91-af67-9bafc707820b\">Michel ROUBINOWITZ</a></p><p><b>date</b>: 2019-03-04 08:30:00+1100</p><p><b>author</b>: </p><ul><li><a href=\"Bundle-cdl-bundle-creation-note.html#urn-uuid-85652218-ea45-426f-916e-6ca5ea8dd5e1\">Bundle: type = transaction</a></li><li><a href=\"Bundle-cdl-bundle-creation-note.html#urn-uuid-f380b0fd-23c2-415a-b367-53e707ef91e2\">Mme Sophie Brooks (infirmier)</a></li></ul><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Language</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>text/plain</td><td>French</td><td><code>TWFtYW4gZXN0IGZhdGlndellLiBFbGxlIG4nYSBwYXMgdm91bHUgc29ydGlyIGNlIG1hdGluLg==</code></td></tr></table></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_04886b69-ef36-4584-819e-4590cd3888a4\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference 04886b69-ef36-4584-819e-4590cd3888a4</b></p><a name=\"04886b69-ef36-4584-819e-4590cd3888a4\"> </a><a name=\"hc04886b69-ef36-4584-819e-4590cd3888a4\"> </a><a name=\"04886b69-ef36-4584-819e-4590cd3888a4-en-US\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R234-TypeNote/FHIR/TRE-R234-TypeNote DEM-AVIS}\">Demande d'avis</span></p><p><b>subject</b>: <a href=\"Patient-0d920958-b596-4b91-af67-9bafc707820b.html\">Michel ROUBINOWITZ</a></p><p><b>date</b>: 2019-03-04 08:30:00+1100</p><p><b>author</b>: </p><ul><li><a href=\"Bundle-cdl-bundle-creation-note.html#Practitioner_85652218-ea45-426f-916e-6ca5ea8dd5e1\">Bundle: type = transaction</a></li><li><a href=\"Bundle-cdl-bundle-creation-note.html#PractitionerRole_f380b0fd-23c2-415a-b367-53e707ef91e2\">Mme Sophie Brooks (infirmier)</a></li></ul><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Language</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>text/plain</td><td>French</td><td><code>TWFtYW4gZXN0IGZhdGlndellLiBFbGxlIG4nYSBwYXMgdm91bHUgc29ydGlyIGNlIG1hdGluLg==</code></td></tr></table></blockquote></div>"
   ] ; # 
   fhir:status [ fhir:v "current"] ; # 
   fhir:type [
@@ -66,14 +66,17 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:reference [ fhir:v "urn:uuid:0d920958-b596-4b91-af67-9bafc707820b" ] ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/Patient/0d920958-b596-4b91-af67-9bafc707820b> ;
+     fhir:reference [ fhir:v "Patient/0d920958-b596-4b91-af67-9bafc707820b" ] ;
      fhir:display [ fhir:v "Michel ROUBINOWITZ" ]
   ] ; # 
   fhir:date [ fhir:v "2019-03-04T08:30:00+11:00"^^xsd:dateTime] ; # 
   fhir:author ( [
-     fhir:reference [ fhir:v "urn:uuid:85652218-ea45-426f-916e-6ca5ea8dd5e1" ]
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1> ;
+     fhir:reference [ fhir:v "Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1" ]
   ] [
-     fhir:reference [ fhir:v "urn:uuid:f380b0fd-23c2-415a-b367-53e707ef91e2" ] ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2> ;
+     fhir:reference [ fhir:v "PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2" ] ;
      fhir:display [ fhir:v "Mme Sophie Brooks (infirmier)" ]
   ] ) ; # 
   fhir:content ( [
@@ -94,11 +97,12 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_f380b0fd-23c2-415a-b367-53e707ef91e2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole f380b0fd-23c2-415a-b367-53e707ef91e2</b></p><a name=\"f380b0fd-23c2-415a-b367-53e707ef91e2\"> </a><a name=\"hcf380b0fd-23c2-415a-b367-53e707ef91e2\"> </a><a name=\"f380b0fd-23c2-415a-b367-53e707ef91e2-en-US\"> </a><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Bundle-cdl-bundle-creation-note.html#urn-uuid-85652218-ea45-426f-916e-6ca5ea8dd5e1\">Mme Sophie Brooks</a></p><p><b>code</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante 60}\">Infirmier</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_f380b0fd-23c2-415a-b367-53e707ef91e2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole f380b0fd-23c2-415a-b367-53e707ef91e2</b></p><a name=\"f380b0fd-23c2-415a-b367-53e707ef91e2\"> </a><a name=\"hcf380b0fd-23c2-415a-b367-53e707ef91e2\"> </a><a name=\"f380b0fd-23c2-415a-b367-53e707ef91e2-en-US\"> </a><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Bundle-cdl-bundle-creation-note.html#Practitioner_85652218-ea45-426f-916e-6ca5ea8dd5e1\">Mme Sophie Brooks</a></p><p><b>code</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante 60}\">Infirmier</span></p></div>"
   ] ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:practitioner [
-     fhir:reference [ fhir:v "urn:uuid:85652218-ea45-426f-916e-6ca5ea8dd5e1" ] ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1> ;
+     fhir:reference [ fhir:v "Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1" ] ;
      fhir:display [ fhir:v "Mme Sophie Brooks" ]
   ] ; # 
   fhir:code ( [
