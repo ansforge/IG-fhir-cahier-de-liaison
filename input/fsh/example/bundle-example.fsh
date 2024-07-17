@@ -1,8 +1,3 @@
-Alias: $TRE-R234-TypeNote = https://mos.esante.gouv.fr/NOS/TRE_R234-TypeNote/FHIR/TRE-R234-TypeNote
-Alias: $TRE-G15-ProfessionSante = https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante
-Alias: $fr-v2-0445 = http://interopsante.org/fhir/CodeSystem/fr-v2-0445
-Alias: $fr-v2-0203 = http://interopsante.org/fhir/CodeSystem/fr-v2-0203
-
 Instance: cdl-bundle-creation-note
 InstanceOf: CdLBundleCreationNote
 Usage: #example
@@ -29,10 +24,10 @@ InstanceOf: CdLDocumentReference
 Usage: #inline
 * status = #current
 * type = $TRE-R234-TypeNote#DEM-AVIS "Demande d'avis"
-* subject = Reference(urn:uuid:0d920958-b596-4b91-af67-9bafc707820b) "Michel ROUBINOWITZ"
+* subject = Reference(0d920958-b596-4b91-af67-9bafc707820b) "Michel ROUBINOWITZ"
 * date = "2019-03-04T08:30:00+11:00"
-* author[0] = Reference(urn:uuid:85652218-ea45-426f-916e-6ca5ea8dd5e1)
-* author[+] = Reference(urn:uuid:f380b0fd-23c2-415a-b367-53e707ef91e2) "Mme Sophie Brooks (infirmier)"
+* author[0] = Reference(85652218-ea45-426f-916e-6ca5ea8dd5e1)
+* author[+] = Reference(f380b0fd-23c2-415a-b367-53e707ef91e2) "Mme Sophie Brooks (infirmier)"
 * content.attachment.contentType = #text/plain
 * content.attachment.language = #fr
 * content.attachment.data = "TWFtYW4gZXN0IGZhdGlndellLiBFbGxlIG4nYSBwYXMgdm91bHUgc29ydGlyIGNlIG1hdGluLg=="
@@ -42,7 +37,7 @@ InstanceOf: AsPractitionerRoleProfile
 Usage: #inline
 * active = true
 * code = $TRE-G15-ProfessionSante#60 "Infirmier"
-* practitioner = Reference(urn:uuid:85652218-ea45-426f-916e-6ca5ea8dd5e1) "Mme Sophie Brooks"
+* practitioner = Reference(85652218-ea45-426f-916e-6ca5ea8dd5e1) "Mme Sophie Brooks"
 
 Instance: 85652218-ea45-426f-916e-6ca5ea8dd5e1
 InstanceOf: AsPractitionerProfile

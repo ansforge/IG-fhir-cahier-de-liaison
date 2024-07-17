@@ -6,7 +6,7 @@ Description: "Profil du bundle pour le flux 1 de création de note du volet CdL"
 
 * type = #transaction
 
-* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains
