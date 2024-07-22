@@ -177,21 +177,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#exemple---remontée-des-informations-de-linfirmière" id="markdown-toc-exemple---remontée-des-informations-de-linfirmière">Exemple - Remontée des informations de l’infirmière</a></li>
-  <li><a href="#méthode-délaboration-des-spécifications-fonctionnelles" id="markdown-toc-méthode-délaboration-des-spécifications-fonctionnelles">Méthode d’élaboration des spécifications fonctionnelles</a></li>
-  <li><a href="#lectorat-cible" id="markdown-toc-lectorat-cible">Lectorat cible</a></li>
-  <li><a href="#élaboration-des-spécifications-fonctionnelles" id="markdown-toc-élaboration-des-spécifications-fonctionnelles">Élaboration des spécifications fonctionnelles</a>    <ul>
-      <li><a href="#etape-1-organisation-du-contexte-métier" id="markdown-toc-etape-1-organisation-du-contexte-métier">Etape 1: Organisation du contexte métier</a></li>
-      <li><a href="#etape-2-définition-des-processus-métier-collaboratifs" id="markdown-toc-etape-2-définition-des-processus-métier-collaboratifs">Etape 2: Définition des processus métier collaboratifs</a></li>
-      <li><a href="#etape-3-description-du-processus-et-identification-des-flux" id="markdown-toc-etape-3-description-du-processus-et-identification-des-flux">Etape 3: Description du processus et identification des flux</a></li>
-      <li><a href="#etape-4-qualification-des-flux-échangés" id="markdown-toc-etape-4-qualification-des-flux-échangés">Etape 4: Qualification des flux échangés</a></li>
-      <li><a href="#etape-5-identification-des-informations-véhiculées-dans-les-flux" id="markdown-toc-etape-5-identification-des-informations-véhiculées-dans-les-flux">Etape 5: Identification des informations véhiculées dans les flux</a></li>
-      <li><a href="#etape-6-elaboration-du-modèle-hiérarchique-de-chaque-flux-structuré" id="markdown-toc-etape-6-elaboration-du-modèle-hiérarchique-de-chaque-flux-structuré">Etape 6: Elaboration du modèle hiérarchique de chaque flux structuré</a></li>
-    </ul>
-  </li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#élaboration-des-spécifications-fonctionnelles" id="markdown-toc-élaboration-des-spécifications-fonctionnelles">Élaboration des spécifications fonctionnelles</a></li>
 </ul>
 
 </div>
+<h3 id="introduction">Introduction</h3>
+
 <p>Ce document présente une étude « métier » pour la mise en œuvre d’un cahier de liaison dans le domaine sanitaire, médico-administratif, médico-social et social afin d’assurer un suivi « terrain » d’une personne prise en charge (usager du secteur social ou patient)</p>
 
 <p>L’étude menée concerne la modélisation des flux qui existent entre les composants d’un système d’information ou entre des systèmes d’informations qui participent à la mise en œuvre du cahier de liaison. Elle englobe les actions d’alimentation et de consultation du cahier de liaison selon divers critères de recherche qui sont présentés dans ce document.</p>
@@ -200,7 +192,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Ces exigences « métier » sont mis en œuvre par les volets transport et service du CI-SIS.</p>
 
-<h3 id="exemple---remontée-des-informations-de-linfirmière">Exemple - Remontée des informations de l’infirmière</h3>
+<h4 id="exemple---remontée-des-informations-de-linfirmière">Exemple - Remontée des informations de l’infirmière</h4>
 
 <p>Ci-dessous un exemple d’une mise en œuvre du cahier de liaison.</p>
 
@@ -210,7 +202,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Le médecin traitant consulte les dernières observations relatives à son patient et décide de prendre contact avec le patient afin de faire un nouveau bilan.</li>
 </ol>
 
-<h3 id="méthode-délaboration-des-spécifications-fonctionnelles">Méthode d’élaboration des spécifications fonctionnelles</h3>
+<h4 id="méthode-délaboration-des-spécifications-fonctionnelles">Méthode d’élaboration des spécifications fonctionnelles</h4>
 
 <p>Les spécifications « métier » présentées dans ce document suivent la méthode d’élaboration des spécifications fonctionnelles des échanges élaborée par l’ANS. Cette méthode est constituée de plusieurs étapes :</p>
 
@@ -223,13 +215,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Etape 6</strong>: Élaboration du modèle hiérarchique de chaque flux structuré (sous forme d’un ou plusieurs diagrammes de classes UML). Le modèle hiérarchique élaboré repose sur la reprise des composants mutualisés dans le modèle des objets de santé (MOS) et des nomenclatures associées. A l’issue de cette élaboration, il se peut que de nouveaux composants jusqu’alors inexistants dans le MOS aient été définis et soient intégrés par la suite au MOS.</li>
 </ul>
 
-<h3 id="lectorat-cible">Lectorat cible</h3>
+<h4 id="lectorat-cible">Lectorat cible</h4>
 
 <p>Les lecteurs cibles sont principalement des chefs de projets ainsi que toute personne concernée par la maîtrise d’ouvrage et qui spécifie des projets avec des interfaces interopérables.</p>
 
-<h2 id="élaboration-des-spécifications-fonctionnelles">Élaboration des spécifications fonctionnelles</h2>
+<h3 id="élaboration-des-spécifications-fonctionnelles">Élaboration des spécifications fonctionnelles</h3>
 
-<h3 id="etape-1-organisation-du-contexte-métier">Etape 1: Organisation du contexte métier</h3>
+<h4 id="etape-1-organisation-du-contexte-métier">Etape 1: Organisation du contexte métier</h4>
 
 <p>Le but de cette étape est d’organiser la vue métier dans laquelle s’insère le projet et d’identifier le ou les processus collaboratifs du périmètre du projet.</p>
 
@@ -250,7 +242,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <img src="sf-img1.png" alt="CI-SIS" style="height: auto; width: 100%;" title="Organisation du contexte métier du cahier de liaison"/>
 </div>
 
-<h3 id="etape-2-définition-des-processus-métier-collaboratifs">Etape 2: Définition des processus métier collaboratifs</h3>
+<h4 id="etape-2-définition-des-processus-métier-collaboratifs">Etape 2: Définition des processus métier collaboratifs</h4>
 
 <p>Le but de cette étape est de définir les processus métier collaboratifs identifiés dans la Figure 1. Les Tables ci-dessous contiennent des informations concernant les acteurs et les cas d’utilisation des Figures 2, 3, 4 et 5.</p>
 
@@ -280,7 +272,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>EntiteGeographique</td>
-      <td>L’Entité Géographique<sup><a name="l533">​</a><a href="#footnote-5">[5]</a></sup> (EG) correspond à la notion d’établissement:  <br/>** Pour les établissements inscrits au FINESS, l’EG correspond à une implantation géographique. Un établissement est caractérisé par une catégorie d’établissement; un établissement est obligatoirement relié à une entité juridique; à chaque établissement sont associées les activités exercées.  <br/>** Pour les organismes inscrits uniquement dans le SIRENE, l’EG correspond à un établissement de la personne morale, elle est identifiée par un numéro SIRET.  <br/>Synonymes: Site, établissement, structure.</td>
+      <td>L’Entité Géographique<sup><a name="l500">​</a><a href="#footnote-5">[5]</a></sup> (EG) correspond à la notion d’établissement:  <br/>** Pour les établissements inscrits au FINESS, l’EG correspond à une implantation géographique. Un établissement est caractérisé par une catégorie d’établissement; un établissement est obligatoirement relié à une entité juridique; à chaque établissement sont associées les activités exercées.  <br/>** Pour les organismes inscrits uniquement dans le SIRENE, l’EG correspond à un établissement de la personne morale, elle est identifiée par un numéro SIRET.  <br/>Synonymes: Site, établissement, structure.</td>
     </tr>
     <tr>
       <td>Equipement</td>
@@ -301,7 +293,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tbody>
     <tr>
       <td>Création d’une note</td>
-      <td>Un professionnel, une personne tierce, un équipement, la personne prise en charge ou une entité géographique (un hôpital, par exemple) se connecte au gestionnaire de cahier de liaison via un module d’accès<sup><a name="l584">​</a><a href="#footnote-6">[6]</a></sup>. Ainsi, Ils accèdent au cahier de liaison afin de pouvoir l’alimenter avec de nouvelles informations qui ont vocation à être partagées.</td>
+      <td>Un professionnel, une personne tierce, un équipement, la personne prise en charge ou une entité géographique (un hôpital, par exemple) se connecte au gestionnaire de cahier de liaison via un module d’accès<sup><a name="l551">​</a><a href="#footnote-6">[6]</a></sup>. Ainsi, Ils accèdent au cahier de liaison afin de pouvoir l’alimenter avec de nouvelles informations qui ont vocation à être partagées.</td>
     </tr>
     <tr>
       <td>Mise à jour d’une note</td>
@@ -346,13 +338,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Figure 5 : Diagramme de cas d’utilisation concernant la consultation de note(s) dans le cahier de liaison</p>
 
-<h3 id="etape-3-description-du-processus-et-identification-des-flux">Etape 3: Description du processus et identification des flux</h3>
+<h4 id="etape-3-description-du-processus-et-identification-des-flux">Etape 3: Description du processus et identification des flux</h4>
 
 <p>L’objectif de cette étape est de décrire les processus métier collaboratifs définis dans les cas d’utilisation de l’étape 2. Dans ce document, les processus sont modélisés avec des diagrammes d’activités UML qui identifient les acteurs techniques qui échangent des flux d’informations. Les Figure 6, 7, 8 et 9 décrivent les interactions entre le créateur/consommateur du contenu et le gestionnaire de cahier de liaison.</p>
 
 <p>Sauf indication contraire, il n’y a pas de contrainte architecturale d’implémentation du gestionnaire de cahier de liaison: il peut être mis en œuvre au sein d’un même système ou sur plusieurs systèmes répartis.</p>
 
-<h4 id="création-dune-note">Création d’une note</h4>
+<h5 id="création-dune-note">Création d’une note</h5>
 
 <p>Les Tables 3, 4 et 5 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Création d’une note ». Le diagramme d’activités correspondant est représenté dans la Figure 6.</p>
 
@@ -425,7 +417,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Figure 6 : Diagramme d’activités du processus « Création d’une note »</p>
 
-<h4 id="mise-à-jour-dune-note">Mise à jour d’une note</h4>
+<h5 id="mise-à-jour-dune-note">Mise à jour d’une note</h5>
 
 <p>Les Tables 6, 7 et 8 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Mise à jour d’une note». Le diagramme d’activités correspondant est représenté dans la Figure 7.</p>
 
@@ -502,7 +494,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Figure 7: Diagramme d’activités du processus collaboratif «Mise à jour d’une note»</p>
 
-<h4 id="suppression-dune-note">Suppression d’une note</h4>
+<h5 id="suppression-dune-note">Suppression d’une note</h5>
 
 <p>Les Tables 9, 10 et 11 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Suppression d’une note ». Le diagramme d’activités correspondant est représenté dans la Figure 8.</p>
 
@@ -579,7 +571,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Figure 8 : Diagramme d’activités du processus « Suppression d’une note»</p>
 
-<h4 id="consultation-du-cahier-de-liaison">Consultation du cahier de liaison</h4>
+<h5 id="consultation-du-cahier-de-liaison">Consultation du cahier de liaison</h5>
 
 <p>Les Tables 12, 13 et 14 représentent les acteurs, les actions et les flux identifiés pour le processus « Consultation du cahier de liaison ». Le diagramme d’activités correspondant est représenté dans la Figure 9.</p>
 
@@ -656,7 +648,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Figure 9: Diagramme d’activités du processus « Consultation du cahier de liaison »</p>
 
-<h3 id="etape-4-qualification-des-flux-échangés">Etape 4: Qualification des flux échangés</h3>
+<h4 id="etape-4-qualification-des-flux-échangés">Etape 4: Qualification des flux échangés</h4>
 
 <p>Les flux échangés ont été identifiés à l’étape 3. L’étape 4 vise à qualifier les flux d’informations métier en identifiant les flux structurés. De plus, pour chaque flux, les acteurs « émetteur » et « récepteur » sont identifiés. Ci-dessous une liste des flux échangés dans le cadre du cahier de liaison.</p>
 
@@ -705,7 +697,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 15 : Récapitulatif des flux structurés identifiés</p>
 
-<h3 id="etape-5-identification-des-informations-véhiculées-dans-les-flux">Etape 5: Identification des informations véhiculées dans les flux</h3>
+<h4 id="etape-5-identification-des-informations-véhiculées-dans-les-flux">Etape 5: Identification des informations véhiculées dans les flux</h4>
 
 <p>Dans cette section, il s’agit de définir les informations « métier » présentes dans chaque flux identifié dans l’étape 4. La Table 16 liste les concepts présents dans ces flux.</p>
 
@@ -756,9 +748,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p>Table 16: Liste des concepts « métier » identifiés permettant l’alignement avec les informations modélisées dans le MOS<sup><a name="l1468">​</a><a href="#footnote-7">[7]</a></sup></p>
+<p>Table 16: Liste des concepts « métier » identifiés permettant l’alignement avec les informations modélisées dans le MOS<sup><a name="l1435">​</a><a href="#footnote-7">[7]</a></sup></p>
 
-<h3 id="etape-6-elaboration-du-modèle-hiérarchique-de-chaque-flux-structuré">Etape 6: Elaboration du modèle hiérarchique de chaque flux structuré</h3>
+<h4 id="etape-6-elaboration-du-modèle-hiérarchique-de-chaque-flux-structuré">Etape 6: Elaboration du modèle hiérarchique de chaque flux structuré</h4>
 
 <p>Le but de cette étape est d’élaborer des diagrammes de classe de chaque flux structuré à partir des informations métier identifiées. La représentation formalisée du flux doit prendre en compte deux exigences supplémentaires:</p>
 
@@ -818,7 +810,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 17 : Liste des correspondances entre les concepts « métier » identifiés et les concepts du MOS</p>
 
-<h4 id="flux-1---créationnote">Flux 1 - CréationNote</h4>
+<h5 id="flux-1---créationnote">Flux 1 - CréationNote</h5>
 
 <p>La Figure 10 présente le diagramme de classes modélisant les informations métier en ce qui concerne le Flux 1 « CréationNote ».</p>
 
@@ -832,7 +824,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Les tables ci-dessous définissent les attributs contenus dans le diagramme de classes de la Figure 8.</p>
 
-<h5 id="classe-note">Classe “Note”</h5>
+<h6 id="classe-note">Classe “Note”</h6>
 
 <table>
   <thead>
@@ -846,7 +838,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>idNote: [0..1] Identifiant</td>
       <td>Identifiant de la note dans le cahier de liaison.</td>
-      <td>Non<sup><a name="l1665">​</a><a href="#footnote-8">[8]</a></sup></td>
+      <td>Non<sup><a name="l1632">​</a><a href="#footnote-8">[8]</a></sup></td>
     </tr>
     <tr>
       <td>type: [1..1] Code</td>
@@ -861,7 +853,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>dateHeureCreation: [0..1] DateHeure</td>
       <td>Date à laquelle la note est déclarée.</td>
-      <td>Non<sup><a name="l1704">​</a><a href="#footnote-9">[9]</a></sup></td>
+      <td>Non<sup><a name="l1671">​</a><a href="#footnote-9">[9]</a></sup></td>
     </tr>
     <tr>
       <td>description : [0..1] Texte</td>
@@ -883,7 +875,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 18 Attributs de la classe “Note”</p>
 
-<h5 id="classe-auteurnote">Classe “AuteurNote”</h5>
+<h6 id="classe-auteurnote">Classe “AuteurNote”</h6>
 
 <table>
   <thead>
@@ -897,14 +889,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>idAuteurNote: [0..1] Identifiant</td>
       <td>Identifiant de l’auteur de la note qui est soit un professionnel, soit une personne tierce, soit une entité géographique soit une personne prise en charge.</td>
-      <td>Non<sup><a name="l1785">​</a><a href="#footnote-10">[10]</a></sup></td>
+      <td>Non<sup><a name="l1752">​</a><a href="#footnote-10">[10]</a></sup></td>
     </tr>
   </tbody>
 </table>
 
 <p>Table 19 Attributs de la classe “AuteurNote”</p>
 
-<h5 id="classe-personnetierce">Classe “PersonneTierce”</h5>
+<h6 id="classe-personnetierce">Classe “PersonneTierce”</h6>
 
 <table>
   <thead>
@@ -935,9 +927,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 20 Attributs de la classe “PersonneTierce”</p>
 
-<h5 id="classe-professionnel">Classe “Professionnel”</h5>
+<h6 id="classe-professionnel">Classe “Professionnel”</h6>
 
-<p>Se référer à la classe <strong>Professionnel</strong> du MOS<sup><a name="l1869">​</a><a href="#footnote-11">[11]</a></sup> pour plus d’informations.</p>
+<p>Se référer à la classe <strong>Professionnel</strong> du MOS<sup><a name="l1836">​</a><a href="#footnote-11">[11]</a></sup> pour plus d’informations.</p>
 
 <table>
   <thead>
@@ -968,7 +960,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 21 Attributs de la classe “Professionnel”</p>
 
-<h5 id="classe-exerciceprofessionnel">Classe “ExerciceProfessionnel”</h5>
+<h6 id="classe-exerciceprofessionnel">Classe “ExerciceProfessionnel”</h6>
 
 <p>Se référer à la classe <strong>ExerciceProfessionnel</strong> du MOS pour plus d’informations.</p>
 
@@ -991,9 +983,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 22 Attributs de la classe “ExcerciceProfessionnel”</p>
 
-<h5 id="classe-entitegeographique">Classe “EntiteGeographique”</h5>
+<h6 id="classe-entitegeographique">Classe “EntiteGeographique”</h6>
 
-<p>Se référer à la classe <strong>EntiteGeographique</strong> du MOS<sup><a name="l1999">​</a><a href="#footnote-12">[12]</a></sup> pour plus d’informations.</p>
+<p>Se référer à la classe <strong>EntiteGeographique</strong> du MOS<sup><a name="l1966">​</a><a href="#footnote-12">[12]</a></sup> pour plus d’informations.</p>
 
 <table>
   <thead>
@@ -1034,7 +1026,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 23 Attributs de la classe “EntiteGeographique”</p>
 
-<h5 id="classe-ressourcematerielle">Classe “RessourceMaterielle”</h5>
+<h6 id="classe-ressourcematerielle">Classe “RessourceMaterielle”</h6>
 
 <table>
   <thead>
@@ -1060,7 +1052,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 24 Attributs de la classe”RessourceMaterielle”</p>
 
-<h5 id="classe-personnepriseencharge">Classe “PersonnePriseEnCharge”</h5>
+<h6 id="classe-personnepriseencharge">Classe “PersonnePriseEnCharge”</h6>
 
 <table>
   <thead>
@@ -1072,7 +1064,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td>idPersonnePriseEnCharge<strong><sup><a name="l2172">​</a><a href="#footnote-13">[13]</a></sup></strong> [0..1] Identifiant</td>
+      <td>idPersonnePriseEnCharge<strong><sup><a name="l2139">​</a><a href="#footnote-13">[13]</a></sup></strong> [0..1] Identifiant</td>
       <td>Identifiant de la personne prise en charge.</td>
       <td>Non</td>
     </tr>
@@ -1091,9 +1083,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 25 Classe “PersonnePriseEnCharge”</p>
 
-<h5 id="classe-patient">Classe “Patient”</h5>
+<h6 id="classe-patient">Classe “Patient”</h6>
 
-<p>Se référer à la classe <strong>Patient</strong> du MOS<sup><a name="l2221">​</a><a href="#footnote-14">[14]</a></sup> pour plus d’informations.</p>
+<p>Se référer à la classe <strong>Patient</strong> du MOS<sup><a name="l2188">​</a><a href="#footnote-14">[14]</a></sup> pour plus d’informations.</p>
 
 <table>
   <thead>
@@ -1124,7 +1116,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 26 Classe “Patient”</p>
 
-<h5 id="classe-personnephysique">Classe “PersonnePhysique”</h5>
+<h6 id="classe-personnephysique">Classe “PersonnePhysique”</h6>
 
 <p>Se référer à la classe <strong>PersonnePhysique</strong> du MOS pour plus d’informations.</p>
 
@@ -1152,13 +1144,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 27 “PersonnePhysique”</p>
 
-<h4 id="flux-2---majnote">Flux 2 - MaJNote</h4>
+<h5 id="flux-2---majnote">Flux 2 - MaJNote</h5>
 
 <p>Ce flux est modélisé par le même modèle hiérarchique du Flux 1 CréationNote, étant donné qu’ils peuvent contenir les mêmes informations métier.</p>
 
 <p>A noter que pour la mise en œuvre du cahier de liaison dans une infrastructure de partage, la mise à jour d’une note concerne les informations relatives à son indexation et référencement dans cette infrastructure. Elle ne concerne pas les informations relatives à son auteur ni à son sujet.</p>
 
-<h4 id="flux-3---suppressionnote">Flux 3 - SuppressionNote</h4>
+<h5 id="flux-3---suppressionnote">Flux 3 - SuppressionNote</h5>
 
 <p>La Figure ci-dessous présente le diagramme de classe concernant le Flux 3 - <strong>SuppressionNote</strong>. Les attributs de cette classe représentent les critères de recherche des informations contenues dans le cahier de liaison afin de pouvoir supprimer une note.</p>
 
@@ -1189,7 +1181,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 28 Classe “SuppressionNote”</p>
 
-<h4 id="flux-4---recherchenotes">Flux 4 - RechercheNotes</h4>
+<h5 id="flux-4---recherchenotes">Flux 4 - RechercheNotes</h5>
 
 <p>La Figure 12 ci-dessous représente le diagramme de classe concernant le flux <strong>RechercheNotes</strong>. Les attributs de cette classe représentent les critères de recherche des informations contenues dans le cahier de liaison.</p>
 
@@ -1250,7 +1242,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 29 Classe “RechercheNotes”</p>
 
-<h4 id="flux-5---résultatrecherchenotes">Flux 5 - RésultatRechercheNotes</h4>
+<h5 id="flux-5---résultatrecherchenotes">Flux 5 - RésultatRechercheNotes</h5>
 
 <p>Le Flux 5 est modélisé par le même modèle hiérarchique du Flux 1 - CréationNote, étant donné qu’il peut contenir les mêmes informations « métier ». Par contre, ce flux peut contenir plusieurs notes.</p>
 
@@ -1294,7 +1286,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 22, 2024 12:26+0000">2024-07-22</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 22, 2024 12:50+0000">2024-07-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
