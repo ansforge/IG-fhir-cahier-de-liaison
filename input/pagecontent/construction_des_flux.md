@@ -9,82 +9,17 @@ Le gestionnaire doit implémenter les deux options.
 
 Cette section présente la construction de flux HTTP (de l'API REST FHIR[^18]) pour l'échange des informations identifiées dans les sections précédentes et mises en correspondance avec les éléments des ressources FHIR retenues. La Table ci-dessous liste les types de requête HTTP pour chaque flux identifié.
 
-+------------------------+----------------------------------+----------+
-| Nom du flux            | Ressource FHIR R4                | Requête  |
-|                        |                                  | http     |
-+========================+==================================+==========+
-| Flux 1a -              | Patient, Practitioner,           | HTTP     |
-| CreationActeurRestful  | PractitionerRole, RelatedPerson, | POST     |
-|                        | Organization, Device             |          |
-|                        |                                  |          |
-|                        | Profil                           |          |
-|                        |                                  |          |
-|                        | FrPatient, FrRelatedperson,      |          |
-|                        | Fr                               |          |
-|                        | Practitioner et FrOrganizationdu |          |
-|                        | package*.fhir.fr.core 1.1.0*     |          |
-|                        |                                  |          |
-|                        | Pract                            |          |
-|                        | itionerRoleProfessionalRoleRASS, |          |
-|                        | Practitio                        |          |
-|                        | nerRoleOrganizationalRoleRASS du |          |
-|                        | package *ANS.annuaire.fhir.r4    |          |
-|                        | 0.2.0*                           |          |
-+------------------------+----------------------------------+----------+
-| Flux 1b -              | DocumentReference                | HTTP     |
-| CreationNoteRestful    |                                  | POST     |
-|                        | Profil CdL_DocumentReferenceCdL  |          |
-+------------------------+----------------------------------+----------+
-| Flux 1c -              | Bundle                           | HTTP     |
-| C                      |                                  | POST     |
-| reationNoteTransaction | Profil CdL_BundleCreationNoteCdL |          |
-+------------------------+----------------------------------+----------+
-| Flux 2a -              | Patient, Practitioner,           | HTTP PUT |
-| MAJActeurRestful       | PractitionerRole, RelatedPerson, |          |
-|                        | Organization, Device             |          |
-|                        |                                  |          |
-|                        | Profil                           |          |
-|                        |                                  |          |
-|                        | FrPatient, FrRelatedperson,      |          |
-|                        | Fr                               |          |
-|                        | Practitioner et FrOrganizationdu |          |
-|                        | package*.fhir.fr.core 1.1.0*     |          |
-|                        |                                  |          |
-|                        | Pract                            |          |
-|                        | itionerRoleProfessionalRoleRASS, |          |
-|                        | Practitio                        |          |
-|                        | nerRoleOrganizationalRoleRASS du |          |
-|                        | package *ANS.annuaire.fhir.r4    |          |
-|                        | 0.2.0*                           |          |
-+------------------------+----------------------------------+----------+
-| Flux 2b -              | DocumentReference                | HTTP PUT |
-| MAJNoteRestful         |                                  |          |
-|                        | Profil CdL_DocumentReferenceCdL  |          |
-+------------------------+----------------------------------+----------+
-| Flux 2c -              | Bundle                           | HTTP     |
-| MAJNoteTransaction     |                                  | POST     |
-|                        | Profil CdL_BundleMAJNoteCdL      |          |
-+------------------------+----------------------------------+----------+
-| Flux 3 -               | DocumentReference                | HTTP     |
-| SuppressionNote        |                                  | DELETE   |
-|                        | Profil CdL_DocumentReferenceCdL  |          |
-|                        |                                  | (ce flux |
-|                        |                                  | est      |
-|                        |                                  | op       |
-|                        |                                  | tionnel) |
-+------------------------+----------------------------------+----------+
-| Flux 4 -               | DocumentReference                | HTTP GET |
-| RechercheNotes         |                                  |          |
-|                        | Profil CdL_DocumentReferenceCdL  |          |
-+------------------------+----------------------------------+----------+
-| Flux 5 -               | Bundle                           | Réponse  |
-| ReponseRechercheNotes  |                                  | à la     |
-|                        | Profil                           | requête  |
-|                        | CdL                              | HTTP GET |
-|                        | _BundleResultatRechercheNotesCdL |          |
-+------------------------+----------------------------------+----------+
-
-
+| Nom du flux                     | Ressource FHIR R4                    | Requête http     |
+| ------------------------------- | ------------------------------------ | ---------------- |
+| Flux 1a - CreationActeurRestful | Profils FrPatient, FrRelatedperson du package*.fhir.fr.core*,Profils ASPractitioner, ASPractitionerRole ASOrganization du package ans.fhir.fr.annuaire ansi que la ressource Device           | HTTP POST     |
+| Flux 1b - CreationNoteRestful   | Profil CdL_DocumentReferenceCdL      | HTTP POST |
+| Flux 1c - CreationNoteTransaction | Profil CdL_BundleCreationNoteCdL   | HTTP POST     |
+| Flux 2a - MAJActeurRestful      | Idem Flux 1a - CreationActeurRestful | HTTP PUT |
+| Flux 2b - MAJNoteRestful        | Idem Flux 1b - CreationNoteRestful   | HTTP PUT |
+| Flux 2c - MAJNoteTransaction    | Profil CdL_BundleMAJNoteCdL          | HTTP POST |
+| Flux 3 - SuppressionNote (optionnel) | Idem Flux 1b - CreationNoteRestful | HTTP DELETE |
+| Flux 4 - RechercheNotes         | Idem Flux 1b - CreationNoteRestful   | HTTP GET |
+| Flux 5 - ReponseRechercheNotes  | Profil CdL_BundleResultatRechercheNotesCdL | Réponse à la requête  |
 
 #### Flux 1 - Création note
 
