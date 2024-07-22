@@ -3,7 +3,7 @@ CDL : Validation Results
 
 err = 13, warn = 36, info = 19
 IG Publisher Version: 1.6.18
-Generated Mon Jul 22 13:03:44 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cdl#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/cdl)
+Generated Mon Jul 22 14:38:34 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cdl#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/cdl)
  Build Errors : 0 / 6 / 0
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/Bundle-cdl-bundle-creation-note : 12 / 1 / 26
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-ConsommateurContenu : 0 / 0 / 1
