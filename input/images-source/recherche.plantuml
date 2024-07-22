@@ -1,0 +1,25 @@
+@startuml
+hide footbox
+
+skinparam sequence {
+ arrowColor black
+ ParticipantBorderColor RoyalBlue
+ ParticipantBackgroundColor white
+ LifeLineBorderColor RoyalBlue
+ LifeLineBackgroundColor RoyalBlue
+ ParticipantFontSize 14
+ ParticipantFontName arial
+ ParticipantPadding 20
+}
+skinparam  roundcorner 20
+
+
+participant "Consommateur de contenu" as CONT
+participant "Gestionnaire de cahier de liaison" as INFRA
+
+
+CONT-[#black]> INFRA : Flux 4 **RechercheNote** - <color #FireBrick>HTTP GET [base]/DocumentReference{? parameters}</color>
+
+INFRA-[#black]> CONT : Flux 5 **ResultatRechercheNote** - <color #FireBrick>HTTP 200 OK + Bundle de type SearchSet</color>
+
+@enduml
