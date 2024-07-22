@@ -191,80 +191,62 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Cette section présente la construction de flux HTTP (de l’API REST FHIR[^18]) pour l’échange des informations identifiées dans les sections précédentes et mises en correspondance avec les éléments des ressources FHIR retenues. La Table ci-dessous liste les types de requête HTTP pour chaque flux identifié.</p>
 
-<p>+————————+———————————-+———-+
-| Nom du flux            | Ressource FHIR R4                | Requête  |
-|                        |                                  | http     |
-+========================+==================================+==========+
-| Flux 1a -              | Patient, Practitioner,           | HTTP     |
-| CreationActeurRestful  | PractitionerRole, RelatedPerson, | POST     |
-|                        | Organization, Device             |          |
-|                        |                                  |          |
-|                        | Profil                           |          |
-|                        |                                  |          |
-|                        | FrPatient, FrRelatedperson,      |          |
-|                        | Fr                               |          |
-|                        | Practitioner et FrOrganizationdu |          |
-|                        | package<em>.fhir.fr.core 1.1.0</em>     |          |
-|                        |                                  |          |
-|                        | Pract                            |          |
-|                        | itionerRoleProfessionalRoleRASS, |          |
-|                        | Practitio                        |          |
-|                        | nerRoleOrganizationalRoleRASS du |          |
-|                        | package <em>ANS.annuaire.fhir.r4    |          |
-|                        | 0.2.0</em>                           |          |
-+————————+———————————-+———-+
-| Flux 1b -              | DocumentReference                | HTTP     |
-| CreationNoteRestful    |                                  | POST     |
-|                        | Profil CdL_DocumentReferenceCdL  |          |
-+————————+———————————-+———-+
-| Flux 1c -              | Bundle                           | HTTP     |
-| C                      |                                  | POST     |
-| reationNoteTransaction | Profil CdL_BundleCreationNoteCdL |          |
-+————————+———————————-+———-+
-| Flux 2a -              | Patient, Practitioner,           | HTTP PUT |
-| MAJActeurRestful       | PractitionerRole, RelatedPerson, |          |
-|                        | Organization, Device             |          |
-|                        |                                  |          |
-|                        | Profil                           |          |
-|                        |                                  |          |
-|                        | FrPatient, FrRelatedperson,      |          |
-|                        | Fr                               |          |
-|                        | Practitioner et FrOrganizationdu |          |
-|                        | package<em>.fhir.fr.core 1.1.0</em>     |          |
-|                        |                                  |          |
-|                        | Pract                            |          |
-|                        | itionerRoleProfessionalRoleRASS, |          |
-|                        | Practitio                        |          |
-|                        | nerRoleOrganizationalRoleRASS du |          |
-|                        | package <em>ANS.annuaire.fhir.r4    |          |
-|                        | 0.2.0</em>                           |          |
-+————————+———————————-+———-+
-| Flux 2b -              | DocumentReference                | HTTP PUT |
-| MAJNoteRestful         |                                  |          |
-|                        | Profil CdL_DocumentReferenceCdL  |          |
-+————————+———————————-+———-+
-| Flux 2c -              | Bundle                           | HTTP     |
-| MAJNoteTransaction     |                                  | POST     |
-|                        | Profil CdL_BundleMAJNoteCdL      |          |
-+————————+———————————-+———-+
-| Flux 3 -               | DocumentReference                | HTTP     |
-| SuppressionNote        |                                  | DELETE   |
-|                        | Profil CdL_DocumentReferenceCdL  |          |
-|                        |                                  | (ce flux |
-|                        |                                  | est      |
-|                        |                                  | op       |
-|                        |                                  | tionnel) |
-+————————+———————————-+———-+
-| Flux 4 -               | DocumentReference                | HTTP GET |
-| RechercheNotes         |                                  |          |
-|                        | Profil CdL_DocumentReferenceCdL  |          |
-+————————+———————————-+———-+
-| Flux 5 -               | Bundle                           | Réponse  |
-| ReponseRechercheNotes  |                                  | à la     |
-|                        | Profil                           | requête  |
-|                        | CdL                              | HTTP GET |
-|                        | _BundleResultatRechercheNotesCdL |          |
-+————————+———————————-+———-+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Nom du flux</th>
+      <th>Ressource FHIR R4</th>
+      <th>Requête http</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Flux 1a - CreationActeurRestful</td>
+      <td>Profils FrPatient, FrRelatedperson du package<em>.fhir.fr.core</em>,Profils ASPractitioner, ASPractitionerRole ASOrganization du package ans.fhir.fr.annuaire ansi que la ressource Device</td>
+      <td>HTTP POST</td>
+    </tr>
+    <tr>
+      <td>Flux 1b - CreationNoteRestful</td>
+      <td>Profil CdL_DocumentReferenceCdL</td>
+      <td>HTTP POST</td>
+    </tr>
+    <tr>
+      <td>Flux 1c - CreationNoteTransaction</td>
+      <td>Profil CdL_BundleCreationNoteCdL</td>
+      <td>HTTP POST</td>
+    </tr>
+    <tr>
+      <td>Flux 2a - MAJActeurRestful</td>
+      <td>Idem Flux 1a - CreationActeurRestful</td>
+      <td>HTTP PUT</td>
+    </tr>
+    <tr>
+      <td>Flux 2b - MAJNoteRestful</td>
+      <td>Idem Flux 1b - CreationNoteRestful</td>
+      <td>HTTP PUT</td>
+    </tr>
+    <tr>
+      <td>Flux 2c - MAJNoteTransaction</td>
+      <td>Profil CdL_BundleMAJNoteCdL</td>
+      <td>HTTP POST</td>
+    </tr>
+    <tr>
+      <td>Flux 3 - SuppressionNote (optionnel)</td>
+      <td>Idem Flux 1b - CreationNoteRestful</td>
+      <td>HTTP DELETE</td>
+    </tr>
+    <tr>
+      <td>Flux 4 - RechercheNotes</td>
+      <td>Idem Flux 1b - CreationNoteRestful</td>
+      <td>HTTP GET</td>
+    </tr>
+    <tr>
+      <td>Flux 5 - ReponseRechercheNotes </td>
+      <td>Profil CdL_BundleResultatRechercheNotesCdL</td>
+      <td>Réponse à la requête</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="flux-1---création-note">Flux 1 - Création note</h4>
 
@@ -340,7 +322,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 22, 2024 08:11+0000">2024-07-22</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 22, 2024 09:31+0000">2024-07-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
