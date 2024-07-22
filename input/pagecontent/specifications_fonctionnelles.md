@@ -1,3 +1,5 @@
+### Introduction
+
 Ce document présente une étude « métier » pour la mise en œuvre d’un cahier de liaison dans le domaine sanitaire, médico-administratif, médico-social et social afin d’assurer un suivi « terrain » d’une personne prise en charge (usager du secteur social ou patient)
 
 L’étude menée concerne la modélisation des flux qui existent entre les composants d’un système d’information ou entre des systèmes d’informations qui participent à la mise en œuvre du cahier de liaison. Elle englobe les actions d'alimentation et de consultation du cahier de liaison selon divers critères de recherche qui sont présentés dans ce document.
@@ -6,7 +8,7 @@ A noter que les contraintes de sécurité concernant les flux échangés ne sont
 
 Ces exigences « métier » sont mis en œuvre par les volets transport et service du CI-SIS.
 
-### Exemple - Remontée des informations de l’infirmière
+#### Exemple - Remontée des informations de l’infirmière
 
 Ci-dessous un exemple d’une mise en œuvre du cahier de liaison.
 
@@ -14,7 +16,7 @@ Ci-dessous un exemple d’une mise en œuvre du cahier de liaison.
 2. A la fin de sa visite, elle se connecte à la plateforme et accède au cahier de liaison partagé dans lequel elle peut indiquer ses observations, afin de les partager avec l’ensemble de l’équipe de prise en charge.
 3. Le médecin traitant consulte les dernières observations relatives à son patient et décide de prendre contact avec le patient afin de faire un nouveau bilan.
 
-### Méthode d’élaboration des spécifications fonctionnelles
+#### Méthode d’élaboration des spécifications fonctionnelles
 
 Les spécifications « métier » présentées dans ce document suivent la méthode d’élaboration des spécifications fonctionnelles des échanges élaborée par l’ANS. Cette méthode est constituée de plusieurs étapes :
 
@@ -25,13 +27,13 @@ Les spécifications « métier » présentées dans ce document suivent la méth
 - **Etape 5**: Pour chaque flux, identification des informations véhiculées;
 - **Etape 6**: Élaboration du modèle hiérarchique de chaque flux structuré (sous forme d’un ou plusieurs diagrammes de classes UML). Le modèle hiérarchique élaboré repose sur la reprise des composants mutualisés dans le modèle des objets de santé (MOS) et des nomenclatures associées. A l'issue de cette élaboration, il se peut que de nouveaux composants jusqu'alors inexistants dans le MOS aient été définis et soient intégrés par la suite au MOS.
 
-### Lectorat cible
+#### Lectorat cible
 
 Les lecteurs cibles sont principalement des chefs de projets ainsi que toute personne concernée par la maîtrise d’ouvrage et qui spécifie des projets avec des interfaces interopérables.
 
-## Élaboration des spécifications fonctionnelles
+### Élaboration des spécifications fonctionnelles
 
-### Etape 1: Organisation du contexte métier
+#### Etape 1: Organisation du contexte métier
 
 Le but de cette étape est d’organiser la vue métier dans laquelle s’insère le projet et d'identifier le ou les processus collaboratifs du périmètre du projet.
 
@@ -50,7 +52,7 @@ La Figure 1 présente ces principaux processus.
     <img style="height: auto; width: 100%;" src="sf-img1.png" alt="CI-SIS" title="Organisation du contexte métier du cahier de liaison">
 </div>
 
-### Etape 2: Définition des processus métier collaboratifs
+#### Etape 2: Définition des processus métier collaboratifs
 
 Le but de cette étape est de définir les processus métier collaboratifs identifiés dans la Figure 1. Les Tables ci-dessous contiennent des informations concernant les acteurs et les cas d’utilisation des Figures 2, 3, 4 et 5.
 
@@ -100,13 +102,13 @@ Figure 4 : Diagramme de cas d’utilisation concernant la suppression d’une no
 
 Figure 5 : Diagramme de cas d’utilisation concernant la consultation de note(s) dans le cahier de liaison
 
-### Etape 3: Description du processus et identification des flux
+#### Etape 3: Description du processus et identification des flux
 
 L’objectif de cette étape est de décrire les processus métier collaboratifs définis dans les cas d'utilisation de l’étape 2. Dans ce document, les processus sont modélisés avec des diagrammes d'activités UML qui identifient les acteurs techniques qui échangent des flux d’informations. Les Figure 6, 7, 8 et 9 décrivent les interactions entre le créateur/consommateur du contenu et le gestionnaire de cahier de liaison.
 
 Sauf indication contraire, il n’y a pas de contrainte architecturale d’implémentation du gestionnaire de cahier de liaison: il peut être mis en œuvre au sein d’un même système ou sur plusieurs systèmes répartis.
 
-#### Création d’une note
+##### Création d’une note
 
 Les Tables 3, 4 et 5 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Création d’une note ». Le diagramme d’activités correspondant est représenté dans la Figure 6.
 
@@ -137,7 +139,7 @@ Table 5: Table des flux identifiés
 
 Figure 6 : Diagramme d’activités du processus « Création d’une note »
 
-#### Mise à jour d’une note
+##### Mise à jour d’une note
 
 Les Tables 6, 7 et 8 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Mise à jour d’une note». Le diagramme d’activités correspondant est représenté dans la Figure 7.
 
@@ -169,7 +171,7 @@ Table 8: Table des flux identifiés
 
 Figure 7: Diagramme d’activités du processus collaboratif «Mise à jour d’une note»
 
-#### Suppression d’une note
+##### Suppression d’une note
 
 Les Tables 9, 10 et 11 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Suppression d’une note ». Le diagramme d’activités correspondant est représenté dans la Figure 8.
 
@@ -201,7 +203,7 @@ Table 11: Table des flux identifiés
 
 Figure 8 : Diagramme d’activités du processus « Suppression d’une note»
 
-#### Consultation du cahier de liaison
+##### Consultation du cahier de liaison
 
 Les Tables 12, 13 et 14 représentent les acteurs, les actions et les flux identifiés pour le processus « Consultation du cahier de liaison ». Le diagramme d’activités correspondant est représenté dans la Figure 9.
 
@@ -233,7 +235,7 @@ Table 14 : Table des flux identifiés dans le diagramme d’activités de la Fig
 
 Figure 9: Diagramme d’activités du processus « Consultation du cahier de liaison »
 
-### Etape 4: Qualification des flux échangés
+#### Etape 4: Qualification des flux échangés
 
 Les flux échangés ont été identifiés à l'étape 3. L’étape 4 vise à qualifier les flux d'informations métier en identifiant les flux structurés. De plus, pour chaque flux, les acteurs « émetteur » et « récepteur » sont identifiés. Ci-dessous une liste des flux échangés dans le cadre du cahier de liaison.
 
@@ -247,7 +249,7 @@ Les flux échangés ont été identifiés à l'étape 3. L’étape 4 vise à qu
 
 Table 15 : Récapitulatif des flux structurés identifiés
 
-### Etape 5: Identification des informations véhiculées dans les flux
+#### Etape 5: Identification des informations véhiculées dans les flux
 
 Dans cette section, il s'agit de définir les informations « métier » présentes dans chaque flux identifié dans l’étape 4. La Table 16 liste les concepts présents dans ces flux.
 
@@ -263,7 +265,7 @@ Dans cette section, il s'agit de définir les informations « métier » présen
 
 Table 16: Liste des concepts « métier » identifiés permettant l’alignement avec les informations modélisées dans le MOS<sup>[\[7\]](#footnote-7)</sup>
 
-### Etape 6: Elaboration du modèle hiérarchique de chaque flux structuré
+#### Etape 6: Elaboration du modèle hiérarchique de chaque flux structuré
 
 Le but de cette étape est d'élaborer des diagrammes de classe de chaque flux structuré à partir des informations métier identifiées. La représentation formalisée du flux doit prendre en compte deux exigences supplémentaires:
 
@@ -284,7 +286,7 @@ Ci-dessous les correspondances effectuées avec les concepts identifiés et les 
 
 Table 17 : Liste des correspondances entre les concepts « métier » identifiés et les concepts du MOS
 
-#### Flux 1 - CréationNote
+##### Flux 1 - CréationNote
 
 La Figure 10 présente le diagramme de classes modélisant les informations métier en ce qui concerne le Flux 1 « CréationNote ».
 
@@ -298,7 +300,7 @@ Figure 10: Diagramme de classe du flux « CréationNote»
 
 Les tables ci-dessous définissent les attributs contenus dans le diagramme de classes de la Figure 8.
 
-##### Classe "Note"
+###### Classe "Note"
 
 | **Nom** | **Description** | **Obligatoire** |
 | --- | --- | --- |
@@ -312,7 +314,7 @@ Les tables ci-dessous définissent les attributs contenus dans le diagramme de c
 
 Table 18 Attributs de la classe "Note"
 
-##### Classe "AuteurNote"
+###### Classe "AuteurNote"
 
 | **Nom** | **Description** | **Obligatoire** |
 | --- | --- | --- |
@@ -320,7 +322,7 @@ Table 18 Attributs de la classe "Note"
 
 Table 19 Attributs de la classe "AuteurNote"
 
-##### Classe "PersonneTierce"
+###### Classe "PersonneTierce"
 
 | **Nom** | **Description** | **Obligatoire** |
 | --- | --- | --- |
@@ -330,7 +332,7 @@ Table 19 Attributs de la classe "AuteurNote"
 
 Table 20 Attributs de la classe "PersonneTierce"
 
-##### Classe "Professionnel"
+###### Classe "Professionnel"
 
 Se référer à la classe **Professionnel** du MOS<sup>[\[11\]](#footnote-11)</sup> pour plus d’informations.
 
@@ -342,7 +344,7 @@ Se référer à la classe **Professionnel** du MOS<sup>[\[11\]](#footnote-11)</s
 
 Table 21 Attributs de la classe "Professionnel"
 
-##### Classe "ExerciceProfessionnel"
+###### Classe "ExerciceProfessionnel"
 
 Se référer à la classe **ExerciceProfessionnel** du MOS pour plus d’informations.
 
@@ -352,7 +354,7 @@ Se référer à la classe **ExerciceProfessionnel** du MOS pour plus d’informa
 
 Table 22 Attributs de la classe "ExcerciceProfessionnel"
 
-##### Classe "EntiteGeographique”
+###### Classe "EntiteGeographique”
 
 Se référer à la classe **EntiteGeographique** du MOS<sup>[\[12\]](#footnote-12)</sup> pour plus d’informations.
 
@@ -366,7 +368,7 @@ Se référer à la classe **EntiteGeographique** du MOS<sup>[\[12\]](#footnote-1
 
 Table 23 Attributs de la classe "EntiteGeographique"
 
-##### Classe "RessourceMaterielle”
+###### Classe "RessourceMaterielle”
 
 | Concept | Définition | Obligatoire |
 | --- | --- | --- |
@@ -375,7 +377,7 @@ Table 23 Attributs de la classe "EntiteGeographique"
 
 Table 24 Attributs de la classe"RessourceMaterielle"
 
-##### Classe "PersonnePriseEnCharge”
+###### Classe "PersonnePriseEnCharge”
 
 | **Nom** | **Définition** | **Obligatoire** |
 | --- | --- | --- |
@@ -385,7 +387,7 @@ Table 24 Attributs de la classe"RessourceMaterielle"
 
 Table 25 Classe "PersonnePriseEnCharge"
 
-##### Classe "Patient”
+###### Classe "Patient”
 
 Se référer à la classe **Patient** du MOS<sup>[\[14\]](#footnote-14)</sup> pour plus d’informations.
 
@@ -397,7 +399,7 @@ Se référer à la classe **Patient** du MOS<sup>[\[14\]](#footnote-14)</sup> po
 
 Table 26 Classe "Patient"
 
-##### Classe "PersonnePhysique”
+###### Classe "PersonnePhysique”
 
 Se référer à la classe **PersonnePhysique** du MOS pour plus d’informations.
 
@@ -408,13 +410,13 @@ Se référer à la classe **PersonnePhysique** du MOS pour plus d’informations
 
 Table 27 "PersonnePhysique"
 
-#### Flux 2 - MaJNote
+##### Flux 2 - MaJNote
 
 Ce flux est modélisé par le même modèle hiérarchique du Flux 1 CréationNote, étant donné qu’ils peuvent contenir les mêmes informations métier.
 
 A noter que pour la mise en œuvre du cahier de liaison dans une infrastructure de partage, la mise à jour d’une note concerne les informations relatives à son indexation et référencement dans cette infrastructure. Elle ne concerne pas les informations relatives à son auteur ni à son sujet.
 
-#### Flux 3 - SuppressionNote
+##### Flux 3 - SuppressionNote
 
 La Figure ci-dessous présente le diagramme de classe concernant le Flux 3 - **SuppressionNote**. Les attributs de cette classe représentent les critères de recherche des informations contenues dans le cahier de liaison afin de pouvoir supprimer une note.
 
@@ -432,7 +434,7 @@ La table ci-dessous définit les attributs contenus dans le diagramme de classe 
 
 Table 28 Classe "SuppressionNote"
 
-#### Flux 4 - RechercheNotes
+##### Flux 4 - RechercheNotes
 
 La Figure 12 ci-dessous représente le diagramme de classe concernant le flux **RechercheNotes**. Les attributs de cette classe représentent les critères de recherche des informations contenues dans le cahier de liaison.
 
@@ -457,6 +459,6 @@ La table ci-dessous définit les attributs contenus dans le diagramme de classe 
 
 Table 29 Classe "RechercheNotes"
 
-#### Flux 5 - RésultatRechercheNotes
+##### Flux 5 - RésultatRechercheNotes
 
 Le Flux 5 est modélisé par le même modèle hiérarchique du Flux 1 - CréationNote, étant donné qu’il peut contenir les mêmes informations « métier ». Par contre, ce flux peut contenir plusieurs notes.
