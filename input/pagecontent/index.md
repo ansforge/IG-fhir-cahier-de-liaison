@@ -4,7 +4,9 @@ Ce document présente les spécifications techniques d’interopérabilité de m
 
 #### Lectorat cible & utilisation
 
-Ce document s’adresse aux développeurs des interfaces interopérables des systèmes implémentant le « cahier de liaison » ou à toute autre personne intervenant dans le processus de mise en place de ces interfaces.
+Les spécifications fonctionnelles s'adresent principalement des chefs de projets ainsi que toute personne concernée par la maîtrise d’ouvrage et qui spécifie des projets avec des interfaces interopérables.
+
+Les spécifications techniques s’adressent aux développeurs des interfaces interopérables des systèmes implémentant le « cahier de liaison » ou à toute autre personne intervenant dans le processus de mise en place de ces interfaces.
 Cette spécification technique s’appuie sur le standard HL7 FHIR et plus particulièrement à un sous-ensemble des ressources définies par ce standard ainsi que la notion d’extension et de profilage des ressources. Pour les opérations sur les ressources, l’API HTTP REST définie par le standard HL7 FHIR est mise en œuvre. L’hypothèse est faite que le lecteur est familier de ces concepts.
 
 Les spécifications d’interopérabilité présentées dans ce volet ne présagent pas des conditions de leur mise en œuvre dans le cadre d’un système d’information partagé. Il appartient à tout responsable de traitement de s’assurer que les services utilisant ces spécifications respectent les cadres et bonnes pratiques applicables à ce genre de service (ex. cadre juridique, bonnes pratiques de sécurité, ergonomie, accessibilité…).

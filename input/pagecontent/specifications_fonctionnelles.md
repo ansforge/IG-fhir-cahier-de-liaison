@@ -27,10 +27,6 @@ Les spécifications « métier » présentées dans ce document suivent la méth
 - **Etape 5**: Pour chaque flux, identification des informations véhiculées;
 - **Etape 6**: Élaboration du modèle hiérarchique de chaque flux structuré (sous forme d’un ou plusieurs diagrammes de classes UML). Le modèle hiérarchique élaboré repose sur la reprise des composants mutualisés dans le modèle des objets de santé (MOS) et des nomenclatures associées. A l'issue de cette élaboration, il se peut que de nouveaux composants jusqu'alors inexistants dans le MOS aient été définis et soient intégrés par la suite au MOS.
 
-#### Lectorat cible
-
-Les lecteurs cibles sont principalement des chefs de projets ainsi que toute personne concernée par la maîtrise d’ouvrage et qui spécifie des projets avec des interfaces interopérables.
-
 ### Élaboration des spécifications fonctionnelles
 
 #### Etape 1: Organisation du contexte métier
