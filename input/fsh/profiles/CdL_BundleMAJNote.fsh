@@ -1,10 +1,8 @@
-
-
-Profile: CdL_BundleMAJNoteCdL
+Profile: CdLBundleMAJNote
 Parent: Bundle
 Id: cdl-bundle-maj-note
 Title: "Bundle de mise à jour d'une note"
-Description: "StructureDefinition du bundle représentant le flux 2 de mise à jour d'une note du volet CdL"
+Description: "Profil du bundle pour le flux 2 de mise à jour d'une note du volet CdL"
 
 * type = #transaction
 * entry ^slicing.discriminator.type = #profile

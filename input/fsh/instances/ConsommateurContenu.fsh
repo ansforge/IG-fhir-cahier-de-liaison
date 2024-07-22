@@ -42,7 +42,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].documentation = "Sujet de la note"
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPatient"
+* rest.resource[=].profile = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].searchParam[0].name = "identifier"
@@ -62,7 +62,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Nom du patient"
 * rest.resource[+].type = #RelatedPerson
-* rest.resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrRelatedPerson"
+* rest.resource[=].profile = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].searchParam[0].name = "identifier"
