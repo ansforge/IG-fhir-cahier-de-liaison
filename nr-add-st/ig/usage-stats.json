@@ -34,6 +34,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence": [
+      "ConceptMap.group.element.target"
+    ],
     "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
       "CapabilityStatement.rest.resource.interaction"
     ],

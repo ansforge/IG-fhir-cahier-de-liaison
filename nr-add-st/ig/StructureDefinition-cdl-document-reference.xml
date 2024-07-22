@@ -33,7 +33,7 @@
   <name value="CdLDocumentReference"/>
   <title value="DocumentReference Cahier de Liaison"/>
   <status value="draft"/>
-  <date value="2024-07-17T12:07:37+00:00"/>
+  <date value="2024-07-22T08:11:32+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -973,6 +973,10 @@
       <mapping>
         <identity value="cdl-documentreference-to-mos-note"/>
         <map value="Note.auteurNote"/>
+      </mapping>
+      <mapping>
+        <identity value="cdl-documentreference-to-mos-note"/>
+        <map value="AuteurNote.idAuteurNote"/>
       </mapping>
     </element>
     <element id="DocumentReference.authenticator">
@@ -2572,6 +2576,10 @@
       <mapping>
         <identity value="cdl-documentreference-to-mos-note"/>
         <map value="Note.auteurNote"/>
+      </mapping>
+      <mapping>
+        <identity value="cdl-documentreference-to-mos-note"/>
+        <map value="AuteurNote.idAuteurNote"/>
       </mapping>
     </element>
     <element id="DocumentReference.authenticator">

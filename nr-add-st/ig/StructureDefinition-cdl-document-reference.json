@@ -10,7 +10,7 @@
   "name" : "CdLDocumentReference",
   "title" : "DocumentReference Cahier de Liaison",
   "status" : "draft",
-  "date" : "2024-07-17T12:07:37+00:00",
+  "date" : "2024-07-22T08:11:32+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -977,6 +977,10 @@
       {
         "identity" : "cdl-documentreference-to-mos-note",
         "map" : "Note.auteurNote"
+      },
+      {
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "AuteurNote.idAuteurNote"
       }]
     },
     {
@@ -2636,6 +2640,10 @@
       "mapping" : [{
         "identity" : "cdl-documentreference-to-mos-note",
         "map" : "Note.auteurNote"
+      },
+      {
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "AuteurNote.idAuteurNote"
       }]
     },
     {

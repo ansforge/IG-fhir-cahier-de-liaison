@@ -10,7 +10,7 @@
   "name" : "CDL",
   "title" : "Cahier De Liaison",
   "status" : "draft",
-  "date" : "2024-07-17T12:07:37+00:00",
+  "date" : "2024-07-22T08:11:32+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -30,7 +30,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.0.0"
+    "version" : "6.0.1"
   },
   {
     "id" : "hl7ext",
@@ -752,6 +752,18 @@
       },
       "name" : "DocumentReference Cahier de Liaison",
       "description" : "Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/ConceptMap-mos-cdl"
+      },
+      "name" : "MOS to FHIR CDL",
+      "description" : "Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne sont pas présents dans ce guide.",
       "exampleBoolean" : false
     }],
     "page" : {

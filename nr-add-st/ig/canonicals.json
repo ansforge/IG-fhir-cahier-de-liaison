@@ -21,6 +21,13 @@
     "name" : "GestionnaireCdL"
   },
   {
+    "id" : "ConceptMap-mos-cdl",
+    "type" : "ConceptMap",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/ConceptMap/ConceptMap-mos-cdl",
+    "version" : "3.0.0",
+    "name" : "ConceptMapMOS2CDL"
+  },
+  {
     "id" : "ans.fhir.fr.cdl",
     "type" : "ImplementationGuide",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl",

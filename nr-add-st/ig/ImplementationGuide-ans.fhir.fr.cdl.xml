@@ -10,7 +10,7 @@
   <name value="CDL"/>
   <title value="Cahier De Liaison"/>
   <status value="draft"/>
-  <date value="2024-07-17T12:07:37+00:00"/>
+  <date value="2024-07-22T08:11:32+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -28,7 +28,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.0.0"/>
+    <version value="6.0.1"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -578,6 +578,17 @@
       </reference>
       <name value="DocumentReference Cahier de Liaison"/>
       <description value="Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/ConceptMap-mos-cdl"/>
+      </reference>
+      <name value="MOS to FHIR CDL"/>
+      <description value="Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne sont pas présents dans ce guide."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

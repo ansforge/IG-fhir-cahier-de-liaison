@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDL"] ; # 
   fhir:title [ fhir:v "Cahier De Liaison"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-17T12:07:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-22T08:11:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -40,7 +40,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.0.0" ]
+     fhir:version [ fhir:v "6.0.1" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -670,6 +670,18 @@
        ] ;
        fhir:name [ fhir:v "DocumentReference Cahier de Liaison" ] ;
        fhir:description [ fhir:v "Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ConceptMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/ConceptMap/ConceptMap-mos-cdl> ;
+         fhir:reference [ fhir:v "ConceptMap/ConceptMap-mos-cdl" ]
+       ] ;
+       fhir:name [ fhir:v "MOS to FHIR CDL" ] ;
+       fhir:description [ fhir:v "Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne sont pas présents dans ce guide." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
