@@ -8,7 +8,6 @@ Il s’agit d’un flux d’indexation de notes. Il véhicule la nouvelle note, 
 Le flux 1b de création d’une note est une requête HTTP POST reposant sur l’interaction « create » de FHIR . La ressource « DocumentReference » constitue le corps de la requête.
 Si la création de la note est correctement effectuée, un code HTTP 201 created est retourné.
 
-
 #### Option transaction
 
 La première étape de la construction de ce flux de création de note consiste à organiser son contenu. Plusieurs types de ressources sont présents :
@@ -42,10 +41,8 @@ Le flux 2a de mise à jour est une requête HTTP PUT reposant sur l’interactio
 
 Ces requêtes sont envoyées au gestionnaire :
 
-<div>
-    <img src="gestion-acteurs.png"  alt="Gestion acteurs" width="60%">
-    <p>Gestion acteurs</p>
-    <p></p>
+<div class="figure" style="width:100%;">
+    <p>{% include gestion-acteurs.svg %}</p>
 </div>
 
 Si la création de l’acteur est correctement effectuée, un code HTTP 201 created est retourné.

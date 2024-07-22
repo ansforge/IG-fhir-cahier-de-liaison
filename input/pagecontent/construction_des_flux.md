@@ -12,13 +12,13 @@ Cette section présente la construction de flux HTTP (de l'API REST FHIR[^18]) p
 | Nom du flux                     | Ressource FHIR R4                    | Requête http     |
 | ------------------------------- | ------------------------------------ | ---------------- |
 | Flux 1a - CreationActeurRestful | Profils FrPatient, FrRelatedperson du package*.fhir.fr.core*,Profils ASPractitioner, ASPractitionerRole ASOrganization du package ans.fhir.fr.annuaire ansi que la ressource Device           | HTTP POST     |
-| Flux 1b - CreationNoteRestful   | Profil CdL_DocumentReferenceCdL      | HTTP POST |
-| Flux 1c - CreationNoteTransaction | Profil CdL_BundleCreationNoteCdL   | HTTP POST     |
-| Flux 2a - MAJActeurRestful      | Idem Flux 1a - CreationActeurRestful | HTTP PUT |
-| Flux 2b - MAJNoteRestful        | Idem Flux 1b - CreationNoteRestful   | HTTP PUT |
-| Flux 2c - MAJNoteTransaction    | Profil CdL_BundleMAJNoteCdL          | HTTP POST |
-| Flux 3 - SuppressionNote (optionnel) | Idem Flux 1b - CreationNoteRestful | HTTP DELETE |
-| Flux 4 - RechercheNotes         | Idem Flux 1b - CreationNoteRestful   | HTTP GET |
+| Flux 1b - CreationNoteRestful   | Profil CdL_DocumentReferenceCdL      | HTTP POST        |
+| Flux 1c - CreationNoteTransaction | Profil CdL_BundleCreationNoteCdL   | HTTP POST        |
+| Flux 2a - MAJActeurRestful      | Idem Flux 1a - CreationActeurRestful | HTTP PUT         |
+| Flux 2b - MAJNoteRestful        | Idem Flux 1b - CreationNoteRestful   | HTTP PUT         |
+| Flux 2c - MAJNoteTransaction    | Profil CdL_BundleMAJNoteCdL          | HTTP POST        |
+| Flux 3 - SuppressionNote (optionnel) | Idem Flux 1b - CreationNoteRestful | HTTP DELETE   |
+| Flux 4 - RechercheNotes         | Idem Flux 1b - CreationNoteRestful   | HTTP GET         |
 | Flux 5 - ReponseRechercheNotes  | Profil CdL_BundleResultatRechercheNotesCdL | Réponse à la requête  |
 
 #### Flux 1 - Création note

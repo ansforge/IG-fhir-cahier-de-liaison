@@ -11,8 +11,8 @@ Il est possible d’utiliser l’identifiant attribué par le système source, l
 Si la suppression de la note est correctement effectuée, le système gestionnaire du cahier de liaison retourne un code HTTP 200 ok. Pour des informations sur les autres codes HTTP (HTTP status codes) consultez la documentation relative à l’interaction de suppression, « delete » de l’API REST FHIR . 
 Il est recommandé de ne pas permettre la suppression du sujet et de l’auteur référencés par le « DocumentReference » qui peuvent être référencés par d’autres notes.
 
-<div>
-    <img src="3-suppr.png"  alt="Suppr note" width="60%">
-    <p>Suppression d'une note</p>
-    <p></p>
+
+
+<div class="figure" style="width:100%;">
+    <p>{% include 3-suppr.svg %}</p>
 </div>

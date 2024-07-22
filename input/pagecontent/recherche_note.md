@@ -53,8 +53,6 @@ Le contenu de ce flux est similaire à celui du flux 1 de création de note mais
 
 Les recherches sont soumises au gestionnaire qui retourne les résultats au consommateur :
 
-<div>
-    <img src="recherche.png"  alt="Recherche d'une note" width="60%">
-    <p>Recherche d'une note</p>
-    <p></p>
+<div class="figure" style="width:100%;">
+    <p>{% include recherche.svg %}</p>
 </div>

@@ -11,12 +11,9 @@ A la mise à jour de la note, le gestionnaire incrémente le numéro de version 
 
 Les requêtes de création et de mise à jour sont envoyées au gestionnaire :
 
-<div>
-    <img src="1b-2b-restful.png"  alt="MAJ note" width="60%">
-    <p>Mise à jour d'une note</p>
-    <p></p>
+<div class="figure" style="width:100%;">
+    <p>{% include 1b-2b-restful.svg %}</p>
 </div>
-
 
 #### Option transaction
 
@@ -29,8 +26,6 @@ Pour chaque élément entry de la ressource Bundle, le paramètre request.method
 
 La gestion des droits de création et de modification des acteurs est à la charge du gestionnaire
 
-<div>
-    <img src="1c-2c-transaction.png"  alt="MAJ note" width="60%">
-    <p>Mise à jour d'une note</p>
-    <p></p>
+<div class="figure" style="width:100%;">
+    <p>{% include 1c-2c-transaction.svg %}</p>
 </div>
