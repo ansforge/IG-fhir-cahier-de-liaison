@@ -62,14 +62,14 @@ Le but de cette étape est de définir les processus métier collaboratifs ident
 | Professionnel | Un professionnel est une personne qui participe à la prise en charge d’une personne que ce soit au niveau sanitaire, médico-administratif, médico-social ou social. |
 | PersonneTierce | Une personne tierce (non-professionnelle) participe à la prise en charge d’une personne que ce soit au niveau sanitaire, médico-administratif, médico-social ou social. Une personne tierce peut être un membre de la famille ou un proche de la personne à prendre en charge. |
 | PersonnePriseEnCharge | Il s’agit de la personne à prendre en charge dans le secteur social ou sanitaire. |
-| EntiteGeographique | L'Entité Géographique<sup>[\[5\]](#footnote-5)</sup> (EG) correspond à la notion d'établissement:  <br>\*\* Pour les établissements inscrits au FINESS, l'EG correspond à une implantation géographique. Un établissement est caractérisé par une catégorie d'établissement; un établissement est obligatoirement relié à une entité juridique; à chaque établissement sont associées les activités exercées.  <br>\*\* Pour les organismes inscrits uniquement dans le SIRENE, l'EG correspond à un établissement de la personne morale, elle est identifiée par un numéro SIRET.  <br>Synonymes: Site, établissement, structure. |
+| EntiteGeographique | L'[Entité Géographique](http://esante.gouv.fr/sites/MOS/MOS/0.html) (EG) correspond à la notion d'établissement:  <br>\*\* Pour les établissements inscrits au FINESS, l'EG correspond à une implantation géographique. Un établissement est caractérisé par une catégorie d'établissement; un établissement est obligatoirement relié à une entité juridique; à chaque établissement sont associées les activités exercées.  <br>\*\* Pour les organismes inscrits uniquement dans le SIRENE, l'EG correspond à un établissement de la personne morale, elle est identifiée par un numéro SIRET.  <br>Synonymes: Site, établissement, structure. |
 | Equipement | Equipement ou dispositif médical utilisé pour la réalisation d'une activité de soin ou le suivi du patient (objet connecté, équipement de diagnostic…) |
 
 Table 1 : Table des acteurs
 
 | **Cas d'utilisation** | **Description** |
 | --- | --- |
-| Création d’une note | Un professionnel, une personne tierce, un équipement, la personne prise en charge ou une entité géographique (un hôpital, par exemple) se connecte au gestionnaire de cahier de liaison via un module d’accès<sup>[\[6\]](#footnote-6)</sup>. Ainsi, Ils accèdent au cahier de liaison afin de pouvoir l’alimenter avec de nouvelles informations qui ont vocation à être partagées. |
+| Création d’une note | Un professionnel, une personne tierce, un équipement, la personne prise en charge ou une entité géographique (un hôpital, par exemple) se connecte au gestionnaire de cahier de liaison via un module d’accès (Le module d’accès peut être offert par le portail internet ou bien intégré au logiciel du professionnel de santé (LPS). Il n’y a pas de de contrainte architecturale concernant ce module.). Ainsi, Ils accèdent au cahier de liaison afin de pouvoir l’alimenter avec de nouvelles informations qui ont vocation à être partagées. |
 | Mise à jour d’une note | Une personne (professionnel, personne tierce ou personne prise en charge), un équipement ou une entité géographique se connecte au gestionnaire de cahier de liaison via un module d’accès pour modifier une note. |
 | Suppression d’une note | Une personne (professionnel, personne tierce ou personne prise en charge) ou une entité géographique se connecte au gestionnaire de cahier de liaison via un module d’accès pour supprimer une note. |
 | Consultation de note(s) | Une personne (professionnel, personne tierce ou personne prise en charge) ou une entité géographique se connecte au gestionnaire de cahier de liaison via un module d’accès pour consulter le suivi de la personne prise en charge. Dans ce cadre, le cahier de liaison agit comme une ressource qui donne des informations sur l’état de la personne prise en charge. |
@@ -263,7 +263,7 @@ Dans cette section, il s'agit de définir les informations « métier » présen
 | Auteur ou sujet de la note | PersonnePriseEnCharge | Il s’agit de la personne prise en charge que ce soit au niveau sanitaire, médico-administratif, médico-social ou social. |
 | Note | Note | Une note concerne un ensemble d’informations qui ont vocation à être partagées via le cahier de liaison. |
 
-Table 16: Liste des concepts « métier » identifiés permettant l’alignement avec les informations modélisées dans le MOS<sup>[\[7\]](#footnote-7)</sup>
+Table 16: Liste des concepts « métier » identifiés permettant l’alignement avec les informations modélisées dans le [MOS](http://esante.gouv.fr/sites/MOS/MOS/0.html).
 
 #### Etape 6: Elaboration du modèle hiérarchique de chaque flux structuré
 
@@ -304,10 +304,10 @@ Les tables ci-dessous définissent les attributs contenus dans le diagramme de c
 
 | **Nom** | **Description** | **Obligatoire** |
 | --- | --- | --- |
-| idNote: \[0..1\] Identifiant | Identifiant de la note dans le cahier de liaison. | Non<sup>[\[8\]](#footnote-8)</sup> |
+| idNote: \[0..1\] Identifiant | Identifiant de la note dans le cahier de liaison. | Non, l’identifiant de la note peut être généré par le système ou bien précisé par la personne qui a créé la note. Cette information peut ne pas circuler dans ce Flux. |
 | type: \[1..1\] Code | Type de la note: dépôt de document, sortie d’hôpital, etc. | Oui |
 | restrictionAudience: \[0..1\] Code | Le type d’audience autorisé à accéder à la note (professionnels de santé, personnes tierces, etc.). | Non |
-| dateHeureCreation: \[0..1\] DateHeure | Date à laquelle la note est déclarée. | Non<sup>[\[9\]](#footnote-9)</sup> |
+| dateHeureCreation: \[0..1\] DateHeure | Date à laquelle la note est déclarée. | Non, cette information est générée par le système et peut ne pas circuler dans le Flux.|
 | description : \[0..1\] Texte | Il s’agit d’une description ou du titre de la note. | Oui |
 | pieceJointe: \[1..\*\] ObjetBinaire | Il s’agit de toute pièce jointe à rajouter à la note. La pièce jointe peut être de plusieurs types (JPEG, TXT, PDF, XML, etc.). | Non |
 | urgenceNote: \[0..1\] Indicateur | L’urgence de la note ce qui permet d’identifier la façon dont elle sera prise en charge. L’urgence de la note est de type Booléen (Urgente, non urgente). | Non |
@@ -318,7 +318,7 @@ Table 18 Attributs de la classe "Note"
 
 | **Nom** | **Description** | **Obligatoire** |
 | --- | --- | --- |
-| idAuteurNote: \[0..1\] Identifiant | Identifiant de l’auteur de la note qui est soit un professionnel, soit une personne tierce, soit une entité géographique soit une personne prise en charge. | Non<sup>[\[10\]](#footnote-10)</sup> |
+| idAuteurNote: \[0..1\] Identifiant | Identifiant de l’auteur de la note qui est soit un professionnel, soit une personne tierce, soit une entité géographique soit une personne prise en charge. | Non : Par exemple, ce champ peut prendre la valeur IdPP (Table 21) si l’auteur est un professionnel. |
 
 Table 19 Attributs de la classe "AuteurNote"
 
@@ -334,7 +334,7 @@ Table 20 Attributs de la classe "PersonneTierce"
 
 ###### Classe "Professionnel"
 
-Se référer à la classe **Professionnel** du MOS<sup>[\[11\]](#footnote-11)</sup> pour plus d’informations.
+Se référer à la classe **Professionnel** du [MOS](http://esante.gouv.fr/sites/MOS/MOS/0.html) pour plus d’informations.
 
 | **Nom** | **Définition** | **Obligatoire** |
 | --- | --- | --- |
@@ -356,7 +356,7 @@ Table 22 Attributs de la classe "ExcerciceProfessionnel"
 
 ###### Classe "EntiteGeographique”
 
-Se référer à la classe **EntiteGeographique** du MOS<sup>[\[12\]](#footnote-12)</sup> pour plus d’informations.
+Se référer à la classe **EntiteGeographique** du [MOS](http://esante.gouv.fr/sites/MOS/MOS/0.html) pour plus d’informations.
 
 | **Nom** | **Description** | **Obligatoire** |
 | --- | --- | --- |
@@ -381,7 +381,7 @@ Table 24 Attributs de la classe"RessourceMaterielle"
 
 | **Nom** | **Définition** | **Obligatoire** |
 | --- | --- | --- |
-| idPersonnePriseEnCharge**<sup>[\[13\]](#footnote-13)</sup>** \[0..1\] Identifiant | Identifiant de la personne prise en charge. | Non |
+| idPersonnePriseEnCharge \[0..1\] Identifiant | Identifiant de la personne prise en charge. | Non |
 | adresse : \[0..\*\] Adresse | Point(s) de contact de la personne tierce. | Non |
 | telecommunication: \[0..\*\] Telecommunication | Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.). | Non |
 
@@ -389,7 +389,7 @@ Table 25 Classe "PersonnePriseEnCharge"
 
 ###### Classe "Patient”
 
-Se référer à la classe **Patient** du MOS<sup>[\[14\]](#footnote-14)</sup> pour plus d’informations.
+Se référer à la classe **Patient** du [MOS](http://esante.gouv.fr/sites/MOS/MOS/0.html) pour plus d’informations.
 
 | **Nom** | **Description** | **Obligatoire** |
 | --- | --- | --- |
