@@ -14,20 +14,20 @@ Usage: #definition
 * group[+].source = "https://mos.esante.gouv.fr/12.html"
 * group[=].target = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"
 
-* group[=].element[+].code = #PersonneTierce.idPersonneTierce
-* group[=].element[=].display = "PersonneTierce.idPersonneTierce"
+* group[=].element[+].code = #Contact.IdContact
+* group[=].element[=].display = "Contact.IdContact"
 * group[=].element[=].target.code = #RelatedPerson.identifier
 * group[=].element[=].target.display = "RelatedPerson.identifier"
 * group[=].element[=].target.equivalence = #relatedto
 
-* group[=].element[+].code = #PersonneTierce.adresse
-* group[=].element[=].display = "PersonneTierce.adresse"
+* group[=].element[+].code = #Contact.adresse
+* group[=].element[=].display = "Contact.adresse"
 * group[=].element[=].target.code = #RelatedPerson.address
 * group[=].element[=].target.display = "RelatedPerson.address"
 * group[=].element[=].target.equivalence = #relatedto
 
-* group[=].element[+].code = #PersonneTierce.telecommunication
-* group[=].element[=].display = "PersonneTierce.telecommunication"
+* group[=].element[+].code = #Contact.telecommunication
+* group[=].element[=].display = "Contact.telecommunication"
 * group[=].element[=].target.code = #RelatedPerson.telecom
 * group[=].element[=].target.display = "RelatedPerson.telecom"
 * group[=].element[=].target.equivalence = #relatedto
