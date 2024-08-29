@@ -33,24 +33,19 @@ Les spécifications « métier » présentées dans ce document suivent la méth
 
 Le but de cette étape est d’organiser la vue métier dans laquelle s’insère le projet et d'identifier le ou les processus collaboratifs du périmètre du projet.
 
-Le domaine « cahier de liaison » (Figure 1) est relatif à la mise en œuvre d’un cahier de liaison partagé afin d’assurer un suivi « terrain » de la personne prise en charge. Il peut être alimenté, automatiquement ou manuellement, par des professionnels, des logiciels métier, une personne tierce (Une personne tierce peut être, par exemple, un membre de la famille qui s’occupe quotidiennement de la personne prise en charge.) en contact direct ou indirect avec la personne prise en charge, ou bien par la personne prise en charge elle-même. Le cahier de liaison permet de garder en temps réel, une vue précise de la situation de cette personne prise en charge. Les informations échangées peuvent concerner, par exemple, des symptômes observés, des résultats d’analyses, des avis et observations, etc.
+Le domaine « cahier de liaison » est relatif à la mise en œuvre d’un cahier de liaison partagé afin d’assurer un suivi « terrain » de la personne prise en charge. Il peut être alimenté, automatiquement ou manuellement, par des professionnels, des logiciels métier, une personne tierce (Une personne tierce peut être, par exemple, un membre de la famille qui s’occupe quotidiennement de la personne prise en charge.) en contact direct ou indirect avec la personne prise en charge, ou bien par la personne prise en charge elle-même. Le cahier de liaison permet de garder en temps réel, une vue précise de la situation de cette personne prise en charge. Les informations échangées peuvent concerner, par exemple, des symptômes observés, des résultats d’analyses, des avis et observations, etc.
 
 Le groupe de processus « gestion du cahier de liaison » comprend les processus relatifs à:
 
-- La création d’une note dans le cahier de liaison par un professionnel, une personne tierce, une entité géographique, un équipement ou la personne prise en charge dans le secteur sanitaire, médico-administratif, médico-social et social;
-- la mise à jour (modification) d’une note dans le cahier de liaison
-- la suppression d’une note dans le cahier de liaison
-- la consultation d’une ou de plusieurs notes dans le cahier de liaison par un professionnel, une personne tierce, une entité géographique ou la personne prise en charge dans le secteur sanitaire, médico-administratif, médico-social et social;
+- La **création d’une note** dans le cahier de liaison par un professionnel, une personne tierce, une entité géographique, un équipement ou la personne prise en charge dans le secteur sanitaire, médico-administratif, médico-social et social;
+- la **mise à jour d’une note** (modification) dans le cahier de liaison
+- la **suppression d’une note** dans le cahier de liaison
+- la **consultation d’une ou de plusieurs notes** dans le cahier de liaison par un professionnel, une personne tierce, une entité géographique ou la personne prise en charge dans le secteur sanitaire, médico-administratif, médico-social et social;
 
-La Figure 1 présente ces principaux processus.
-
-<div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="sf-img1.png" alt="CI-SIS" title="Organisation du contexte métier du cahier de liaison">
-</div>
 
 #### Etape 2: Définition des processus métier collaboratifs
 
-Le but de cette étape est de définir les processus métier collaboratifs identifiés dans la Figure 1. Les Tables ci-dessous contiennent des informations concernant les acteurs et les cas d’utilisation des Figures 2, 3, 4 et 5.
+Le but de cette étape est de définir les processus métier collaboratifs identifiés ci-dessus. Les Tables ci-dessous contiennent des informations concernant les acteurs et les cas d’utilisation des Figures 1, 2, 3 et 4.
 
 | **Acteur** | **Description** |
 | --- | --- |
@@ -72,31 +67,31 @@ Table 1 : Table des acteurs
 
 Table 2 : Table des cas d'utilisation
 
-Les Figures 2, 3, 4 et 5 présentent des diagrammes de cas d’utilisation concernant les processus identifiés ainsi que les acteurs concernés.
+Les Figures 1, 2, 3 et 4 présentent des diagrammes de cas d’utilisation concernant les processus identifiés ainsi que les acteurs concernés.
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="sf-img2.png" alt="CI-SIS" title="Diagramme de cas d’utilisation concernant la création d’une note dans le cahier de liaison">
+    <img style="height: auto; width: 100%;" src="sf-img1.png" alt="CI-SIS" title="Diagramme de cas d’utilisation concernant la création d’une note dans le cahier de liaison">
 </div>
 
-Figure 2 : Diagramme de cas d’utilisation concernant la création d’une note dans le cahier de liaison
+Figure 1 : Diagramme de cas d’utilisation concernant la création d’une note dans le cahier de liaison
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="sf-img3.png" alt="CI-SIS" title="Diagramme de cas d’utilisation concernant la mise à jour d’une note dans le cahier de liaison">
+    <img style="height: auto; width: 100%;" src="sf-img2.png" alt="CI-SIS" title="Diagramme de cas d’utilisation concernant la mise à jour d’une note dans le cahier de liaison">
 </div>
 
-Figure 3 : Diagramme de cas d’utilisation concernant la mise à jour d’une note dans le cahier de liaison
+Figure 2 : Diagramme de cas d’utilisation concernant la mise à jour d’une note dans le cahier de liaison
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="sf-img4.png" alt="CI-SIS" title="Diagramme de cas d’utilisation concernant la suppression d’une note dans le cahier de liaison">
+    <img style="height: auto; width: 100%;" src="sf-img3.png" alt="CI-SIS" title="Diagramme de cas d’utilisation concernant la suppression d’une note dans le cahier de liaison">
 </div>
 
-Figure 4 : Diagramme de cas d’utilisation concernant la suppression d’une note dans le cahier de liaison
+Figure 3 : Diagramme de cas d’utilisation concernant la suppression d’une note dans le cahier de liaison
 
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="sf-img4.png" alt="CI-SIS" title="Diagramme de cas d’utilisation concernant la consultation de note(s) dans le cahier de liaison">
 </div>
 
-Figure 5 : Diagramme de cas d’utilisation concernant la consultation de note(s) dans le cahier de liaison
+Figure 4 : Diagramme de cas d’utilisation concernant la consultation de note(s) dans le cahier de liaison
 
 #### Etape 3: Description du processus et identification des flux
 
@@ -106,7 +101,7 @@ Sauf indication contraire, il n’y a pas de contrainte architecturale d’impl�
 
 ##### Création d’une note
 
-Les Tables 3, 4 et 5 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Création d’une note ». Le diagramme d’activités correspondant est représenté dans la Figure 6.
+Les Tables 3, 4 et 5 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Création d’une note ». Le diagramme d’activités correspondant est représenté dans la Figure 5.
 
 | **Acteur** | **Description** |
 | --- | --- |
@@ -130,14 +125,14 @@ Table 4: Table des actions identifiées
 Table 5: Table des flux identifiés
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="sf-img6.png" alt="CI-SIS" title="Diagramme d’activités du processus « Création d’une note »">
+    <img style="height: auto; width: 100%;" src="sf-img5.png" alt="CI-SIS" title="Diagramme d’activités du processus « Création d’une note »">
 </div>
 
-Figure 6 : Diagramme d’activités du processus « Création d’une note »
+Figure 5 : Diagramme d’activités du processus « Création d’une note »
 
 ##### Mise à jour d’une note
 
-Les Tables 6, 7 et 8 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Mise à jour d’une note». Le diagramme d’activités correspondant est représenté dans la Figure 7.
+Les Tables 6, 7 et 8 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Mise à jour d’une note». Le diagramme d’activités correspondant est représenté dans la Figure 6.
 
 | **Acteur** | **Description** |
 | --- | --- |
@@ -162,14 +157,14 @@ Table 7: Table des actions identifiées
 Table 8: Table des flux identifiés
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="sf-img7.png" alt="CI-SIS" title="Diagramme d’activités du processus collaboratif «Mise à jour d’une note»">
+    <img style="height: auto; width: 100%;" src="sf-img6.png" alt="CI-SIS" title="Diagramme d’activités du processus collaboratif «Mise à jour d’une note»">
 </div>
 
-Figure 7: Diagramme d’activités du processus collaboratif «Mise à jour d’une note»
+Figure 6: Diagramme d’activités du processus collaboratif «Mise à jour d’une note»
 
 ##### Suppression d’une note
 
-Les Tables 9, 10 et 11 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Suppression d’une note ». Le diagramme d’activités correspondant est représenté dans la Figure 8.
+Les Tables 9, 10 et 11 représentent les acteurs, les actions et les flux identifiés en ce qui concerne le processus « Suppression d’une note ». Le diagramme d’activités correspondant est représenté dans la Figure 7.
 
 | **Acteur** | **Description** |
 | --- | --- |
@@ -194,21 +189,21 @@ Table 10: Table des actions identifiées
 Table 11: Table des flux identifiés
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="sf-img8.png" alt="CI-SIS" title="Diagramme d’activités du processus « Suppression d’une note»">
+    <img style="height: auto; width: 100%;" src="sf-img7.png" alt="CI-SIS" title="Diagramme d’activités du processus « Suppression d’une note»">
 </div>
 
-Figure 8 : Diagramme d’activités du processus « Suppression d’une note»
+Figure 7 : Diagramme d’activités du processus « Suppression d’une note»
 
 ##### Consultation du cahier de liaison
 
-Les Tables 12, 13 et 14 représentent les acteurs, les actions et les flux identifiés pour le processus « Consultation du cahier de liaison ». Le diagramme d’activités correspondant est représenté dans la Figure 9.
+Les Tables 12, 13 et 14 représentent les acteurs, les actions et les flux identifiés pour le processus « Consultation du cahier de liaison ». Le diagramme d’activités correspondant est représenté dans la Figure 8.
 
 | **Acteur** | **Description** |
 | --- | --- |
 | Consommateur de contenu | Il s’agit de la personne ou entité qui consulte le cahier de liaison afin de récupérer des informations qui ont été partagées. Le consommateur de contenu peut être un logiciel métier installé sur un ordinateur, une application installée sur un téléphone mobile ou une tablette ainsi que tout autre dispositif utilisé par une personne ou une entité pour alimenter le cahier de liaison. |
 | Gestionnaire de cahier de liaison | Le gestionnaire de cahier de liaison implémente le cahier de liaison. |
 
-Table 12: Table des acteurs identifiés dans le diagramme d’activités de la Figure 9
+Table 12: Table des acteurs identifiés dans le diagramme d’activités de la Figure 8
 
 | **Action** | **Description** |
 | --- | --- |
@@ -216,20 +211,20 @@ Table 12: Table des acteurs identifiés dans le diagramme d’activités de la F
 | Rechercher les notes dans le cahier de liaison | Les notes demandées sont recherchées dans le cahier de liaison selon les critères définis par le consommateur de contenu. |
 | Consulter la réponse du gestionnaire de cahier de liaison | Le consommateur consulte les notes retournées par le gestionnaire de cahier de liaison. |
 
-Table 13: Table des actions identifiées dans le diagramme d’activités de la Figure 9
+Table 13: Table des actions identifiées dans le diagramme d’activités de la Figure 8
 
 | **Flux identifiés** | **Description** |
 | --- | --- |
 | RechercheNotes | Il s’agit du flux qui contient les informations nécessaires pour rechercher une ou plusieurs notes dans un cahier de liaison. |
 | RésulatsRechercheNotes | Il s’agit du flux qui contient les informations recherchées par le consommateur de contenu. |
 
-Table 14 : Table des flux identifiés dans le diagramme d’activités de la Figure 9
+Table 14 : Table des flux identifiés dans le diagramme d’activités de la Figure 8
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="sf-img9.png" alt="CI-SIS" title="Diagramme d’activités du processus « Consultation du cahier de liaison »">
+    <img style="height: auto; width: 100%;" src="sf-img8.png" alt="CI-SIS" title="Diagramme d’activités du processus « Consultation du cahier de liaison »">
 </div>
 
-Figure 9: Diagramme d’activités du processus « Consultation du cahier de liaison »
+Figure 8: Diagramme d’activités du processus « Consultation du cahier de liaison »
 
 #### Etape 4: Qualification des flux échangés
 
@@ -284,17 +279,17 @@ Table 17 : Liste des correspondances entre les concepts « métier » identifié
 
 ##### Flux 1 - CréationNote
 
-La Figure 10 présente le diagramme de classes modélisant les informations métier en ce qui concerne le Flux 1 « CréationNote ».
+La Figure 9 présente le diagramme de classes modélisant les informations métier en ce qui concerne le Flux 1 « CréationNote ».
 
 Note : Ce diagramme de classe est également utilisé pour modéliser les Flux 2 et 5.
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="sf-img10.png" alt="CI-SIS" title="Diagramme de classe du flux « CréationNote»">
+    <img style="height: auto; width: 100%;" src="sf-img9.png" alt="CI-SIS" title="Diagramme de classe du flux « CréationNote»">
 </div>
 
-Figure 10: Diagramme de classe du flux « CréationNote»
+Figure 9: Diagramme de classe du flux « CréationNote»
 
-Les tables ci-dessous définissent les attributs contenus dans le diagramme de classes de la Figure 8.
+Les tables ci-dessous définissent les attributs contenus dans le diagramme de classes de la Figure 7.
 
 ###### Classe "Note"
 
@@ -417,10 +412,10 @@ A noter que pour la mise en œuvre du cahier de liaison dans une infrastructure 
 La Figure ci-dessous présente le diagramme de classe concernant le Flux 3 - **SuppressionNote**. Les attributs de cette classe représentent les critères de recherche des informations contenues dans le cahier de liaison afin de pouvoir supprimer une note.
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="sf-img11.png" alt="CI-SIS" title="Diagramme de classes du Flux 3 - SuppressionNote">
+    <img style="height: auto; width: 100%;" src="sf-img10.png" alt="CI-SIS" title="Diagramme de classes du Flux 3 - SuppressionNote">
 </div>
 
-Figure 11: Diagramme de classes du Flux 3 - SuppressionNote
+Figure 10: Diagramme de classes du Flux 3 - SuppressionNote
 
 La table ci-dessous définit les attributs contenus dans le diagramme de classe ci-dessus.
 
@@ -432,16 +427,16 @@ Table 28 Classe "SuppressionNote"
 
 ##### Flux 4 - RechercheNotes
 
-La Figure 12 ci-dessous représente le diagramme de classe concernant le flux **RechercheNotes**. Les attributs de cette classe représentent les critères de recherche des informations contenues dans le cahier de liaison.
+La Figure 11 ci-dessous représente le diagramme de classe concernant le flux **RechercheNotes**. Les attributs de cette classe représentent les critères de recherche des informations contenues dans le cahier de liaison.
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="sf-img12.png" alt="CI-SIS" title="Diagramme de classe «RechercheNotes»">
+    <img style="height: auto; width: 100%;" src="sf-img11.png" alt="CI-SIS" title="Diagramme de classe «RechercheNotes»">
 </div>
 
 
-Figure 12: Diagramme de classe «RechercheNotes»
+Figure 11: Diagramme de classe «RechercheNotes»
 
-La table ci-dessous définit les attributs contenus dans le diagramme de classe de la Figure 12.
+La table ci-dessous définit les attributs contenus dans le diagramme de classe de la Figure 11.
 
 | Nom | Définition | Obligatoire |
 | --- | --- | --- |
