@@ -17,7 +17,7 @@ Des ressources FHIR ont été profilées pour le contexte français et sont util
 {% sql SELECT '[' || Title ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description FROM Resources WHERE Type = 'StructureDefinition' and Description like "Profil%" %}
 
 Dans l’ensemble de ce guide, lorsqu’il est fait référence aux ressources Patient, RelatedPerson et Organization, il est entendu que le profil français (respectivement, FrPatient, FrRelatedPerson et FrOrganization) doit être utilisé.
-De même, lorsqu’il est fait référence à la ressource Practitioner, PractitionerRole, les profils français « AsProfessionalRoleR », « AsPractitioner » doivent être utilisés.
+De même, lorsqu’il est fait référence à la ressource Practitioner, PractitionerRole, les profils français « AsProfessionalRole », « AsPractitioner » doivent être utilisés.
 
 ### Dépendances
 
