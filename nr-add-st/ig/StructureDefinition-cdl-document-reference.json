@@ -10,7 +10,7 @@
   "name" : "CdLDocumentReference",
   "title" : "DocumentReference Cahier de Liaison",
   "status" : "draft",
-  "date" : "2024-07-22T11:50:49+00:00",
+  "date" : "2024-08-29T16:16:51+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -131,6 +131,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "Note"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity. Role, or Act"
       },
@@ -149,10 +153,6 @@
       {
         "identity" : "cda",
         "map" : "when describing a CDA"
-      },
-      {
-        "identity" : "cdl-documentreference-to-mos-note",
-        "map" : "Note"
       }]
     },
     {
@@ -411,16 +411,16 @@
       "mustSupport" : true,
       "isModifier" : false,
       "mapping" : [{
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "Note.urgenceNote"
+      },
+      {
         "identity" : "rim",
         "map" : "n/a"
       },
       {
         "identity" : "rim",
         "map" : "N/A"
-      },
-      {
-        "identity" : "cdl-documentreference-to-mos-note",
-        "map" : "Note.urgenceNote"
       }]
     },
     {
@@ -495,6 +495,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "Note.idNote"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.identifier"
       },
@@ -521,10 +525,6 @@
       {
         "identity" : "cda",
         "map" : "ClinicalDocument/id"
-      },
-      {
-        "identity" : "cdl-documentreference-to-mos-note",
-        "map" : "Note.idNote"
       }]
     },
     {
@@ -715,6 +715,10 @@
         "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS"
       },
       "mapping" : [{
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "Note.type"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.code"
       },
@@ -741,10 +745,6 @@
       {
         "identity" : "cda",
         "map" : "ClinicalDocument/code/@code \n\nThe typeCode should be mapped from the ClinicalDocument/code element to a set of document type codes configured in the affinity domain. One suggested coding system to use for typeCode is LOINC, in which case the mapping step can be omitted."
-      },
-      {
-        "identity" : "cdl-documentreference-to-mos-note",
-        "map" : "Note.type"
       }]
     },
     {
@@ -832,6 +832,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "Note.personnePriseEnCharge"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.subject"
       },
@@ -862,10 +866,6 @@
       {
         "identity" : "w5",
         "map" : "FiveWs.subject"
-      },
-      {
-        "identity" : "cdl-documentreference-to-mos-note",
-        "map" : "Note.personnePriseEnCharge"
       }]
     },
     {
@@ -897,6 +897,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "Note.dateHeureCreation"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.occurrence[x]"
       },
@@ -911,10 +915,6 @@
       {
         "identity" : "rim",
         "map" : ".availabilityTime[type=\"TS\"]"
-      },
-      {
-        "identity" : "cdl-documentreference-to-mos-note",
-        "map" : "Note.dateHeureCreation"
       }]
     },
     {
@@ -951,6 +951,14 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "Note.auteurNote"
+      },
+      {
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "AuteurNote.idAuteurNote"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.performer.actor"
       },
@@ -973,14 +981,6 @@
       {
         "identity" : "cda",
         "map" : "ClinicalDocument/author"
-      },
-      {
-        "identity" : "cdl-documentreference-to-mos-note",
-        "map" : "Note.auteurNote"
-      },
-      {
-        "identity" : "cdl-documentreference-to-mos-note",
-        "map" : "AuteurNote.idAuteurNote"
       }]
     },
     {
@@ -1348,6 +1348,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "description"
+      },
+      {
         "identity" : "v2",
         "map" : "TXA-25"
       },
@@ -1358,10 +1362,6 @@
       {
         "identity" : "xds",
         "map" : "DocumentEntry.comments"
-      },
-      {
-        "identity" : "cdl-documentreference-to-mos-note",
-        "map" : "description"
       }]
     },
     {
@@ -1397,6 +1397,10 @@
         "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J110-StatutVisibiliteDocument-CISIS/FHIR/JDV-J110-StatutVisibiliteDocument-CISIS"
       },
       "mapping" : [{
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "Note.restrictionAudience"
+      },
+      {
         "identity" : "fhircomposition",
         "map" : "Composition.confidentiality, Composition.meta.security"
       },
@@ -1415,10 +1419,6 @@
       {
         "identity" : "cda",
         "map" : "ClinicalDocument/confidentialityCode/@code"
-      },
-      {
-        "identity" : "cdl-documentreference-to-mos-note",
-        "map" : "Note.restrictionAudience"
       }]
     },
     {
@@ -1594,6 +1594,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "cdl-documentreference-to-mos-note",
+        "map" : "Note.pieceJointe"
+      },
+      {
         "identity" : "fhircomposition",
         "map" : "Composition.language, \nComposition.title, \nComposition.date"
       },
@@ -1612,10 +1616,6 @@
       {
         "identity" : "cda",
         "map" : "ClinicalDocument/languageCode, ClinicalDocument/title, ClinicalDocument/date"
-      },
-      {
-        "identity" : "cdl-documentreference-to-mos-note",
-        "map" : "Note.pieceJointe"
       }]
     },
     {

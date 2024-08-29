@@ -3,7 +3,7 @@
   "id" : "ConceptMap-mos-cdl",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ConceptMap-mos-cdl</b></p><a name=\"ConceptMap-mos-cdl\"> </a><a name=\"hcConceptMap-mos-cdl\"> </a><a name=\"ConceptMap-mos-cdl-en-US\"> </a><p>Mapping from https://mos.esante.gouv.fr to https://hl7.fr/ig/fhir/core</p><p>DRAFT (not intended for production usage). Published on 2024-07-22 11:50:49+0000 by ANS  (ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a>). </p><div><p>Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne sont pas présents dans ce guide.</p>\n</div><br/><p><b>Group 1 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-related-person.html\">FR Core Related Person Profile</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Contact.IdContact</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>RelatedPerson.identifier</td></tr><tr><td>Contact.adresse</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>RelatedPerson.address</td></tr><tr><td>Contact.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>RelatedPerson.telecom</td></tr><tr><td>PersonnePhysique.nomFamille</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>RelatedPerson.name.family</td></tr><tr><td>PersonnePhysique.prenomUsuel</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>RelatedPerson.name.given</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-practitioner.html\">FR Core Practitioner Profile</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Professionnel.idPP</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Practitioner.identifier</td></tr><tr><td>Professionnel.adresseCorrespondance</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Practitioner.address</td></tr><tr><td>Professionnel.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Practitioner.telecom</td></tr><tr><td>PersonnePhysique.nomFamille</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Practitioner.name.family</td></tr><tr><td>PersonnePhysique.prenomUsuel</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Practitioner.name.given</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <code>https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ExerciceProfessionnel.profession</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>PractitionerRole.code</td></tr></table><hr/><p><b>Group 4 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-organization.html\">FR Core Organization Profile</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>EntiteGeographique.numFINESS</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Organization.identifier</td></tr><tr><td>EntiteGeographique.secteurActivite</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Organization.type</td></tr><tr><td>EntiteGeographique.adresseEG</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Organization.address</td></tr><tr><td>EntiteGeographique.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Organization.telecom</td></tr><tr><td>EntiteGeographique.denominationEG</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Organization.name</td></tr></table><hr/><p><b>Group 5 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html\">FR Core Patient Profile</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>PersonnePriseEnCharge.idPersonnePriseEnCharge</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.identifier</td></tr><tr><td>PersonnePriseEnCharge.adresseCorrespondance</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.address</td></tr><tr><td>PersonnePriseEnCharge.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.telecom</td></tr><tr><td>Patient.idPatient</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.identifier</td></tr><tr><td>Patient.adresseCorrespondance</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.address</td></tr><tr><td>Patient.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.telecom</td></tr><tr><td>PersonnePhysique.nomFamille</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.name.family</td></tr><tr><td>PersonnePhysique.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.name.given</td></tr></table><hr/><p><b>Group 6 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <a href=\"http://hl7.org/fhir/R4/device.html\">Device</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>RessourceMaterielle.libelle</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Device.deviceName.name</td></tr><tr><td>RessourceMaterielle.reference</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Device.modelNumber</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ConceptMap-mos-cdl</b></p><a name=\"ConceptMap-mos-cdl\"> </a><a name=\"hcConceptMap-mos-cdl\"> </a><a name=\"ConceptMap-mos-cdl-en-US\"> </a><p>Mapping from https://mos.esante.gouv.fr to https://hl7.fr/ig/fhir/core</p><br/><p><b>Group 1 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-related-person.html\">FR Core Related Person Profile</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Contact.IdContact</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>RelatedPerson.identifier</td></tr><tr><td>Contact.adresse</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>RelatedPerson.address</td></tr><tr><td>Contact.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>RelatedPerson.telecom</td></tr><tr><td>PersonnePhysique.nomFamille</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>RelatedPerson.name.family</td></tr><tr><td>PersonnePhysique.prenomUsuel</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>RelatedPerson.name.given</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-practitioner.html\">FR Core Practitioner Profile</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Professionnel.idPP</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Practitioner.identifier</td></tr><tr><td>Professionnel.adresseCorrespondance</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Practitioner.address</td></tr><tr><td>Professionnel.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Practitioner.telecom</td></tr><tr><td>PersonnePhysique.nomFamille</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Practitioner.name.family</td></tr><tr><td>PersonnePhysique.prenomUsuel</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Practitioner.name.given</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <code>https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ExerciceProfessionnel.profession</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>PractitionerRole.code</td></tr></table><hr/><p><b>Group 4 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-organization.html\">FR Core Organization Profile</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>EntiteGeographique.numFINESS</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Organization.identifier</td></tr><tr><td>EntiteGeographique.secteurActivite</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Organization.type</td></tr><tr><td>EntiteGeographique.adresseEG</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Organization.address</td></tr><tr><td>EntiteGeographique.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Organization.telecom</td></tr><tr><td>EntiteGeographique.denominationEG</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Organization.name</td></tr></table><hr/><p><b>Group 5 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html\">FR Core Patient Profile</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>PersonnePriseEnCharge.idPersonnePriseEnCharge</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.identifier</td></tr><tr><td>PersonnePriseEnCharge.adresseCorrespondance</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.address</td></tr><tr><td>PersonnePriseEnCharge.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.telecom</td></tr><tr><td>Patient.idPatient</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.identifier</td></tr><tr><td>Patient.adresseCorrespondance</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.address</td></tr><tr><td>Patient.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.telecom</td></tr><tr><td>PersonnePhysique.nomFamille</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.name.family</td></tr><tr><td>PersonnePhysique.telecommunication</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Patient.name.given</td></tr></table><hr/><p><b>Group 6 </b>Mapping from <code>https://mos.esante.gouv.fr/12.html</code> to <a href=\"http://hl7.org/fhir/R4/device.html\">Device</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>RessourceMaterielle.libelle</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Device.deviceName.name</td></tr><tr><td>RessourceMaterielle.reference</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Device.modelNumber</td></tr></table></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/ConceptMap/ConceptMap-mos-cdl",
   "version" : "3.0.0",
@@ -11,7 +11,7 @@
   "title" : "MOS to FHIR CDL",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2024-07-22T11:50:49+00:00",
+  "date" : "2024-08-29T16:16:51+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -31,10 +31,6 @@
       "code" : "Contact.IdContact",
       "display" : "Contact.IdContact",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "RelatedPerson.identifier",
         "display" : "RelatedPerson.identifier",
         "equivalence" : "relatedto"
@@ -44,10 +40,6 @@
       "code" : "Contact.adresse",
       "display" : "Contact.adresse",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "RelatedPerson.address",
         "display" : "RelatedPerson.address",
         "equivalence" : "relatedto"
@@ -57,10 +49,6 @@
       "code" : "Contact.telecommunication",
       "display" : "Contact.telecommunication",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "RelatedPerson.telecom",
         "display" : "RelatedPerson.telecom",
         "equivalence" : "relatedto"
@@ -70,10 +58,6 @@
       "code" : "PersonnePhysique.nomFamille",
       "display" : "PersonnePhysique.nomFamille",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "RelatedPerson.name.family",
         "display" : "RelatedPerson.name.family",
         "equivalence" : "relatedto"
@@ -83,10 +67,6 @@
       "code" : "PersonnePhysique.prenomUsuel",
       "display" : "PersonnePhysique.prenomUsuel",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "RelatedPerson.name.given",
         "display" : "RelatedPerson.name.given",
         "equivalence" : "relatedto"
@@ -100,10 +80,6 @@
       "code" : "Professionnel.idPP",
       "display" : "Professionnel.idPP",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Practitioner.identifier",
         "display" : "Practitioner.identifier",
         "equivalence" : "relatedto"
@@ -113,10 +89,6 @@
       "code" : "Professionnel.adresseCorrespondance",
       "display" : "Professionnel.adresseCorrespondance",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Practitioner.address",
         "display" : "Practitioner.address",
         "equivalence" : "relatedto"
@@ -126,10 +98,6 @@
       "code" : "Professionnel.telecommunication",
       "display" : "Professionnel.telecommunication",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Practitioner.telecom",
         "display" : "Practitioner.telecom",
         "equivalence" : "relatedto"
@@ -139,10 +107,6 @@
       "code" : "PersonnePhysique.nomFamille",
       "display" : "PersonnePhysique.nomFamille",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Practitioner.name.family",
         "display" : "Practitioner.name.family",
         "equivalence" : "relatedto"
@@ -152,10 +116,6 @@
       "code" : "PersonnePhysique.prenomUsuel",
       "display" : "PersonnePhysique.prenomUsuel",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Practitioner.name.given",
         "display" : "Practitioner.name.given",
         "equivalence" : "relatedto"
@@ -169,10 +129,6 @@
       "code" : "ExerciceProfessionnel.profession",
       "display" : "ExerciceProfessionnel.profession",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "PractitionerRole.code",
         "display" : "PractitionerRole.code",
         "equivalence" : "relatedto"
@@ -186,10 +142,6 @@
       "code" : "EntiteGeographique.numFINESS",
       "display" : "EntiteGeographique.numFINESS",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Organization.identifier",
         "display" : "Organization.identifier",
         "equivalence" : "relatedto"
@@ -199,10 +151,6 @@
       "code" : "EntiteGeographique.secteurActivite",
       "display" : "EntiteGeographique.secteurActivite",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Organization.type",
         "display" : "Organization.type",
         "equivalence" : "relatedto"
@@ -212,10 +160,6 @@
       "code" : "EntiteGeographique.adresseEG",
       "display" : "EntiteGeographique.adresseEG",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Organization.address",
         "display" : "Organization.address",
         "equivalence" : "relatedto"
@@ -225,10 +169,6 @@
       "code" : "EntiteGeographique.telecommunication",
       "display" : "EntiteGeographique.telecommunication",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Organization.telecom",
         "display" : "Organization.telecom",
         "equivalence" : "relatedto"
@@ -238,10 +178,6 @@
       "code" : "EntiteGeographique.denominationEG",
       "display" : "EntiteGeographique.denominationEG",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Organization.name",
         "display" : "Organization.name",
         "equivalence" : "relatedto"
@@ -255,10 +191,6 @@
       "code" : "PersonnePriseEnCharge.idPersonnePriseEnCharge",
       "display" : "PersonnePriseEnCharge.idPersonnePriseEnCharge",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Patient.identifier",
         "display" : "Patient.identifier",
         "equivalence" : "relatedto"
@@ -268,10 +200,6 @@
       "code" : "PersonnePriseEnCharge.adresseCorrespondance",
       "display" : "PersonnePriseEnCharge.adresseCorrespondance",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Patient.address",
         "display" : "Patient.address",
         "equivalence" : "relatedto"
@@ -281,10 +209,6 @@
       "code" : "PersonnePriseEnCharge.telecommunication",
       "display" : "PersonnePriseEnCharge.telecommunication",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Patient.telecom",
         "display" : "Patient.telecom",
         "equivalence" : "relatedto"
@@ -294,10 +218,6 @@
       "code" : "Patient.idPatient",
       "display" : "Patient.idPatient",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Patient.identifier",
         "display" : "Patient.identifier",
         "equivalence" : "relatedto"
@@ -307,10 +227,6 @@
       "code" : "Patient.adresseCorrespondance",
       "display" : "Patient.adresseCorrespondance",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Patient.address",
         "display" : "Patient.address",
         "equivalence" : "relatedto"
@@ -320,10 +236,6 @@
       "code" : "Patient.telecommunication",
       "display" : "Patient.telecommunication",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Patient.telecom",
         "display" : "Patient.telecom",
         "equivalence" : "relatedto"
@@ -333,10 +245,6 @@
       "code" : "PersonnePhysique.nomFamille",
       "display" : "PersonnePhysique.nomFamille",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Patient.name.family",
         "display" : "Patient.name.family",
         "equivalence" : "relatedto"
@@ -346,10 +254,6 @@
       "code" : "PersonnePhysique.telecommunication",
       "display" : "PersonnePhysique.telecommunication",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Patient.name.given",
         "display" : "Patient.name.given",
         "equivalence" : "relatedto"
@@ -363,10 +267,6 @@
       "code" : "RessourceMaterielle.libelle",
       "display" : "RessourceMaterielle.libelle",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Device.deviceName.name",
         "display" : "Device.deviceName.name",
         "equivalence" : "relatedto"
@@ -376,10 +276,6 @@
       "code" : "RessourceMaterielle.reference",
       "display" : "RessourceMaterielle.reference",
       "target" : [{
-        "modifierExtension" : [{
-          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-          "valueCode" : "relatedto"
-        }],
         "code" : "Device.modelNumber",
         "display" : "Device.modelNumber",
         "equivalence" : "relatedto"

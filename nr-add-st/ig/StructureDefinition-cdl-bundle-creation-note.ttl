@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CdLBundleCreationNote"] ; # 
   fhir:title [ fhir:v "Bundle de création d'une note"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-22T11:50:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-29T16:16:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -1954,6 +1954,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "Note" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -1968,9 +1971,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v "when describing a CDA" ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "Note" ]
        ] )
      ] [
        fhir:id [ fhir:v "Bundle.entry:DocumentReference.search" ] ;
