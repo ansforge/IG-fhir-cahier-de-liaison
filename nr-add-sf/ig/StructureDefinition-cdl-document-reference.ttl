@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CdLDocumentReference"] ; # 
   fhir:title [ fhir:v "DocumentReference Cahier de Liaison"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-22T14:37:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-29T16:05:10+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -144,6 +144,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "Note" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -158,9 +161,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v "when describing a CDA" ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "Note" ]
        ] )
      ] [
        fhir:id [ fhir:v "DocumentReference.id" ] ;
@@ -436,14 +436,14 @@
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "Note.urgenceNote" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "n/a" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "Note.urgenceNote" ]
        ] )
      ] [
        fhir:id [ fhir:v "DocumentReference.modifierExtension" ] ;
@@ -523,6 +523,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "Note.idNote" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.identifier" ]
        ] [
@@ -543,9 +546,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v "ClinicalDocument/id" ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "Note.idNote" ]
        ] )
      ] [
        fhir:id [ fhir:v "DocumentReference.identifier" ] ;
@@ -742,6 +742,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "Note.type" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.code" ]
        ] [
@@ -762,9 +765,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v "ClinicalDocument/code/@code \n\nThe typeCode should be mapped from the ClinicalDocument/code element to a set of document type codes configured in the affinity domain. One suggested coding system to use for typeCode is LOINC, in which case the mapping step can be omitted." ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "Note.type" ]
        ] )
      ] [
        fhir:id [ fhir:v "DocumentReference.category" ] ;
@@ -858,6 +858,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "Note.personnePriseEnCharge" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.subject" ]
        ] [
@@ -881,9 +884,6 @@
        ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.subject" ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "Note.personnePriseEnCharge" ]
        ] )
      ] [
        fhir:id [ fhir:v "DocumentReference.date" ] ;
@@ -917,6 +917,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "Note.dateHeureCreation" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.occurrence[x]" ]
        ] [
@@ -928,9 +931,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".availabilityTime[type=\"TS\"]" ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "Note.dateHeureCreation" ]
        ] )
      ] [
        fhir:id [ fhir:v "DocumentReference.author" ] ;
@@ -982,6 +982,12 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "Note.auteurNote" ]
+       ] [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "AuteurNote.idAuteurNote" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.performer.actor" ]
        ] [
@@ -999,12 +1005,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v "ClinicalDocument/author" ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "Note.auteurNote" ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "AuteurNote.idAuteurNote" ]
        ] )
      ] [
        fhir:id [ fhir:v "DocumentReference.authenticator" ] ;
@@ -1390,6 +1390,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "description" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "TXA-25" ]
        ] [
@@ -1398,9 +1401,6 @@
        ] [
          fhir:identity [ fhir:v "xds" ] ;
          fhir:map [ fhir:v "DocumentEntry.comments" ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "description" ]
        ] )
      ] [
        fhir:id [ fhir:v "DocumentReference.securityLabel" ] ;
@@ -1441,6 +1441,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "Note.restrictionAudience" ]
+       ] [
          fhir:identity [ fhir:v "fhircomposition" ] ;
          fhir:map [ fhir:v "Composition.confidentiality, Composition.meta.security" ]
        ] [
@@ -1455,9 +1458,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v "ClinicalDocument/confidentialityCode/@code" ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "Note.restrictionAudience" ]
        ] )
      ] [
        fhir:id [ fhir:v "DocumentReference.content" ] ;
@@ -1640,6 +1640,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
+         fhir:map [ fhir:v "Note.pieceJointe" ]
+       ] [
          fhir:identity [ fhir:v "fhircomposition" ] ;
          fhir:map [ fhir:v "Composition.language, \nComposition.title, \nComposition.date" ]
        ] [
@@ -1654,9 +1657,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v "ClinicalDocument/languageCode, ClinicalDocument/title, ClinicalDocument/date" ]
-       ] [
-         fhir:identity [ fhir:v "cdl-documentreference-to-mos-note" ] ;
-         fhir:map [ fhir:v "Note.pieceJointe" ]
        ] )
      ] [
        fhir:id [ fhir:v "DocumentReference.content.attachment.id" ] ;
