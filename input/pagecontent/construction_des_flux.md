@@ -11,7 +11,7 @@ Cette section présente la construction de flux HTTP (de l'API REST FHIR[^18]) p
 
 | Nom du flux                     | Ressource FHIR R4                    | Requête http     |
 | ------------------------------- | ------------------------------------ | ---------------- |
-| Flux 1a - CreationActeurRestful | Profils FrPatient, FrRelatedperson du package*.fhir.fr.core*,Profils ASPractitioner, ASPractitionerRole ASOrganization du package ans.fhir.fr.annuaire ansi que la ressource Device           | HTTP POST     |
+| Flux 1a - CreationActeurRestful | Profils FrPatient, FrRelatedPerson du package*.fhir.fr.core*,Profils ASPractitioner, ASPractitionerRole ASOrganization du package ans.fhir.fr.annuaire ansi que la ressource Device           | HTTP POST     |
 | Flux 1b - CreationNoteRestful   | Profil CdL_DocumentReferenceCdL      | HTTP POST        |
 | Flux 1c - CreationNoteTransaction | Profil CdL_BundleCreationNoteCdL   | HTTP POST        |
 | Flux 2a - MAJActeurRestful      | Idem Flux 1a - CreationActeurRestful | HTTP PUT         |
@@ -27,7 +27,7 @@ C’est le flux d’alimentation du cahier de liaison avec une nouvelle note.
 
 Il est composé de trois flux distincs :
 
-* Les flux 1a - CréationActeurRestful et 1b - CreationNoteRestful : ces deux flux ont été dissociés pour séparer la création des acteurs de la création des notes dans l’option de construction Restful.
+* Les flux 1a - CreationActeurRestful et 1b - CreationNoteRestful : ces deux flux ont été dissociés pour séparer la création des acteurs de la création des notes dans l’option de construction Restful.
 * Le flux 1c - CreationNoteTransation : ce flux a été dissocié des flux 1a et 1b car il correspond à la création d’une note dans l’option de construction Transaction
 
 #### Flux 2 - Mise à jour d'une note

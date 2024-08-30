@@ -7,7 +7,7 @@ Le flux 4 de recherche de notes est une requête HTTP GET accompagnée des param
 | Critère de recherche |                | Paramètre     | Type du paramètre |
 | ---                  | ---            | ---           | ---                |
 | Identifiant de la personne prise en charge   | | subject:Patient.identifier ou patient.identifier ou subject.identifier | token |
-| Identifiant de l'auteur de la note   | S’il s’agit d’un professionnel             | author:Prctitioner.identifier | token       |
+| Identifiant de l'auteur de la note   | S’il s’agit d’un professionnel             | author:Practitioner.identifier | token       |
 |                                      | S’il s’agit de la personne prise en charge | author:Patient.identifier | token |
 |                                      | S’il s’agit d’une personne tierce          | author:RelatedPerson.identifier | token |
 |                                      | S’il s’agit d’un établissement             | author:Organization.identifier | token |
