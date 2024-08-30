@@ -1,3 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Used
-https://mos.esante.gouv.fr/NOS/TRE_A07-StatutVisibiliteDocument/FHIR/TRE-A07-StatutVisibiliteDocument,1.2.0,active,"1.2.250.1.213.1.1.4.13",TRE_A07-StatutVisibiliteDocument,null,"Restriction d'audience applicable aux objets référencés","ValueSet/JDV-J110-StatutVisibiliteDocument-CISIS"
-https://mos.esante.gouv.fr/NOS/TRE_R234-TypeNote/FHIR/TRE-R234-TypeNote,1.2.0,active,"1.2.250.1.213.1.1.4.334",TRE_R234-TypeNote,null,"Type de note","ValueSet/JDV-J23-TypeNoteCahierLiaison-CISIS"
+https://mos.esante.gouv.fr/NOS/TRE_A07-StatutVisibiliteDocument/FHIR/TRE-A07-StatutVisibiliteDocument,1.3.0,active,"1.2.250.1.213.1.1.4.13",TRE_A07-StatutVisibiliteDocument,null,"Restriction d'audience applicable aux objets référencés","ValueSet/JDV-J110-StatutVisibiliteDocument-CISIS"
+https://mos.esante.gouv.fr/NOS/TRE_R234-TypeNote/FHIR/TRE-R234-TypeNote,1.3.0,active,"1.2.250.1.213.1.1.4.334",TRE_R234-TypeNote,null,"Type de note","ValueSet/JDV-J23-TypeNoteCahierLiaison-CISIS"

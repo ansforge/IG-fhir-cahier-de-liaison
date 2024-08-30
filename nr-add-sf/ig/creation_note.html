@@ -189,8 +189,7 @@ Il s’agit d’un flux d’indexation de notes. Il véhicule la nouvelle note, 
 
 <h4 id="option-restful">Option RestFUL</h4>
 
-<p>Le flux 1b de création d’une note est une requête HTTP POST reposant sur l’interaction « create » de FHIR . La ressource « DocumentReference » constitue le corps de la requête.
-Si la création de la note est correctement effectuée, un code HTTP 201 created est retourné.</p>
+<p>Le flux 1b de création d’une note est une requête HTTP POST dont le corps est constitué d’une ressource « DocumentReference ». Si la création de la note est correctement effectuée, un code HTTP 201 created est retourné.</p>
 
 <h4 id="option-transaction">Option transaction</h4>
 
@@ -214,7 +213,7 @@ Si la création de la note est correctement effectuée, un code HTTP 201 created
   </li>
 </ul>
 
-<p>Ces ressources sont encapsulées dans une ressource « Bundle » de type « transaction » conforme au profil « CdL_BundleCreationNoteCdL». Le Bundle contient à minima une ressource DocumentReference. Ce Bundle constitue le corps de la requête HTTP POST.
+<p>Ces ressources sont encapsulées dans une ressource « Bundle » de type « transaction » conforme au profil « CdL_BundleCreationNoteCdL». Le Bundle contient a minima une ressource DocumentReference. Ce Bundle constitue le corps de la requête HTTP POST.
 Pour chaque élément entry de la ressource Bundle, le paramètre request.method sera positionné à POST pour chaque nouvelle ressource à créer sur le serveur :</p>
 
 <ul>
@@ -223,7 +222,7 @@ Pour chaque élément entry de la ressource Bundle, le paramètre request.method
 La gestion des droits de création et de modification des acteurs est à la charge du gestionnaire.</li>
 </ul>
 
-<p>Si la transaction a été correctement effectuée et donc que la création de la note est correctement effectuée, un code HTTP 200 ok est retourné . Un Bundle de type transaction-response doit être renvoyé dans le corps de la réponse . Ce dernier doit contenir les ressources telles qu’elles ont été créées par le gestionnaire ou, à minima, les identifiants logiques des ressources ayant été attribués par le gestionnaire (dans Bundle.entry.fullUrl et/ou Bundle.entry.resource.id). 
+<p>Si la transaction a été correctement effectuée et donc que la création de la note est correctement effectuée, un code HTTP 200 ok est retourné . Un Bundle de type transaction-response doit être renvoyé dans le corps de la réponse . Ce dernier doit contenir les ressources telles qu’elles ont été créées par le gestionnaire ou, a minima, les identifiants logiques des ressources ayant été attribués par le gestionnaire (dans Bundle.entry.fullUrl et/ou Bundle.entry.resource.id).
 Sinon, un code HTTP 500 Internal Server Error est retourné avec une ressource OperationOutcome contenant le détail des erreurs et avertissements résultant du traitement des entrées du Bundle.</p>
 
 <h3 id="flux-1--création-dacteurs">Flux 1 : création d’acteurs</h3>
@@ -283,7 +282,7 @@ Si la mise à jour d’un acteur est correctement effectuée, le système gestio
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 29, 2024 16:05+0000">2024-08-29</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 30, 2024 08:51+0000">2024-08-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
