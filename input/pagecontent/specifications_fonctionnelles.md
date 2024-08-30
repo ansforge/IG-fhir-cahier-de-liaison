@@ -283,7 +283,7 @@ La Figure 9 présente le diagramme de classes modélisant les informations méti
 
 Note : Ce diagramme de classe est également utilisé pour modéliser les Flux 2 et 5.
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="width:100%;">
     <img style="height: auto; width: 100%;" src="sf-img9.png" alt="CI-SIS" title="Diagramme de classe du flux « CréationNote»">
 </div>
 
@@ -411,7 +411,7 @@ A noter que pour la mise en œuvre du cahier de liaison dans une infrastructure 
 
 La Figure ci-dessous présente le diagramme de classe concernant le Flux 3 - **SuppressionNote**. Les attributs de cette classe représentent les critères de recherche des informations contenues dans le cahier de liaison afin de pouvoir supprimer une note.
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="width:20%;">
     <img style="height: auto; width: 100%;" src="sf-img10.png" alt="CI-SIS" title="Diagramme de classes du Flux 3 - SuppressionNote">
 </div>
 

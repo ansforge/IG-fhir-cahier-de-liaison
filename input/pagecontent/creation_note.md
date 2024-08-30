@@ -5,8 +5,7 @@ Il s’agit d’un flux d’indexation de notes. Il véhicule la nouvelle note, 
 
 #### Option RestFUL
 
-Le flux 1b de création d’une note est une requête HTTP POST reposant sur l’interaction « create » de FHIR . La ressource « DocumentReference » constitue le corps de la requête.
-Si la création de la note est correctement effectuée, un code HTTP 201 created est retourné.
+Le flux 1b de création d’une note est une requête HTTP POST dont le corps est constitué d'une ressource « DocumentReference ». Si la création de la note est correctement effectuée, un code HTTP 201 created est retourné.
 
 #### Option transaction
 
@@ -22,14 +21,14 @@ La première étape de la construction de ce flux de création de note consiste 
   * Organization (profil FrOrganization) pour représenter une entité géographique (EG)
   * Device pour représenter une ressource matérielle.
 
-Ces ressources sont encapsulées dans une ressource « Bundle » de type « transaction » conforme au profil « CdL_BundleCreationNoteCdL». Le Bundle contient à minima une ressource DocumentReference. Ce Bundle constitue le corps de la requête HTTP POST.
+Ces ressources sont encapsulées dans une ressource « Bundle » de type « transaction » conforme au profil « CdL_BundleCreationNoteCdL». Le Bundle contient a minima une ressource DocumentReference. Ce Bundle constitue le corps de la requête HTTP POST.
 Pour chaque élément entry de la ressource Bundle, le paramètre request.method sera positionné à POST pour chaque nouvelle ressource à créer sur le serveur :
 
 * Pour la ressource DocumentReference, l’attribut request.method sera positionné à POST,
 * Pour les ressources référencées dans DocumentReference comme sujet et auteur de la note, elles seront inclues dans le Bundle si elles n’existent pas sur le serveur ; l’attribut request.method sera positionné à POST.
 La gestion des droits de création et de modification des acteurs est à la charge du gestionnaire.
 
-Si la transaction a été correctement effectuée et donc que la création de la note est correctement effectuée, un code HTTP 200 ok est retourné . Un Bundle de type transaction-response doit être renvoyé dans le corps de la réponse . Ce dernier doit contenir les ressources telles qu’elles ont été créées par le gestionnaire ou, à minima, les identifiants logiques des ressources ayant été attribués par le gestionnaire (dans Bundle.entry.fullUrl et/ou Bundle.entry.resource.id). 
+Si la transaction a été correctement effectuée et donc que la création de la note est correctement effectuée, un code HTTP 200 ok est retourné . Un Bundle de type transaction-response doit être renvoyé dans le corps de la réponse . Ce dernier doit contenir les ressources telles qu’elles ont été créées par le gestionnaire ou, a minima, les identifiants logiques des ressources ayant été attribués par le gestionnaire (dans Bundle.entry.fullUrl et/ou Bundle.entry.resource.id).
 Sinon, un code HTTP 500 Internal Server Error est retourné avec une ressource OperationOutcome contenant le détail des erreurs et avertissements résultant du traitement des entrées du Bundle.
 
 ### Flux 1 : création d'acteurs
