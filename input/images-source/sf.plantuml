@@ -1,0 +1,88 @@
+@startuml
+
+
+class Note {
+ - idNote : Identifiant [0..1]
+ - type : Code
+ - restrictionAudience : Code [0..1]
+ - dateHeureCreation : DateHeure [0..1]
+ - description : Texte [0..1]
+ - pieceJoint : ObjetBinaire [1..*]
+ - urgenceNote : Indicateur [0..1]
+}
+
+class AuteurNote {
+ - idAuteurNote : Identifiant [0..1]
+Contrainte auteur:L'auteur de la note peut être un professionnel, une personne tierce, une entité géographique, une ressource matérielle ou la personne prise en charge.
+Contrainte attribut obligatoire auteur: L'identifiant de l'auteur doit être connu. S'il n'est pas connu, doivent être renseignés le nom et le pénom lorsque l'auteur est une personne, le libellé lorsque l'auteur est une ressource matérielle, la dénomination lorsque l'auteur est une entité géographique.
+}
+
+class RessourceMaterielle {
+ - libellé : Texte [0..1]
+ - reference : Texte [0..1]
+}
+
+class PersonneTierce {
+ - idPersonneTierce : Identifiant [0..1]
+ - adresse : Adresse [*]
+ - telecommunication : Telecomunication [*]
+}
+
+class Professionnel {
+ - idPP : Identifiant [0..1]
+ - adresseCorrespondance : Adresse [*]
+ - telecommunication : Telecomunication [*]
+}
+
+class EntiteGeographique {
+ - numFINESS : Identifiant [0..1]
+ - secteurActivite : Code [0..1]
+ - adresseEG : Adresse [*]
+ - telecommunication : Telecomunication [*]
+ - denominationEG : Texte [0..1]
+}
+
+class PersonnePriseEnCharge {
+ - idPersonnePriseEnCharge : Identifiant [0..1]
+ - adresse : Adresse [*]
+ - telecommunication : Telecomunication [*]
+}
+
+class ExerciceProfessionnel {
+ - profession : Code [0..1]
+}
+
+class PersonnePhysique {
+ - nomFamille : Texte [0..1]
+ - prenomUsuel : Texte [0..1]
+}
+
+class Patient {
+ - idPatient : Identifiant [0..1]
+ - telecommunication : Telecommunication [*]
+ - adresseCorrespondance : Adresse [*]
+}
+
+
+
+CreationNote "1" *--> "1" Note 
+Note "1" *--> "1" AuteurNote 
+
+
+AuteurNote "0..1" o--> "0..1" RessourceMaterielle
+AuteurNote "0..1" o--> "0..1" PersonneTierce
+AuteurNote "0..1" o--> "0..1" Professionnel
+AuteurNote "0..1" o--> "0..1" EntiteGeographique
+AuteurNote "0..1" o--> "0..1" PersonnePriseEnCharge
+
+
+PersonnePriseEnCharge "1" o--> "0..1" Patient
+Professionnel "0..1" o--> "*" ExerciceProfessionnel
+
+
+PersonneTierce "1" o--> "1" PersonnePhysique
+Professionnel "1" o--> "1" PersonnePhysique
+PersonnePriseEnCharge "1" o--> "1" PersonnePhysique
+Patient "1" o--> "1" PersonnePhysique
+
+@enduml

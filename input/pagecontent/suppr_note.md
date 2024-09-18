@@ -15,8 +15,6 @@ Si la suppression de la note est correctement effectuée, le système gestionnai
 
 Il est recommandé de ne pas permettre la suppression du sujet et de l’auteur référencés par le « DocumentReference » qui peuvent être référencés par d’autres notes.
 
-
-
 <div class="figure" style="width:100%;">
     <p>{% include 3-suppr.svg %}</p>
 </div>
