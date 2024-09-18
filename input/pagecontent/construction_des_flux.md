@@ -7,7 +7,9 @@ Deux options sont proposées pour la construction des flux :
 
 Le gestionnaire doit implémenter les deux options.
 
-Cette section présente la construction de flux HTTP de l'API REST FHIR pour l'échange des informations identifiées dans les sections précédentes et mises en correspondance avec les éléments des ressources FHIR retenues. La Table ci-dessous liste les types de requête HTTP pour chaque flux identifié.
+Cette section présente la construction de flux HTTP de l'API REST FHIR pour l'échange des informations identifiées dans les sections précédentes et mises en correspondance avec les éléments des ressources FHIR retenues. 
+
+La Table ci-dessous liste les types de requête HTTP pour chaque flux identifié.
 
 | Nom du flux                     | Ressource FHIR R4                    | Requête http     |
 | ------------------------------- | ------------------------------------ | ---------------- |
