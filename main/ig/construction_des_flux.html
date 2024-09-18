@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Construction Des Flux - Cahier De Liaison v0.1.0</title>
+    <title>Construction Des Flux - Cahier De Liaison v3.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.1"}
-    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.1"}
+    h3,h4,h5,h6{--heading-prefix:"3.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Cahier De Liaison</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">3.0.0 - ci-build
 
 
             </span>
@@ -86,8 +86,11 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
+  <li>
+    <a href="specifications_fonctionnelles.html">Volume 1 - Etude fonctionnelle</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description des flux
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2 - Détail des transactions
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -95,10 +98,16 @@
         <a href="construction_des_flux.html">Construction des flux</a>
       </li>
       <li>
-        <a href="st_flux1.html">Flux 01</a>
+        <a href="creation_note.html">Création d&apos;une note</a>
       </li>
       <li>
-        <a href="st_flux2.html">Flux 02</a>
+        <a href="maj_note.html">M-à-j d&apos;une note</a>
+      </li>
+      <li>
+        <a href="suppr_note.html">Suppression d&apos;une note</a>
+      </li>
+      <li>
+        <a href="recherche_note.html">Recherche d&apos;une note</a>
       </li>
     </ul>
   </li>
@@ -128,7 +137,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="st_flux1.html">next&gt;</a>
+          | <a href="creation_note.html">next&gt;</a>
 
           </span>
 
@@ -150,7 +159,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Cahier De Liaison - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/cdl/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Cahier De Liaison - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/cdl/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Construction Des Flux</h2>
   
 
@@ -166,20 +175,112 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#flux-1" id="markdown-toc-flux-1">Flux 1</a></li>
-  <li><a href="#flux-2" id="markdown-toc-flux-2">Flux 2</a></li>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="construction-des-flux">Construction des flux</h3>
+
+<p>Deux options sont proposées pour la construction des flux :</p>
+
+<ul>
+  <li>La première (option Restful) consiste à assurer la création et la mise à jour d’une note par des requêtes POST et PUT de la ressource « DocumentReference ». Cette option implique la définition de flux permettant de gérer les acteurs impliqués dans les notes, c’est-à-dire l’auteur et le sujet de la note. Chaque ressource (« Patient », « Practitioner », « PractitionerRole », « RelatedPerson », « Organization » et « Device ») pourra ainsi être créée ou mise à jour.</li>
+  <li>La seconde (option transaction) consiste à introduire une transaction permettant d’encapsuler les différentes ressources nécessaires dans un Bundle.</li>
 </ul>
 
-</div>
-<h3 id="flux-1">Flux 1</h3>
+<p>Le gestionnaire doit implémenter les deux options.</p>
 
-<p>Description du flux avec schémas et liens hypertextes vers le  <a href="st_flux1.html">flux 01</a></p>
+<p>Cette section présente la construction de flux HTTP (de l’API REST FHIR[^18]) pour l’échange des informations identifiées dans les sections précédentes et mises en correspondance avec les éléments des ressources FHIR retenues. La Table ci-dessous liste les types de requête HTTP pour chaque flux identifié.</p>
 
-<h3 id="flux-2">Flux 2</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Nom du flux</th>
+      <th>Ressource FHIR R4</th>
+      <th>Requête http</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Flux 1a - CreationActeurRestful</td>
+      <td>Profils FrPatient, FrRelatedPerson du package<em>.fhir.fr.core</em>,Profils ASPractitioner, ASPractitionerRole ASOrganization du package ans.fhir.fr.annuaire ansi que la ressource Device</td>
+      <td>HTTP POST</td>
+    </tr>
+    <tr>
+      <td>Flux 1b - CreationNoteRestful</td>
+      <td>Profil CdL_DocumentReferenceCdL</td>
+      <td>HTTP POST</td>
+    </tr>
+    <tr>
+      <td>Flux 1c - CreationNoteTransaction</td>
+      <td>Profil CdL_BundleCreationNoteCdL</td>
+      <td>HTTP POST</td>
+    </tr>
+    <tr>
+      <td>Flux 2a - MAJActeurRestful</td>
+      <td>Idem Flux 1a - CreationActeurRestful</td>
+      <td>HTTP PUT</td>
+    </tr>
+    <tr>
+      <td>Flux 2b - MAJNoteRestful</td>
+      <td>Idem Flux 1b - CreationNoteRestful</td>
+      <td>HTTP PUT</td>
+    </tr>
+    <tr>
+      <td>Flux 2c - MAJNoteTransaction</td>
+      <td>Profil CdL_BundleMAJNoteCdL</td>
+      <td>HTTP POST</td>
+    </tr>
+    <tr>
+      <td>Flux 3 - SuppressionNote (optionnel)</td>
+      <td>Idem Flux 1b - CreationNoteRestful</td>
+      <td>HTTP DELETE</td>
+    </tr>
+    <tr>
+      <td>Flux 4 - RechercheNotes</td>
+      <td>Idem Flux 1b - CreationNoteRestful</td>
+      <td>HTTP GET</td>
+    </tr>
+    <tr>
+      <td>Flux 5 - ReponseRechercheNotes </td>
+      <td>Profil CdL_BundleResultatRechercheNotesCdL</td>
+      <td>Réponse à la requête</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>Description du flux avec schémas et liens hypertextes vers le  <a href="st_flux2.html">flux 02</a></p>
+<h4 id="flux-1---création-note">Flux 1 - Création note</h4>
+
+<p>C’est le flux d’alimentation du cahier de liaison avec une nouvelle note.</p>
+
+<p>Il est composé de trois flux distincs :</p>
+
+<ul>
+  <li>Les flux 1a - CreationActeurRestful et 1b - CreationNoteRestful : ces deux flux ont été dissociés pour séparer la création des acteurs de la création des notes dans l’option de construction Restful.</li>
+  <li>Le flux 1c - CreationNoteTransation : ce flux a été dissocié des flux 1a et 1b car il correspond à la création d’une note dans l’option de construction Transaction</li>
+</ul>
+
+<h4 id="flux-2---mise-à-jour-dune-note">Flux 2 - Mise à jour d’une note</h4>
+
+<p>C’est le flux de mise à jour d’une note.</p>
+
+<p>Il est composé de trois flux distincs :</p>
+
+<ul>
+  <li>Les flux 2a - MAJActeurRestful et 2b - MAJNoteRestful : ces deux flux ont été dissociés pour séparer la mise à jour des acteurs de la mise à jour d’une note dans l’option de construction Restful.</li>
+  <li>Le Flux 2c - MAJNoteTransaction : ce flux a été dissocié pour séparer les mises à jour dans l’option de construction Transaction</li>
+</ul>
+
+<h4 id="flux-3---suppression-dune-note">Flux 3 - Suppression d’une note</h4>
+
+<p>C’est le flux de suppression d’une note.</p>
+
+<h4 id="flux-4---recherche-de-notes">Flux 4 - Recherche de notes</h4>
+
+<p>C’est le flux de recherche multicritères de notes dans le cahier de liaison.</p>
+
+<h4 id="flux-5---réponse-à-la-recherche-de-notes">Flux 5 - Réponse à la recherche de notes</h4>
+
+<p>Ce flux retourne le résultat de la recherche de notes répondant aux critères envoyés dans le flux précédent.</p>
 
 
 
@@ -211,7 +312,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="st_flux1.html">next&gt;</a>
+                <a href="creation_note.html">next&gt;</a>
 
               </td>
             </tr>
@@ -221,7 +322,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 07:59+0000">2024-06-26</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 18, 2024 14:02+0000">2024-09-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

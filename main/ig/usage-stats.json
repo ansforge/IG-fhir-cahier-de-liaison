@@ -1,6 +1,6 @@
 {
   "package": "ans.fhir.fr.cdl",
-  "version": "0.1.0",
+  "version": "3.0.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -15,7 +15,7 @@
     "Bundle": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note",
-        "title": "Bundle de Creation de note"
+        "title": "Bundle de création d\u0027une note"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note",
@@ -29,7 +29,7 @@
     "DocumentReference": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference",
-        "title": "CdL_DocumentReferenceCdL"
+        "title": "DocumentReference Cahier de Liaison"
       }
     ]
   },
@@ -48,6 +48,13 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource",
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -68,6 +75,14 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
+      "Bundle.entry.resource.name",
+      "Patient.name"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-ext-is-emergency": [
       "DocumentReference"

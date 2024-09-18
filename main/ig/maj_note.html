@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Flux 02 - Cahier De Liaison v0.1.0</title>
+    <title>M-à-j d&#39;une note - Cahier De Liaison v3.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.3"}
-    h3,h4,h5,h6{--heading-prefix:"2.3"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.3"}
+    h3,h4,h5,h6{--heading-prefix:"3.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Cahier De Liaison</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">3.0.0 - ci-build
 
 
             </span>
@@ -86,8 +86,11 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
+  <li>
+    <a href="specifications_fonctionnelles.html">Volume 1 - Etude fonctionnelle</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description des flux
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2 - Détail des transactions
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -95,10 +98,16 @@
         <a href="construction_des_flux.html">Construction des flux</a>
       </li>
       <li>
-        <a href="st_flux1.html">Flux 01</a>
+        <a href="creation_note.html">Création d&apos;une note</a>
       </li>
       <li>
-        <a href="st_flux2.html">Flux 02</a>
+        <a href="maj_note.html">M-à-j d&apos;une note</a>
+      </li>
+      <li>
+        <a href="suppr_note.html">Suppression d&apos;une note</a>
+      </li>
+      <li>
+        <a href="recherche_note.html">Recherche d&apos;une note</a>
       </li>
     </ul>
   </li>
@@ -120,15 +129,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques.html'><b>Specifications Techniques</b></a></li><li><b>Flux 02</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques.html'><b>Specifications Techniques</b></a></li><li><b>M-à-j d'une note</b></li>
 
           <span style="float:right;">
 
-            <a href="st_flux1.html">&lt;prev</a> | 
+            <a href="creation_note.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="artifacts.html">next&gt;</a>
+          | <a href="suppr_note.html">next&gt;</a>
 
           </span>
 
@@ -150,8 +159,8 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Cahier De Liaison - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/cdl/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Flux 02</h2>
+  <!--ReleaseHeader--><p id="publish-box">Cahier De Liaison - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/cdl/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>M-à-j d&#39;une note</h2>
   
 
 
@@ -166,21 +175,45 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#nom-du-flux" id="markdown-toc-nom-du-flux">Nom du flux</a></li>
-  <li><a href="#construction-du-flux" id="markdown-toc-construction-du-flux">Construction du flux</a></li>
-</ul>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="flux-2--mise-à-jour-dune-note">Flux 2 : Mise à jour d’une note</h3>
 
+<p>Ce flux permet au créateur d’une note, qu’il soit un professionnel, un établissement, une personne tierce, un équipement ou la personne prise en charge, de corriger ou de modifier sa note. Les informations véhiculées dans ce flux sont similaires à celles relatives à la note, véhiculées dans le flux 1 de création de note, l’identifiant de la note idNote étant obligatoire.
+La gestion des droits d’accès est hors champs des présentes spécifications. Il est tout de même à noter que pour des raisons d’imputabilité, il est recommandé qu’une note ne puisse être modifiée que par son auteur.</p>
+
+<h4 id="option-restful">Option RestFUL</h4>
+
+<p>Le flux 2b de mise à jour est une requête HTTP PUT reposant sur l’interaction « update » de FHIR . La ressource « DocumentReference » constitue le corps de la requête. La mise à jour nécessite de préciser l’identifiant logique de la ressource à mettre à jour. 
+Si la mise à jour de la note est correctement effectuée, le système gestionnaire retourne un code HTTP 200 ok.
+A la mise à jour de la note, le gestionnaire incrémente le numéro de version de la ressource (DocumentReference.meta.versionID) et indique la date de la mise à jour au niveau de DocumentReference.meta.LastUpdated.</p>
+
+<p>Les requêtes de création et de mise à jour sont envoyées au gestionnaire :</p>
+
+<div class="figure" style="width:100%;">
+    <p><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="179px" preserveAspectRatio="none" style="width:738px;height:179px;background:#FFFFFF;" version="1.1" viewBox="0 0 738 179" width="738px" zoomAndPan="magnify"><defs /><g><line style="stroke:#4169E1;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="127" x2="127" y1="36.2969" y2="172.8281" /><line style="stroke:#4169E1;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="612" x2="612" y1="36.2969" y2="172.8281" /><rect fill="#FFFFFF" height="30.2969" rx="10" ry="10" style="stroke:#4169E1;stroke-width:0.5;" width="205" x="25" y="5" /><text fill="#000000" font-family="arial" font-size="14" lengthAdjust="spacing" textLength="191" x="32" y="24.9951">Consommateur de contenu</text><rect fill="#FFFFFF" height="30.2969" rx="10" ry="10" style="stroke:#4169E1;stroke-width:0.5;" width="239" x="493" y="5" /><text fill="#000000" font-family="arial" font-size="14" lengthAdjust="spacing" textLength="225" x="500" y="24.9951">Gestionnaire de cahier de liaison</text><polygon fill="#000000" points="600.5,63.4297,610.5,67.4297,600.5,71.4297,604.5,67.4297" style="stroke:#000000;stroke-width:1.0;" /><line style="stroke:#000000;stroke-width:1.0;" x1="127.5" x2="606.5" y1="67.4297" y2="67.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="134.5" y="62.3638">Flux 1b</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="149" x="183.5" y="62.3638">CreationNoteRestful</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="336.5" y="62.3638">-</text><text fill="#B22222" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="250" x="345.5" y="62.3638">HTTP POST [base]/DocumentReference</text><polygon fill="#000000" points="138.5,92.5625,128.5,96.5625,138.5,100.5625,134.5,96.5625" style="stroke:#000000;stroke-width:1.0;" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="132.5" x2="611.5" y1="96.5625" y2="96.5625" /><text fill="#B22222" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="123" x="144.5" y="91.4966">HTTP 201 CREATED</text><polygon fill="#000000" points="600.5,121.6953,610.5,125.6953,600.5,129.6953,604.5,125.6953" style="stroke:#000000;stroke-width:1.0;" /><line style="stroke:#000000;stroke-width:1.0;" x1="127.5" x2="606.5" y1="125.6953" y2="125.6953" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="134.5" y="120.6294">Flux 2a</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="114" x="183.5" y="120.6294">MAJNoteRestful</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="301.5" y="120.6294">-</text><text fill="#B22222" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="266" x="310.5" y="120.6294">HTTP PUT [base]/DocumentReference/[id]</text><polygon fill="#000000" points="138.5,150.8281,128.5,154.8281,138.5,158.8281,134.5,154.8281" style="stroke:#000000;stroke-width:1.0;" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="132.5" x2="611.5" y1="154.8281" y2="154.8281" /><text fill="#B22222" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="144.5" y="149.7622">HTTP 200 OK</text></g></svg></p>
 </div>
 
-<h3 id="nom-du-flux">Nom du flux</h3>
+<h4 id="option-transaction">Option transaction</h4>
 
-<p>Description du flux</p>
+<p>Le Bundle « CdL_BundleMAJNoteCdL» peut contenir exactement les mêmes ressources que le « CdL_BundleCreationNoteCdL». Le Bundle contient à minima une ressource DocumentReference ; concernant les acteurs, seules la ou les ressources qui doivent être créées ou mises à jour sont inclues dans le bundle. Ce Bundle constitue le corps de la requête HTTP POST.
+Pour chaque élément entry de la ressource Bundle, le paramètre request.method sera positionné à PUT pour chaque ressource à mettre à jour ou à POST pour chaque nouvelle ressource à créer sur le serveur :</p>
 
-<h3 id="construction-du-flux">Construction du flux</h3>
+<ul>
+  <li>
+    <p>Pour la ressource DocumentReference, l’attribut request.method sera positionné à PUT,</p>
+  </li>
+  <li>
+    <p>Pour les ressources référencées dans DocumentReference comme sujet et auteur de la note, elles seront inclues dans le Bundle si elles n’existent pas sur le serveur ; l’attribut request.method sera alors positionné à POST s’il s’agit d’un nouvel acteur ou à PUT pour mettre à jour un acteur.</p>
+  </li>
+</ul>
 
-<p>Explication de comment doit être construit le flux</p>
+<p>La gestion des droits de création et de modification des acteurs est à la charge du gestionnaire</p>
+
+<div class="figure" style="width:100%;">
+    <p><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="179px" preserveAspectRatio="none" style="width:684px;height:179px;background:#FFFFFF;" version="1.1" viewBox="0 0 684 179" width="684px" zoomAndPan="magnify"><defs /><g><line style="stroke:#4169E1;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="127" x2="127" y1="36.2969" y2="172.8281" /><line style="stroke:#4169E1;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="558" x2="558" y1="36.2969" y2="172.8281" /><rect fill="#FFFFFF" height="30.2969" rx="10" ry="10" style="stroke:#4169E1;stroke-width:0.5;" width="205" x="25" y="5" /><text fill="#000000" font-family="arial" font-size="14" lengthAdjust="spacing" textLength="191" x="32" y="24.9951">Consommateur de contenu</text><rect fill="#FFFFFF" height="30.2969" rx="10" ry="10" style="stroke:#4169E1;stroke-width:0.5;" width="239" x="439" y="5" /><text fill="#000000" font-family="arial" font-size="14" lengthAdjust="spacing" textLength="225" x="446" y="24.9951">Gestionnaire de cahier de liaison</text><polygon fill="#000000" points="546.5,63.4297,556.5,67.4297,546.5,71.4297,550.5,67.4297" style="stroke:#000000;stroke-width:1.0;" /><line style="stroke:#000000;stroke-width:1.0;" x1="127.5" x2="552.5" y1="67.4297" y2="67.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="134.5" y="62.3638">Flux 1b</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="182" x="183.5" y="62.3638">CreationNoteTransaction</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="369.5" y="62.3638">-</text><text fill="#B22222" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="163" x="378.5" y="62.3638">HTTP POST [base]/Bundle</text><polygon fill="#000000" points="138.5,92.5625,128.5,96.5625,138.5,100.5625,134.5,96.5625" style="stroke:#000000;stroke-width:1.0;" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="132.5" x2="557.5" y1="96.5625" y2="96.5625" /><text fill="#B22222" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="123" x="144.5" y="91.4966">HTTP 201 CREATED</text><polygon fill="#000000" points="546.5,121.6953,556.5,125.6953,546.5,129.6953,550.5,125.6953" style="stroke:#000000;stroke-width:1.0;" /><line style="stroke:#000000;stroke-width:1.0;" x1="127.5" x2="552.5" y1="125.6953" y2="125.6953" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="134.5" y="120.6294">Flux 2a</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="147" x="183.5" y="120.6294">MAJNoteTransaction</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="334.5" y="120.6294">-</text><text fill="#B22222" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="163" x="343.5" y="120.6294">HTTP POST [base]/Bundle</text><polygon fill="#000000" points="138.5,150.8281,128.5,154.8281,138.5,158.8281,134.5,154.8281" style="stroke:#000000;stroke-width:1.0;" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="132.5" x2="557.5" y1="154.8281" y2="154.8281" /><text fill="#B22222" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="123" x="144.5" y="149.7622">HTTP 201 CREATED</text></g></svg></p>
+</div>
 
 
 
@@ -204,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="st_flux1.html">&lt;prev</a>
+                <a href="creation_note.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -212,7 +245,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="artifacts.html">next&gt;</a>
+                <a href="suppr_note.html">next&gt;</a>
 
               </td>
             </tr>
@@ -222,7 +255,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 07:59+0000">2024-06-26</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 18, 2024 14:02+0000">2024-09-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

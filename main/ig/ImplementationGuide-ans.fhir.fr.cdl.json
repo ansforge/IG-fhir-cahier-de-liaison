@@ -2,15 +2,15 @@
   "resourceType" : "ImplementationGuide",
   "id" : "ans.fhir.fr.cdl",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.cdl</b></p><a name=\"ans.fhir.fr.cdl\"> </a><a name=\"hcans.fhir.fr.cdl\"> </a><a name=\"ans.fhir.fr.cdl-en-US\"> </a><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl",
-  "version" : "0.1.0",
+  "version" : "3.0.0",
   "name" : "CDL",
   "title" : "Cahier De Liaison",
   "status" : "draft",
-  "date" : "2024-06-26T07:59:37+00:00",
+  "date" : "2024-09-18T14:02:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -30,7 +30,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.5.0"
+    "version" : "6.0.2"
   },
   {
     "id" : "hl7ext",
@@ -46,19 +46,19 @@
     "id" : "ans_fhir_fr_annuaire",
     "uri" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire",
     "packageId" : "ans.fhir.fr.annuaire",
-    "version" : "1.0.0-ballot-3"
+    "version" : "1.0.1"
   },
   {
     "id" : "hl7_fhir_fr_core",
-    "uri" : "http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core",
+    "uri" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
     "packageId" : "hl7.fhir.fr.core",
-    "version" : "1.1.0"
+    "version" : "2.0.1"
   },
   {
     "id" : "ans_fr_nos",
     "uri" : "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos",
     "packageId" : "ans.fr.nos",
-    "version" : "1.1.0"
+    "version" : "1.3.0"
   }],
   "definition" : {
     "extension" : [{
@@ -349,7 +349,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
     },
     {
       "extension" : [{
@@ -640,13 +640,24 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/0d920958-b596-4b91-af67-9bafc707820b"
+      },
+      "name" : "0d920958-b596-4b91-af67-9bafc707820b",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/cdl-bundle-creation-note"
       },
-      "name" : "Bundle de Creation de note",
-      "description" : "Profil du bundle représentant le flux 1 de création de note du volet CdL",
+      "name" : "Bundle de création d'une note",
+      "description" : "Profil du bundle pour le flux 1 de création de note du volet CdL",
       "exampleBoolean" : false
     },
     {
@@ -658,7 +669,7 @@
         "reference" : "StructureDefinition/cdl-bundle-maj-note"
       },
       "name" : "Bundle de mise à jour d'une note",
-      "description" : "StructureDefinition du bundle représentant le flux 2 de mise à jour d'une note du volet CdL",
+      "description" : "Profil du bundle pour le flux 2 de mise à jour d'une note du volet CdL",
       "exampleBoolean" : false
     },
     {
@@ -670,19 +681,19 @@
         "reference" : "StructureDefinition/cdl-bundle-resultat-recherche-notes"
       },
       "name" : "Bundle résultat recherche notes",
+      "description" : "Profil du bundle de resultat de recherches d'une note",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/cdl-document-reference"
+        "reference" : "Bundle/cdl-bundle-creation-note"
       },
-      "name" : "CdL_DocumentReferenceCdL",
-      "description" : "Profil de la ressource DocumentReference pour le cahier de liaison",
-      "exampleBoolean" : false
+      "name" : "cdl-bundle-creation-note",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"
     },
     {
       "extension" : [{
@@ -730,6 +741,30 @@
       "name" : "CI-SIS Cahier-de-Liaison - GestionnaireCdL",
       "description" : "Le gestionnaire de cahier de liaison implémente le cahier de liaison",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cdl-document-reference"
+      },
+      "name" : "DocumentReference Cahier de Liaison",
+      "description" : "Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/ConceptMap-mos-cdl"
+      },
+      "name" : "MOS to FHIR CDL",
+      "description" : "Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne sont pas présents dans ce guide.",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
@@ -746,6 +781,15 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Accueil",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "specifications_fonctionnelles.html"
+        }],
+        "nameUrl" : "specifications_fonctionnelles.html",
+        "title" : "Spécifications fonctionnelles",
         "generation" : "markdown"
       },
       {
@@ -768,19 +812,37 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "st_flux1.html"
+            "valueUrl" : "creation_note.html"
           }],
-          "nameUrl" : "st_flux1.html",
-          "title" : "Flux 01",
+          "nameUrl" : "creation_note.html",
+          "title" : "Création d'une note",
           "generation" : "markdown"
         },
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "st_flux2.html"
+            "valueUrl" : "maj_note.html"
           }],
-          "nameUrl" : "st_flux2.html",
-          "title" : "Flux 02",
+          "nameUrl" : "maj_note.html",
+          "title" : "M-à-j d'une note",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "suppr_note.html"
+          }],
+          "nameUrl" : "suppr_note.html",
+          "title" : "Suppression d'une note",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "recherche_note.html"
+          }],
+          "nameUrl" : "recherche_note.html",
+          "title" : "Recherche d'une note",
           "generation" : "markdown"
         }]
       }]

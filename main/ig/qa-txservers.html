@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for CDL</h1>
- <p>Generated Wed Jun 26 08:00:22 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.cdl#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/cdl">https://interop.esante.gouv.fr/ig/fhir/cdl</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/cdl/history.html">history</a>))</p>
+ <p>Generated Wed Sep 18 14:03:26 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.cdl#3.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/cdl">https://interop.esante.gouv.fr/ig/fhir/cdl</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/cdl/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -22,10 +22,11 @@
 </ul>
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
 <ul>
-  <li>(No Errors/Reports - all good)</li>
+  <li>https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1 uses the system [https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
 </ul>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 4. Code Systems used: </p>
+<a href="http://tx.fhir.org/r4"></a>
+<p>Use Count: 10. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -42,10 +43,24 @@
     </th>
   </tr>
   <tr>
+    <td>https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>urn:ietf:bcp:13</td>
     <td>0</td>
-    <td>4</td>
+    <td>7</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>urn:ietf:bcp:47</td>
+    <td>0</td>
+    <td>2</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>
+    </td>
   </tr>
 </table>
 </body>

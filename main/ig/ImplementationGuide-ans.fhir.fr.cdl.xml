@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ans.fhir.fr.cdl"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.cdl</b></p><a name="ans.fhir.fr.cdl"> </a><a name="hcans.fhir.fr.cdl"> </a><a name="ans.fhir.fr.cdl-en-US"> </a><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl"/>
-  <version value="0.1.0"/>
+  <version value="3.0.0"/>
   <name value="CDL"/>
   <title value="Cahier De Liaison"/>
   <status value="draft"/>
-  <date value="2024-06-26T07:59:37+00:00"/>
+  <date value="2024-09-18T14:02:37+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -28,7 +28,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.5.0"/>
+    <version value="6.0.2"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -41,17 +41,17 @@
   <dependsOn id="ans_fhir_fr_annuaire">
     <uri value="https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire"/>
     <packageId value="ans.fhir.fr.annuaire"/>
-    <version value="1.0.0-ballot-3"/>
+    <version value="1.0.1"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_fr_core">
-    <uri value="http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core"/>
+    <uri value="https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"/>
     <packageId value="hl7.fhir.fr.core"/>
-    <version value="1.1.0"/>
+    <version value="2.0.1"/>
   </dependsOn>
   <dependsOn id="ans_fr_nos">
     <uri value="https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"/>
     <packageId value="ans.fr.nos"/>
-    <version value="1.1.0"/>
+    <version value="1.3.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -263,7 +263,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -475,13 +475,23 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/0d920958-b596-4b91-af67-9bafc707820b"/>
+      </reference>
+      <name value="0d920958-b596-4b91-af67-9bafc707820b"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/cdl-bundle-creation-note"/>
       </reference>
-      <name value="Bundle de Creation de note"/>
-      <description value="Profil du bundle représentant le flux 1 de création de note du volet CdL"/>
+      <name value="Bundle de création d'une note"/>
+      <description value="Profil du bundle pour le flux 1 de création de note du volet CdL"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -492,7 +502,7 @@
         <reference value="StructureDefinition/cdl-bundle-maj-note"/>
       </reference>
       <name value="Bundle de mise à jour d'une note"/>
-      <description value="StructureDefinition du bundle représentant le flux 2 de mise à jour d'une note du volet CdL"/>
+      <description value="Profil du bundle pour le flux 2 de mise à jour d'une note du volet CdL"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -503,18 +513,18 @@
         <reference value="StructureDefinition/cdl-bundle-resultat-recherche-notes"/>
       </reference>
       <name value="Bundle résultat recherche notes"/>
+      <description value="Profil du bundle de resultat de recherches d'une note"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cdl-document-reference"/>
+        <reference value="Bundle/cdl-bundle-creation-note"/>
       </reference>
-      <name value="CdL_DocumentReferenceCdL"/>
-      <description value="Profil de la ressource DocumentReference pour le cahier de liaison"/>
-      <exampleBoolean value="false"/>
+      <name value="cdl-bundle-creation-note"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -559,6 +569,28 @@
       <description value="Le gestionnaire de cahier de liaison implémente le cahier de liaison"/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cdl-document-reference"/>
+      </reference>
+      <name value="DocumentReference Cahier de Liaison"/>
+      <description value="Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/ConceptMap-mos-cdl"/>
+      </reference>
+      <name value="MOS to FHIR CDL"/>
+      <description value="Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne sont pas présents dans ce guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
         <valueUrl value="toc.html"/>
@@ -572,6 +604,14 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Accueil"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="specifications_fonctionnelles.html"/>
+        </extension>
+        <nameUrl value="specifications_fonctionnelles.html"/>
+        <title value="Spécifications fonctionnelles"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -591,18 +631,34 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="st_flux1.html"/>
+            <valueUrl value="creation_note.html"/>
           </extension>
-          <nameUrl value="st_flux1.html"/>
-          <title value="Flux 01"/>
+          <nameUrl value="creation_note.html"/>
+          <title value="Création d'une note"/>
           <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="st_flux2.html"/>
+            <valueUrl value="maj_note.html"/>
           </extension>
-          <nameUrl value="st_flux2.html"/>
-          <title value="Flux 02"/>
+          <nameUrl value="maj_note.html"/>
+          <title value="M-à-j d'une note"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="suppr_note.html"/>
+          </extension>
+          <nameUrl value="suppr_note.html"/>
+          <title value="Suppression d'une note"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="recherche_note.html"/>
+          </extension>
+          <nameUrl value="recherche_note.html"/>
+          <title value="Recherche d'une note"/>
           <generation value="markdown"/>
         </page>
       </page>
