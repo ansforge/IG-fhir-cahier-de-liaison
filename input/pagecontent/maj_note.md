@@ -18,6 +18,7 @@ Les requêtes de création et de mise à jour sont envoyées au gestionnaire :
 #### Option transaction
 
 Le Bundle « CdL_BundleMAJNoteCdL» peut contenir exactement les mêmes ressources que le « CdL_BundleCreationNoteCdL». Le Bundle contient à minima une ressource DocumentReference ; concernant les acteurs, seules la ou les ressources qui doivent être créées ou mises à jour sont inclues dans le bundle. Ce Bundle constitue le corps de la requête HTTP POST.
+
 Pour chaque élément entry de la ressource Bundle, le paramètre request.method sera positionné à PUT pour chaque ressource à mettre à jour ou à POST pour chaque nouvelle ressource à créer sur le serveur :
 
 * Pour la ressource DocumentReference, l’attribut request.method sera positionné à PUT,
