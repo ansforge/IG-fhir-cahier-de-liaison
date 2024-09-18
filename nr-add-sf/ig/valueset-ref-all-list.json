@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.620"],
       "uses" : {
       },
-      "StructureDefinition-cdl-bundle-resultat-recherche-notes.html" : "Bundle résultat recherche notes",
       "StructureDefinition-cdl-bundle-maj-note.html" : "Bundle de mise à jour d'une note",
+      "StructureDefinition-cdl-bundle-resultat-recherche-notes.html" : "Bundle résultat recherche notes",
       "StructureDefinition-cdl-bundle-creation-note.html" : "Bundle de création d'une note"
     },
     {
@@ -126,8 +126,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.624"],
       "uses" : {
       },
-      "StructureDefinition-cdl-bundle-resultat-recherche-notes.html" : "Bundle résultat recherche notes",
       "StructureDefinition-cdl-bundle-maj-note.html" : "Bundle de mise à jour d'une note",
+      "StructureDefinition-cdl-bundle-resultat-recherche-notes.html" : "Bundle résultat recherche notes",
       "StructureDefinition-cdl-bundle-creation-note.html" : "Bundle de création d'une note"
     },
     {
@@ -142,10 +142,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-cdl-bundle-resultat-recherche-notes.html" : "Bundle résultat recherche notes",
-      "StructureDefinition-cdl-document-reference.html" : "DocumentReference Cahier de Liaison",
       "StructureDefinition-cdl-bundle-maj-note.html" : "Bundle de mise à jour d'une note",
-      "StructureDefinition-cdl-bundle-creation-note.html" : "Bundle de création d'une note"
+      "StructureDefinition-cdl-bundle-resultat-recherche-notes.html" : "Bundle résultat recherche notes",
+      "StructureDefinition-cdl-bundle-creation-note.html" : "Bundle de création d'une note",
+      "StructureDefinition-cdl-document-reference.html" : "DocumentReference Cahier de Liaison"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
@@ -173,8 +173,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.622"],
       "uses" : {
       },
-      "StructureDefinition-cdl-bundle-resultat-recherche-notes.html" : "Bundle résultat recherche notes",
       "StructureDefinition-cdl-bundle-maj-note.html" : "Bundle de mise à jour d'une note",
+      "StructureDefinition-cdl-bundle-resultat-recherche-notes.html" : "Bundle résultat recherche notes",
       "StructureDefinition-cdl-bundle-creation-note.html" : "Bundle de création d'une note"
     },
     {
