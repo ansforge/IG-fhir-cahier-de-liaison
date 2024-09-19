@@ -287,6 +287,7 @@ Note : Ce diagramme de classe est également utilisé pour modéliser les Flux 2
     <p>{% include sf.svg %}</p>
 </div>
 
+{%include sf.svg%}
 
 Figure 9: Diagramme de classe du flux « CréationNote»
 
