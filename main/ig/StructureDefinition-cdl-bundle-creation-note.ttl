@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CdLBundleCreationNote"] ; # 
   fhir:title [ fhir:v "Bundle de création d'une note"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-18T14:02:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-19T15:14:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;

@@ -182,17 +182,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Ce flux permet au créateur d’une note, qu’il soit un professionnel, un établissement, une personne tierce, un équipement ou la personne prise en charge, de supprimer une note créée par erreur. Les informations véhiculées dans ce flux sont celles nécessaires à l’identification de la note.</p>
 
-<p>Ce flux est optionnel. Pour des raisons de traçabilité, il est recommandé au gestionnaire du cahier de liaison de privilégier la désactivation d’une note (mise à jour du statut de la note grâce à l’élément DocumentReference.status) plutôt que sa suppression.
-Si ce flux est implémenté, pour des raisons d’imputabilité, il est recommandé qu’une note ne puisse être supprimée que par son auteur.</p>
+<p>Ce flux est optionnel. Pour des raisons de traçabilité, il est recommandé au gestionnaire du cahier de liaison de privilégier la désactivation d’une note (mise à jour du statut de la note grâce à l’élément DocumentReference.status) plutôt que sa suppression.</p>
 
-<p>La suppression concerne les informations qui se rapportent directement à la note, c’est-à-dire la ressource « DocumentReference ». La suppression d’une note est faite à travers une requête HTTP DELETE.
-Il est possible d’utiliser l’identifiant attribué par le système source, le « masterIdentifier » pour cette opération. Pour ce faire il faut supporter la suppression conditionnelle de FHIR  en employant le paramètre de recherche « identifier ».
-Si la suppression de la note est correctement effectuée, le système gestionnaire du cahier de liaison retourne un code HTTP 200 ok. Pour des informations sur les autres codes HTTP (HTTP status codes) consultez la documentation relative à l’interaction de suppression, « delete » de l’API REST FHIR . 
-Il est recommandé de ne pas permettre la suppression du sujet et de l’auteur référencés par le « DocumentReference » qui peuvent être référencés par d’autres notes.</p>
+<p>Si ce flux est implémenté, pour des raisons d’imputabilité, il est recommandé qu’une note ne puisse être supprimée que par son auteur.</p>
+
+<p>La suppression concerne les informations qui se rapportent directement à la note, c’est-à-dire la ressource « DocumentReference ». La suppression d’une note est faite à travers une requête HTTP DELETE.</p>
+
+<p>Il est possible d’utiliser l’identifiant attribué par le système source, le « masterIdentifier » pour cette opération. Pour ce faire il faut supporter la suppression conditionnelle de FHIR  en employant le paramètre de recherche « identifier ».</p>
+
+<p>Si la suppression de la note est correctement effectuée, le système gestionnaire du cahier de liaison retourne un code HTTP 200 ok. Pour des informations sur les autres codes HTTP (HTTP status codes) consultez la documentation relative à l’interaction de suppression, « delete » de l’API REST FHIR .</p>
+
+<p>Il est recommandé de ne pas permettre la suppression du sujet et de l’auteur référencés par le « DocumentReference » qui peuvent être référencés par d’autres notes.</p>
 
 <div class="figure" style="width:100%;">
     <p><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="121px" preserveAspectRatio="none" style="width:754px;height:121px;background:#FFFFFF;" version="1.1" viewBox="0 0 754 121" width="754px" zoomAndPan="magnify"><defs /><g><line style="stroke:#4169E1;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="127" x2="127" y1="36.2969" y2="114.5625" /><line style="stroke:#4169E1;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="628" x2="628" y1="36.2969" y2="114.5625" /><rect fill="#FFFFFF" height="30.2969" rx="10" ry="10" style="stroke:#4169E1;stroke-width:0.5;" width="205" x="25" y="5" /><text fill="#000000" font-family="arial" font-size="14" lengthAdjust="spacing" textLength="191" x="32" y="24.9951">Consommateur de contenu</text><rect fill="#FFFFFF" height="30.2969" rx="10" ry="10" style="stroke:#4169E1;stroke-width:0.5;" width="239" x="509" y="5" /><text fill="#000000" font-family="arial" font-size="14" lengthAdjust="spacing" textLength="225" x="516" y="24.9951">Gestionnaire de cahier de liaison</text><polygon fill="#000000" points="616.5,63.4297,626.5,67.4297,616.5,71.4297,620.5,67.4297" style="stroke:#000000;stroke-width:1.0;" /><line style="stroke:#000000;stroke-width:1.0;" x1="127.5" x2="622.5" y1="67.4297" y2="67.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="134.5" y="62.3638">Flux 3</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="134" x="175.5" y="62.3638">SuppresssionNote</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="5" x="313.5" y="62.3638">-</text><text fill="#B22222" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="289" x="322.5" y="62.3638">HTTP DELETE [base]/DocumentReference/[id]</text><polygon fill="#000000" points="138.5,92.5625,128.5,96.5625,138.5,100.5625,134.5,96.5625" style="stroke:#000000;stroke-width:1.0;" /><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="132.5" x2="627.5" y1="96.5625" y2="96.5625" /><text fill="#B22222" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="144.5" y="91.4966">HTTP 200 OK</text></g></svg></p>
 </div>
+
 
 
 
@@ -234,7 +239,7 @@ Il est recommandé de ne pas permettre la suppression du sujet et de l’auteur 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 18, 2024 14:02+0000">2024-09-18</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 19, 2024 15:14+0000">2024-09-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
