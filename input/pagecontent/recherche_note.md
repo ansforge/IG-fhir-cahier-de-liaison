@@ -26,15 +26,21 @@ Le paramètre « \_include » doit pouvoir être utilisé pour demander le ren
 
 Exemples de requêtes
 
+```
 GET http ://targetsystem.com/API/DocumentReference?\_include=\*&patient.identifier=1234567890112345678901&author:Practitioner.identifier=80123456789
+```
 
 Rechercher les ressources de type DocumentReference dont le sujet et l'auteur portent respectivement les identifiants 1234567890112345678901 et 80123456789. Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par les ressources « DocumentReference » retournées.
 
+```
 GET http://targetsystem.com/API/DocumentReference?\_include=DocumentReference:subject&author:Practitioner.family=Dupont&author:Practitioner.given=Marie
+```
 
 Rechercher les ressources de type DocumentReference dont l'auteur a comme nom de famille « Dupont » et comme prénom « Marie ». Le résultat de la recherche devrait aussi inclure les ressources référencées par l'élément subject des ressources DocumentReference retournées, c'est-à-dire les ressources Patient.
 
+```
 GET http://targetsystem.com/API/DocumentReference?\_include=\*&date=ge2013-03-16&type=urn:oid:1.2.250.1.213.1.1.5.98\|OBS
+```
 
 Rechercher les ressources de type DocumentReference ayant été créées depuis le 16/03/2013 inclus et ayant comme type « Note d'observation » (code OBS du jeu de valeurs portant l'OID 1.2.250.1.213.1.1.5.98). Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par les ressources DocumentReference retournées.
 
