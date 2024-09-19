@@ -283,9 +283,11 @@ La Figure 9 présente le diagramme de classes modélisant les informations méti
 
 Note : Ce diagramme de classe est également utilisé pour modéliser les Flux 2 et 5.
 
-{%include sf.svg%}
-
-Figure 9: Diagramme de classe du flux « CréationNote»
+<div>
+<p>{% include sf.svg %}</p>
+<p>Figure 9: Diagramme de classe du flux « CréationNote»</p>
+<p></p>
+</div>
 
 Les tables ci-dessous définissent les attributs contenus dans le diagramme de classes de la Figure 7.
 
