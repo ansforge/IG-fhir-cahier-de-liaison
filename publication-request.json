@@ -5,7 +5,7 @@
     "path" : "https://interop.esante.gouv.fr/ig/fhir/cdl/3.0.0-ballot",
     "mode" : "working",
     "status" : "release",
-    "sequence" : "trial-use",
+    "sequence" : "for-comment",
     "desc" : "Publication 3.0.0-ballot du guide d'implémentation cahier de liaison",
     "descmd": "@release-notes.md",
     "ci-build" : "https://ansforge.github.io/IG-fhir-cdl-de-sante/main/ig",
