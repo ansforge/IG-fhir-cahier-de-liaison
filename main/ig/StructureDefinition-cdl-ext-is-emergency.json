@@ -9,7 +9,7 @@
   "version" : "3.0.0",
   "name" : "CdL_isEmergency",
   "status" : "draft",
-  "date" : "2024-10-30T13:59:47+00:00",
+  "date" : "2024-10-30T14:04:06+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -63,7 +63,6 @@
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
-      "isModifier" : false,
       "mapping" : [{
         "identity" : "rim",
         "map" : "n/a"
@@ -93,8 +92,6 @@
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
-      "isModifier" : false,
-      "isSummary" : false,
       "mapping" : [{
         "identity" : "rim",
         "map" : "n/a"
@@ -123,6 +120,7 @@
       "type" : [{
         "code" : "Extension"
       }],
+      "condition" : ["ele-1"],
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -136,11 +134,9 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
-      }],
-      "isModifier" : false,
-      "isSummary" : false
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
+      }]
     },
     {
       "id" : "Extension.url",
@@ -164,8 +160,6 @@
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
       "fixedUri" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-ext-is-emergency",
-      "isModifier" : false,
-      "isSummary" : false,
       "mapping" : [{
         "identity" : "rim",
         "map" : "N/A"
@@ -186,6 +180,7 @@
       "type" : [{
         "code" : "boolean"
       }],
+      "condition" : ["ele-1"],
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -194,9 +189,11 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "isModifier" : false,
-      "isSummary" : false,
       "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      },
+      {
         "identity" : "rim",
         "map" : "N/A"
       }]
