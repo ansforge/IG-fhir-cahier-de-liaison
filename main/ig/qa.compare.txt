@@ -1,7 +1,7 @@
 CDL : Validation Results
 =========================================
 
-err = 12, warn = 16, info = 19
+err = 12, warn = 11, info = 19
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.cdl#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/cdl)
  Build Errors : 0 / 6 / 0
@@ -12,10 +12,10 @@ Generated $--. FHIR version $-- for ans.fhir.fr.cdl#$-- (canonical = https://int
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/ConceptMap-ConceptMap-mos-cdl : 0 / 0 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cdl : 0 / 0 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/Patient-0d920958-b596-4b91-af67-9bafc707820b : 1 / 0 / 6
- /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note : 0 / 1 / 1
- /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note : 0 / 2 / 1
- /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes : 0 / 2 / 1
- /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-document-reference : 0 / 2 / 2
+ /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note : 0 / 0 / 1
+ /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note : 0 / 1 / 1
+ /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes : 0 / 1 / 1
+ /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-document-reference : 0 / 0 / 2
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency : 0 / 1 / 1
 </table>
 == n/a ==
@@ -65,16 +65,11 @@ INFORMATION: Patient/0d920958-b596-4b91-af67-9bafc707820b: Patient.extension[1].
 INFORMATION: Patient/0d920958-b596-4b91-af67-9bafc707820b: Patient.identifier[0].type: Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
 INFORMATION: Patient/0d920958-b596-4b91-af67-9bafc707820b: Patient.name[0].extension[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note.json ==
-WARNING: StructureDefinition/cdl-bundle-creation-note: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Bundle.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note.json ==
-WARNING: StructureDefinition/cdl-bundle-maj-note: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Bundle.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes.json ==
-WARNING: StructureDefinition/cdl-bundle-resultat-recherche-notes: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Bundle.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-resultat-recherche-notes'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cdl-document-reference.json ==
-WARNING: StructureDefinition/cdl-document-reference: StructureDefinition.snapshot.element[4].binding: The definition for the element 'DocumentReference.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/cdl-document-reference: StructureDefinition.snapshot.element[37].binding: The definition for the element 'DocumentReference.content.attachment.language' binds to the value set 'http://hl7.org/fhir/ValueSet/languages' which is experimental, but this structure is not labeled as experimental
 INFORMATION: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference'): The Implementation Guide contains no explicitly linked examples for this profile
 == fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-ext-is-emergency'): The Implementation Guide contains no examples for this extension
