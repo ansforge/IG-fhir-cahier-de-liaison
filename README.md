@@ -1,5 +1,7 @@
 Ce guide d'implémentation sera accessible à l'adresse https://interop.esante.gouv.fr/ig/fhir/cdl après publication. Pour l'heure, la version actuellement publiée est accessible [ici](esante.gouv.fr/volet-cahier-de-liaison).
 
+Publication en intégration continue : https://ansforge.github.io/IG-fhir-cahier-de-liaison/main/ig
+
 # Contexte
 
 ## Contexte métier du projet
