@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e3678dcf-ddd5-4e6b-9232-4612f69891ac-6",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e3678dcf-ddd5-4e6b-9232-4612f69891ac-6",
+  "id" : "339eed95-6c7f-44d3-bc78-969e35abbf2c-6",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/339eed95-6c7f-44d3-bc78-969e35abbf2c-6",
   "name" : "IntersectionCdLBundleMAJNoteAndCdLBundleMAJNote",
   "title" : "Intersection of Bundle de mise à jour d'une note And Bundle de mise à jour d'une note",
   "status" : "draft",
-  "date" : "2025-02-06T16:12:10+00:00",
+  "date" : "2025-02-06T16:12:43+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Bundle",
