@@ -36,6 +36,9 @@ pages:
             title: Suppression d'une note
         recherche_note.md:
             title: Recherche d'une note
+    changes.md:
+        title: Historique des changements
+
 menu:
     Accueil: index.html
     Volume 1 - Etude fonctionnelle: specifications_fonctionnelles.html
@@ -47,3 +50,4 @@ menu:
         Recherche d'une note: recherche_note.html
     Ressources de conformité: artifacts.html
     Documentation des IGs: new-tab https://interop.esante.gouv.fr/ig/documentation
+    Changements: changes.html
