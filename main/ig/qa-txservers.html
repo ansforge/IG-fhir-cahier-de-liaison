@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for CDL</h1>
- <p>Generated Wed Oct 30 14:05:19 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.cdl#3.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/cdl">https://interop.esante.gouv.fr/ig/fhir/cdl</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/cdl/history.html">history</a>))</p>
+ <p>Generated Thu Feb 06 16:13:00 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.cdl#3.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/cdl">https://interop.esante.gouv.fr/ig/fhir/cdl</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/cdl/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -21,6 +21,9 @@
   </li>
 </ul>
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
+<p>
+  <b>Decisions</b>
+</p>
 <table class="grid">
   <tr>
     <td>
@@ -40,6 +43,20 @@
     </td>
   </tr>
   <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
@@ -51,12 +68,12 @@
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>urn:ietf:bcp:47</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:bf501688-e329-4c6e-85b0-08d16d5fa871</td>
+    <td>urn:uuid:18a0a501-a493-470b-99fb-4278ce099b99</td>
     <td>urn:ietf:bcp:13</td>
     <td>auth = , candidates=http://tx.fhir.org/r4</td>
   </tr>
@@ -70,7 +87,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:7374f87d-de64-4b8e-acd0-8199e82240f9</td>
+    <td>urn:uuid:6265c6be-ba3a-40b6-b010-ac682c52aba5</td>
     <td>urn:ietf:bcp:13</td>
     <td>auth = , candidates=http://tx.fhir.org/r4</td>
   </tr>
@@ -91,7 +108,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:822418c5-c24b-4ee7-bb31-7d66a04b3cda</td>
+    <td>urn:uuid:b2f0f6c1-0451-4d72-9139-42447342683c</td>
     <td>urn:ietf:bcp:13</td>
     <td>auth = , candidates=http://tx.fhir.org/r4</td>
   </tr>
@@ -102,10 +119,17 @@
     <td>urn:ietf:bcp:13</td>
     <td>auth = , candidates=http://tx.fhir.org/r4</td>
   </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/languages|4.0.1</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir</td>
+  </tr>
 </table>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
 <a href="http://tx.fhir.org/r4"></a>
-<p>Use Count: 9. Code Systems used: </p>
+<p>Use Count: 15. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -122,6 +146,12 @@
     </th>
   </tr>
   <tr>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune</td>
     <td>0</td>
     <td>1</td>
@@ -136,11 +166,25 @@
   <tr>
     <td>urn:ietf:bcp:47</td>
     <td>0</td>
-    <td>1</td>
+    <td>2</td>
     <td>
-      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>
+      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>
     </td>
   </tr>
 </table>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>https://hl7.fr/ig/fhir/core</li>
+</ul>
+<h2>Server: https://smt.esante.gouv.fr/fhir</h2>
+<a href="https://smt.esante.gouv.fr/fhir"></a>
+<p>Use Count: 2. Code Systems used: </p>
+<ul>
+  <li>(None)</li>
+</ul>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>https://mos.esante.gouv.fr</li>
+</ul>
 </body>
 </html>

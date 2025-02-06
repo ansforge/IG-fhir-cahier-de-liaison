@@ -1,11 +1,11 @@
 CDL : Validation Results
 =========================================
 
-err = 12, warn = 12, info = 20
+err = 12, warn = 12, info = 19
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.cdl#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/cdl)
- Build Errors : 0 / 6 / 0
- /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/Bundle-cdl-bundle-creation-note : 11 / 3 / 26
+ Build Errors : 1 / 7 / 0
+ /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/Bundle-cdl-bundle-creation-note : 11 / 2 / 26
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-ConsommateurContenu : 0 / 0 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-CreateurContenu : 0 / 0 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-GestionnaireCdL : 0 / 0 / 1
@@ -15,22 +15,23 @@ Generated $--. FHIR version $-- for ans.fhir.fr.cdl#$-- (canonical = https://int
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note : 0 / 0 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note : 0 / 1 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes : 0 / 1 / 1
- /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-document-reference : 0 / 0 / 3
+ /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-document-reference : 0 / 0 / 2
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/cdl-ext-is-emergency.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/0d920958-b596-4b91-af67-9bafc707820b.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/cdl-bundle-creation-note.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
+WARNING: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img/footer/div/div/div/div/div/div/a/img/div/a/img/script at Line 255, column 7: The <script> containing the javascript '$( document ).ready('... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-cdl-bundle-creation-note.json ==
-ERROR: Bundle/cdl-bundle-creation-note: Bundle.entry[0].resource/*DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4*/.subject: Unable to find a match for profile Patient/0d920958-b596-4b91-af67-9bafc707820b among choices: https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient
+ERROR: Bundle/cdl-bundle-creation-note: Bundle.entry[0].resource/*DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4*/.subject: Unable to find a profile match for Patient/0d920958-b596-4b91-af67-9bafc707820b among choices: https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient
 INFORMATION: Bundle/cdl-bundle-creation-note: Bundle.entry[0].resource/*DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4*/.subject: Details for Patient/0d920958-b596-4b91-af67-9bafc707820b matching against profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1
-ERROR: Bundle/cdl-bundle-creation-note: Bundle.entry[0].resource/*DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4*/.author[1]: Unable to find a match for profile PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2 among choices: http://hl7.org/fhir/StructureDefinition/Device, https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient, https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person, https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization, https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner, https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole
+ERROR: Bundle/cdl-bundle-creation-note: Bundle.entry[0].resource/*DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4*/.author[1]: Unable to find a profile match for PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2 among choices: http://hl7.org/fhir/StructureDefinition/Device, https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient, https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person, https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization, https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner, https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole
 INFORMATION: Bundle/cdl-bundle-creation-note: Bundle.entry[0].resource/*DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4*/.author[1]: Details for PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2 matching against profile https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1
-WARNING: Bundle/cdl-bundle-creation-note: Bundle.entry[0].resource/*DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4*/.content[0].attachment.language: Resolved system urn:ietf:bcp:47, but the definition is not complete, so assuming value set include is correct
 INFORMATION: Bundle/cdl-bundle-creation-note: Bundle.entry[0].resource/*DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4*/.subject: Details for Patient/0d920958-b596-4b91-af67-9bafc707820b matching against profile http://hl7.org/fhir/StructureDefinition/Patient|4.0.1
 INFORMATION: Bundle/cdl-bundle-creation-note: Bundle.entry[0].resource/*DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4*/.author[1]: Details for PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2 matching against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1
 ERROR: Bundle/cdl-bundle-creation-note: Bundle.entry[1].resource/*PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2*/.code[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile PractitionerRole.code:genreActivite - the discriminator https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1 does not have fixed value, binding or existence assertions
@@ -71,7 +72,6 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-resultat-recherche-notes'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cdl-document-reference.json ==
-INFORMATION: StructureDefinition/cdl-document-reference: StructureDefinition.snapshot.element[51].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference'): The Implementation Guide contains no explicitly linked examples for this profile
 == fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency.json ==
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-ext-is-emergency'): The Implementation Guide contains no examples for this extension

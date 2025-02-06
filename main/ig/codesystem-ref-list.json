@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_A07-StatutVisibiliteDocument/FHIR/TRE-A07-StatutVisibiliteDocument",
-      "version" : "1.3.0",
+      "version" : "1.4.0",
       "status" : "active",
       "name" : "TRE_A07-StatutVisibiliteDocument",
       "title" : null,
@@ -10,11 +10,11 @@
       "oids" : ["1.2.250.1.213.1.1.4.13"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.3.0/ValueSet-JDV-J110-StatutVisibiliteDocument-CISIS.html" : "JDV_J110-StatutVisibiliteDocument-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.4.0/ValueSet-JDV-J110-StatutVisibiliteDocument-CISIS.html" : "JDV_J110-StatutVisibiliteDocument-CISIS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R234-TypeNote/FHIR/TRE-R234-TypeNote",
-      "version" : "1.3.0",
+      "version" : "1.4.0",
       "status" : "active",
       "name" : "TRE_R234-TypeNote",
       "title" : null,
@@ -22,7 +22,7 @@
       "oids" : ["1.2.250.1.213.1.1.4.334"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.3.0/ValueSet-JDV-J23-TypeNoteCahierLiaison-CISIS.html" : "JDV_J23-TypeNoteCahierLiaison-CISIS"
+      "https://interop.esante.gouv.fr/ig/nos/1.4.0/ValueSet-JDV-J23-TypeNoteCahierLiaison-CISIS.html" : "JDV_J23-TypeNoteCahierLiaison-CISIS"
     }
   ]
 }
