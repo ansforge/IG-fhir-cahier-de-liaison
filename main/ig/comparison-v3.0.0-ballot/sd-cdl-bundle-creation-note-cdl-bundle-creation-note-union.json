@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "339eed95-6c7f-44d3-bc78-969e35abbf2c-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/339eed95-6c7f-44d3-bc78-969e35abbf2c-2",
+  "id" : "8f7cbe3c-d68a-4054-8756-7301cfc01c18-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8f7cbe3c-d68a-4054-8756-7301cfc01c18-2",
   "name" : "UnionCdLBundleCreationNoteAndCdLBundleCreationNote",
   "title" : "Union of Bundle de création d'une note And Bundle de création d'une note",
   "status" : "draft",
-  "date" : "2025-02-06T16:12:43+00:00",
+  "date" : "2025-02-06T16:13:04+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Bundle",
