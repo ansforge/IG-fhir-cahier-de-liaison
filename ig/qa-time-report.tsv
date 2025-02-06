@@ -1,0 +1,13 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cdl.json	6480	-	0	0	0	0	0	0	4	305	0	0	1	0	0	0	0	1	0	0	90	86	0	0	0	2	0	0
+fsh-generated/resources/Bundle-cdl-bundle-creation-note.json	6262	39	0	0	0	0	31	0	1	1072	0	0	0	0	0	0	0	0	0	0	36	42	0	0	0	0	0	0
+fsh-generated/resources/CapabilityStatement-ConsommateurContenu.json	7401	34	1	0	0	0	0	0	1	81	0	0	0	0	0	0	0	0	0	0	59	49	0	0	0	1	0	1
+fsh-generated/resources/CapabilityStatement-CreateurContenu.json	8592	35	0	0	0	0	0	0	0	62	0	0	0	0	0	0	0	0	0	0	75	36	0	0	0	2	0	0
+fsh-generated/resources/CapabilityStatement-GestionnaireCdL.json	8659	35	0	0	0	0	0	0	1	51	0	0	0	0	0	0	0	0	0	0	56	44	0	0	0	2	0	0
+fsh-generated/resources/ConceptMap-ConceptMap-mos-cdl.json	10060	35	0	0	0	0	0	0	1	926	0	0	0	0	0	0	0	1	0	0	36	626	0	0	0	2	0	0
+fsh-generated/resources/Patient-0d920958-b596-4b91-af67-9bafc707820b.json	2057	35	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	16	25	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note.json	8767	37	0	0	0	0	0	367	1	179	0	0	0	0	0	0	0	7	0	0	655	3194	0	0	0	21	0	3
+fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note.json	8733	37	0	0	0	0	0	195	0	120	0	0	1	0	0	0	0	8	0	0	559	2077	0	0	0	24	0	2
+fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes.json	7312	37	1	0	0	0	0	130	0	91	0	0	0	0	0	0	0	7	0	0	728	1240	0	0	0	29	0	1
+fsh-generated/resources/StructureDefinition-cdl-document-reference.json	8778	38	0	0	0	0	0	30	0	40	0	0	0	0	0	0	0	3	0	0	178	602	0	0	0	8	1	0
+fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency.json	1055	35	0	0	0	0	0	19	0	15	0	0	0	0	0	0	0	0	0	0	31	119	0	0	0	1	0	0
