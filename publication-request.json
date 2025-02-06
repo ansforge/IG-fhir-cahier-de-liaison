@@ -1,16 +1,12 @@
 
 {
     "package-id" : "ans.fhir.fr.cdl",
-    "version" : "3.0.0-ballot",
-    "path" : "https://interop.esante.gouv.fr/ig/fhir/cdl/3.0.0-ballot",
-    "mode" : "working",
+    "version" : "3.0.0",
+    "path" : "https://interop.esante.gouv.fr/ig/fhir/cdl/3.0.0",
+    "mode" : "milestone",
     "status" : "release",
-    "sequence" : "for-comment",
-    "desc" : "Publication 3.0.0-ballot du guide d'implémentation cahier de liaison",
-    "descmd": "@release-notes.md",
-    "ci-build" : "https://ansforge.github.io/IG-fhir-cdl-de-sante/main/ig",
-    "first": "true",
-    "title" : "Guide d'implémentation cahier de liaison",
-    "category" : "Clinical Document",
-    "introduction" : "Guide d'implémentation cahier de liaison"
+    "sequence" : "trial-use",
+    "desc" : "Publication 3.0.0 du guide d'implémentation cahier de liaison",
+    "descmd": "Publication 3.0.0 du guide d'implémentation cahier de liaison. La liste des changements est accessible ici : https://interop.esante.gouv.fr/ig/fhir/cdl/changes.html",
+    "changes": "changes.html"
   }

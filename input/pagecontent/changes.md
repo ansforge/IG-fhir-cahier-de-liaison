@@ -1,4 +1,4 @@
-**Release 0.1.0-ballot de l'Implementation Guide cahier de liaison.**
+**Release 3.0.0 de l'Implementation Guide cahier de liaison.**
 
 [Modifications apportées dans cette release](https://github.com/ansforge/IG-fhir-cahier-de-liaison/milestone/1?closed=1) :
 
