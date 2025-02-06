@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="cdl-bundle-creation-note"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"/>
+  </meta>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="urn:uuid:04886b69-ef36-4584-819e-4590cd3888a4"/>
+    <resource>
+      <DocumentReference>
+        <id value="04886b69-ef36-4584-819e-4590cd3888a4"/>
+        <meta>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DocumentReference_04886b69-ef36-4584-819e-4590cd3888a4"> </a><p class="res-header-id"><b>Generated Narrative: DocumentReference 04886b69-ef36-4584-819e-4590cd3888a4</b></p><a name="04886b69-ef36-4584-819e-4590cd3888a4"> </a><a name="hc04886b69-ef36-4584-819e-4590cd3888a4"> </a><a name="04886b69-ef36-4584-819e-4590cd3888a4-en-US"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{https://mos.esante.gouv.fr/NOS/TRE_R234-TypeNote/FHIR/TRE-R234-TypeNote DEM-AVIS}">Demande d'avis</span></p><p><b>subject</b>: <a href="Patient-0d920958-b596-4b91-af67-9bafc707820b.html">Michel ROUBINOWITZ</a></p><p><b>date</b>: 2019-03-04 08:30:00+1100</p><p><b>author</b>: </p><ul><li><a href="Bundle-cdl-bundle-creation-note.html#Practitioner_85652218-ea45-426f-916e-6ca5ea8dd5e1">Bundle: type = transaction</a></li><li><a href="Bundle-cdl-bundle-creation-note.html#PractitionerRole_f380b0fd-23c2-415a-b367-53e707ef91e2">Mme Sophie Brooks (infirmier)</a></li></ul><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Language</b></td><td><b>Data</b></td></tr><tr><td style="display: none">*</td><td>text/plain</td><td>French</td><td><code>TWFtYW4gZXN0IGZhdGlndellLiBFbGxlIG4nYSBwYXMgdm91bHUgc29ydGlyIGNlIG1hdGluLg==</code></td></tr></table></blockquote></div>
+        </text>
+        <status value="current"/>
+        <type>
+          <coding>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R234-TypeNote/FHIR/TRE-R234-TypeNote"/>
+            <code value="DEM-AVIS"/>
+            <display value="Demande d'avis"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/0d920958-b596-4b91-af67-9bafc707820b"/>
+          <display value="Michel ROUBINOWITZ"/>
+        </subject>
+        <date value="2019-03-04T08:30:00+11:00"/>
+        <author>
+          <reference value="Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1"/>
+        </author>
+        <author>
+          <reference value="PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2"/>
+          <display value="Mme Sophie Brooks (infirmier)"/>
+        </author>
+        <content>
+          <attachment>
+            <contentType value="text/plain"/>
+            <language value="fr"/>
+            <data value="TWFtYW4gZXN0IGZhdGlndellLiBFbGxlIG4nYSBwYXMgdm91bHUgc29ydGlyIGNlIG1hdGluLg=="/>
+          </attachment>
+        </content>
+      </DocumentReference>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f380b0fd-23c2-415a-b367-53e707ef91e2"/>
+    <resource>
+      <PractitionerRole>
+        <id value="f380b0fd-23c2-415a-b367-53e707ef91e2"/>
+        <meta>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="PractitionerRole_f380b0fd-23c2-415a-b367-53e707ef91e2"> </a><p class="res-header-id"><b>Generated Narrative: PractitionerRole f380b0fd-23c2-415a-b367-53e707ef91e2</b></p><a name="f380b0fd-23c2-415a-b367-53e707ef91e2"> </a><a name="hcf380b0fd-23c2-415a-b367-53e707ef91e2"> </a><a name="f380b0fd-23c2-415a-b367-53e707ef91e2-en-US"> </a><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Bundle-cdl-bundle-creation-note.html#Practitioner_85652218-ea45-426f-916e-6ca5ea8dd5e1">Mme Sophie Brooks</a></p><p><b>code</b>: <span title="Codes:{https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante 60}">Infirmier</span></p></div>
+        </text>
+        <active value="true"/>
+        <practitioner>
+          <reference value="Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1"/>
+          <display value="Mme Sophie Brooks"/>
+        </practitioner>
+        <code>
+          <coding>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante"/>
+            <code value="60"/>
+            <display value="Infirmier"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:85652218-ea45-426f-916e-6ca5ea8dd5e1"/>
+    <resource>
+      <Practitioner>
+        <id value="85652218-ea45-426f-916e-6ca5ea8dd5e1"/>
+        <meta>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_85652218-ea45-426f-916e-6ca5ea8dd5e1"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner 85652218-ea45-426f-916e-6ca5ea8dd5e1</b></p><a name="85652218-ea45-426f-916e-6ca5ea8dd5e1"> </a><a name="hc85652218-ea45-426f-916e-6ca5ea8dd5e1"> </a><a name="85652218-ea45-426f-916e-6ca5ea8dd5e1-en-US"> </a><p><b>name</b>: Sophie Brooks </p></div>
+        </text>
+        <name>
+          <family value="Brooks"/>
+          <given value="Sophie"/>
+          <prefix value="MME"/>
+        </name>
+      </Practitioner>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:0d920958-b596-4b91-af67-9bafc707820b"/>
+    <resource>
+      <Patient>
+        <id value="0d920958-b596-4b91-af67-9bafc707820b"/>
+        <meta>
+          <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_0d920958-b596-4b91-af67-9bafc707820b"> </a><p class="res-header-id"><b>Generated Narrative: Patient 0d920958-b596-4b91-af67-9bafc707820b</b></p><a name="0d920958-b596-4b91-af67-9bafc707820b"> </a><a name="hc0d920958-b596-4b91-af67-9bafc707820b"> </a><a name="0d920958-b596-4b91-af67-9bafc707820b-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Michel ROUBINOWITZ (official) Male, DoB: 1975-03-11 ( NIR définitif (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li><a href="tel:+33635256986">+33635256986</a></li><li>10 Rue Guillaume Bertrand Paris 75011 (home)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-birthPlace.html">Patient Birth Place</a></td><td colspan="3">Chantilly </td></tr><tr><td style="background-color: #f3f5da" title="Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection">FR Core Patient Ident Reliability Extension:</td><td colspan="3"><ul><li>identityStatus: <a href="https://hl7.fr/ig/fhir/core/2.0.1/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI">FR Core CodeSystem v2-0445 VALI</a>: Identité validée</li></ul></td></tr></table></div>
+        </text>
+        <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability">
+          <extension url="identityStatus">
+            <valueCoding>
+              <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"/>
+              <code value="VALI"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+          <valueAddress>
+            <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code">
+              <valueCoding>
+                <system value="https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"/>
+                <code value="60500"/>
+              </valueCoding>
+            </extension>
+            <city value="Chantilly"/>
+          </valueAddress>
+        </extension>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"/>
+              <code value="INS-NIR"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.2.250.1.213.1.4.8"/>
+          <value value="123456789012244"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name">
+            <valueString value="Michel"/>
+          </extension>
+          <use value="official"/>
+          <family value="ROUBINOWITZ"/>
+          <given value="Michel"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="+33635256986"/>
+          <use value="mobile"/>
+          <rank value="1"/>
+        </telecom>
+        <gender value="male"/>
+        <birthDate value="1975-03-11"/>
+        <address>
+          <use value="home"/>
+          <type value="both"/>
+          <line value="10 Rue Guillaume Bertrand"/>
+          <city value="Paris"/>
+          <postalCode value="75011"/>
+        </address>
+      </Patient>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Patient/0d920958-b596-4b91-af67-9bafc707820b"/>
+    </request>
+  </entry>
+</Bundle>
