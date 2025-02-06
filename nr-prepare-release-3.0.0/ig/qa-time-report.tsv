@@ -1,0 +1,13 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cdl.json	6480	-	0	0	0	0	0	0	5	449	0	0	0	0	1	0	0	1	0	0	85	72	0	0	0	3	0	1
+fsh-generated/resources/Bundle-cdl-bundle-creation-note.json	6262	48	0	0	0	1	39	0	1	1029	0	0	0	0	0	0	0	0	0	0	36	38	0	0	0	0	0	0
+fsh-generated/resources/CapabilityStatement-ConsommateurContenu.json	7401	44	0	0	0	0	0	0	1	83	0	0	0	0	0	0	0	0	0	0	58	48	0	0	0	2	0	0
+fsh-generated/resources/CapabilityStatement-CreateurContenu.json	8592	45	1	0	0	0	0	0	0	47	0	0	0	0	0	0	0	0	0	0	74	34	0	1	0	3	0	0
+fsh-generated/resources/CapabilityStatement-GestionnaireCdL.json	8659	44	0	0	0	0	0	0	1	42	0	0	0	0	0	0	0	0	0	0	46	40	0	0	0	2	0	1
+fsh-generated/resources/ConceptMap-ConceptMap-mos-cdl.json	10060	44	0	0	0	0	0	0	1	706	0	0	0	0	0	0	0	0	0	0	38	639	0	0	0	2	0	0
+fsh-generated/resources/Patient-0d920958-b596-4b91-af67-9bafc707820b.json	2057	27	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	20	19	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note.json	8767	36	0	0	0	0	0	357	1	96	0	0	1	0	0	0	0	7	0	0	633	3366	0	0	0	39	0	3
+fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note.json	8733	46	0	0	0	0	0	254	0	106	0	0	1	0	0	0	0	4	0	0	531	1855	0	0	0	37	0	1
+fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes.json	7312	47	0	0	0	0	0	184	0	69	0	0	0	0	0	0	0	3	0	0	574	1146	0	0	0	43	0	2
+fsh-generated/resources/StructureDefinition-cdl-document-reference.json	8778	45	0	0	0	0	0	55	0	77	0	0	1	0	0	0	0	1	0	0	228	658	0	0	0	13	0	0
+fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency.json	1055	42	0	0	0	0	0	40	0	50	0	0	0	0	0	0	0	0	0	0	30	162	0	0	0	2	0	1
