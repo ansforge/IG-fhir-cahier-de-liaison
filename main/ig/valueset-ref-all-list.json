@@ -143,9 +143,9 @@
       "uses" : {
       },
       "StructureDefinition-cdl-bundle-resultat-recherche-notes.html" : "Bundle résultat recherche notes",
-      "StructureDefinition-cdl-document-reference.html" : "DocumentReference Cahier de Liaison",
       "StructureDefinition-cdl-bundle-creation-note.html" : "Bundle de création d'une note",
-      "StructureDefinition-cdl-bundle-maj-note.html" : "Bundle de mise à jour d'une note"
+      "StructureDefinition-cdl-bundle-maj-note.html" : "Bundle de mise à jour d'une note",
+      "StructureDefinition-cdl-document-reference.html" : "DocumentReference Cahier de Liaison"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
