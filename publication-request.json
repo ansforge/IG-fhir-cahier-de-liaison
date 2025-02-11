@@ -3,7 +3,7 @@
     "package-id" : "ans.fhir.fr.cdl",
     "version" : "3.0.0",
     "path" : "https://interop.esante.gouv.fr/ig/fhir/cdl/3.0.0",
-    "mode" : "milestone",
+    "mode" : "technical-correction",
     "status" : "release",
     "sequence" : "trial-use",
     "desc" : "Publication 3.0.0 du guide d'implémentation cahier de liaison",
