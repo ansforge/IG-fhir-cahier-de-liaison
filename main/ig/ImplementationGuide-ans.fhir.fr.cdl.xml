@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ans.fhir.fr.cdl"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.cdl</b></p><a name="ans.fhir.fr.cdl"> </a><a name="hcans.fhir.fr.cdl"> </a><a name="ans.fhir.fr.cdl-en-US"> </a><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.cdl</b></p><a name="ans.fhir.fr.cdl"> </a><a name="hcans.fhir.fr.cdl"> </a><a name="ans.fhir.fr.cdl-fr-FR"> </a><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl"/>
   <version value="3.0.0"/>
   <name value="CDL"/>
   <title value="Cahier De Liaison"/>
   <status value="draft"/>
-  <date value="2025-02-06T17:11:19+00:00"/>
+  <date value="2025-02-11T12:46:54+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -19,6 +19,13 @@
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
   <packageId value="ans.fhir.fr.cdl"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -485,7 +492,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/cdl-bundle-creation-note"/>
@@ -496,7 +503,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/cdl-bundle-maj-note"/>
@@ -507,7 +514,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/cdl-bundle-resultat-recherche-notes"/>
@@ -528,7 +535,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/cdl-ext-is-emergency"/>
@@ -571,7 +578,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/cdl-document-reference"/>

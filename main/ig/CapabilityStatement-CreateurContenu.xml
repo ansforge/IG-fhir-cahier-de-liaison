@@ -3,7 +3,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="CreateurContenu"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CapabilityStatement CreateurContenu</b></p><a name="CreateurContenu"> </a><a name="hcCreateurContenu"> </a><a name="CreateurContenu-en-US"> </a><h2 id="title">CI-SIS Cahier-de-Liaison - CreateurContenu</h2><ul><li>Implementation Guide Version: 3.0.0 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>application/fhir+xml</code>, <code>application/fhir+json</code></li><li>Supported Patch Formats: </li><li>Published on: 2023-02-15 14:22:10+0100 </li><li>Published by: ANS </li></ul><blockquote class="impl-note"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h3 id="shallIGs">SHALL Support the Following Implementation Guides</h3><ul><li>http://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuides/ans.fhir.fr.cdl</li></ul><h2 id="rest">FHIR RESTful Capabilities</h2><h3 id="rest1">REST Configuration: 1 </h3><div class="panel panel-default"><div class="panel-heading"><h4 id="mode1" class="panel-title">Mode: <code>client</code></h4></div><div class="panel-body"><div><p>Alimente le cahier de liaison avec une nouvelle note</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CapabilityStatement CreateurContenu</b></p><a name="CreateurContenu"> </a><a name="hcCreateurContenu"> </a><a name="CreateurContenu-fr-FR"> </a><h2 id="title">CI-SIS Cahier-de-Liaison - CreateurContenu</h2><ul><li>Implementation Guide Version: 3.0.0 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>application/fhir+xml</code>, <code>application/fhir+json</code></li><li>Supported Patch Formats: </li><li>Published on: 2023-02-15 14:22:10+0100 </li><li>Published by: ANS </li></ul><blockquote class="impl-note"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h3 id="shallIGs">SHALL Support the Following Implementation Guides</h3><ul><li>http://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuides/ans.fhir.fr.cdl</li></ul><h2 id="rest">FHIR RESTful Capabilities</h2><h3 id="rest1">REST Configuration: 1 </h3><div class="panel panel-default"><div class="panel-heading"><h4 id="mode1" class="panel-title">Mode: <code>client</code></h4></div><div class="panel-body"><div><p>Alimente le cahier de liaison avec une nouvelle note</p>
 </div><div class="lead"><em>Security</em></div><blockquote><div><p>L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S
 ) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes
 d’information de santé (CI-SIS)</p>
@@ -33,6 +33,13 @@ d’information de santé (CI-SIS)</p>
     </telecom>
   </contact>
   <description value="Le créateur de contenu est une personne, un équipement ou une entité qui alimente le cahier de liaison par des informations &#xA;qui ont vocation à être partagées. Le créateur de contenu peut être un logiciel métier&#xA;installé sur un ordinateur, une application installée sur un téléphone mobile ou une &#xA;tablette ainsi que tout autre dispositif utilisé par une personne ou une entité pour &#xA;alimenter le cahier de liaison. "/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="application/fhir+xml"/>

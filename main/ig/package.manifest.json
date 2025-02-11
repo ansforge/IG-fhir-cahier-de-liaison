@@ -1,6 +1,7 @@
 {
   "version" : "3.0.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20250206171004",
-  "name" : "ans.fhir.fr.cdl"
+  "date" : "20250211124654",
+  "name" : "ans.fhir.fr.cdl",
+  "jurisdiction" : "urn:iso:std:iso:3166#FR"
 }

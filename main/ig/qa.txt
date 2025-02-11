@@ -2,9 +2,9 @@ CDL : Validation Results
 =========================================
 
 err = 12, warn = 12, info = 19
-IG Publisher Version: 1.8.10
-Generated Thu Feb 06 17:12:33 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.cdl#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/cdl)
- Build Errors : 1 / 7 / 0
+IG Publisher Version: 1.8.12
+Generated Tue Feb 11 12:48:55 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.cdl#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/cdl)
+ Build Errors : 0 / 7 / 0
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/Bundle-cdl-bundle-creation-note : 11 / 2 / 26
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-ConsommateurContenu : 0 / 0 / 1
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-CreateurContenu : 0 / 0 / 1
@@ -19,10 +19,9 @@ Generated Thu Feb 06 17:12:33 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.cdl#3
  /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/cdl-ext-is-emergency.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/0d920958-b596-4b91-af67-9bafc707820b.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/cdl-bundle-creation-note.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/cdl-ext-is-emergency.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: /home/runner/work/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/output/searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img/footer/div/div/div/div/div/div/a/img/div/a/img/script at Line 255, column 7: The <script> containing the javascript '$( document ).ready('... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide

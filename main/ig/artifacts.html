@@ -65,6 +65,10 @@
             <span style="display:inline-block;">3.0.0 - ci-build
 
 
+
+  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+
+
             </span>
           </p>
         </div>
@@ -183,16 +187,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Structures: Resource Profiles</a>
+         <a href="#2">Terminology: Concept Maps</a>
       </li>
       <li>
-         <a href="#3">Structures: Extension Definitions</a>
+         <a href="#3">Example: Example Instances</a>
       </li>
       <li>
-         <a href="#4">Terminology: Concept Maps</a>
-      </li>
-      <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#4">Other</a>
       </li>
    </ul>
 </div>
@@ -240,8 +241,45 @@ alimenter le cahier de liaison.</p>
       </tbody>
    </table>
    <a name="2"> </a>
-   <h3>Structures: Resource Profiles </h3>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+   <h3>Terminology: Concept Maps </h3>
+    <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-ConceptMap-mos-cdl.html"
+                  title="ConceptMap/ConceptMap-mos-cdl">MOS to FHIR CDL</a>
+            </td>
+            <td>
+<p>Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne sont pas présents dans ce guide.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-0d920958-b596-4b91-af67-9bafc707820b.html"
+                  title="Patient/0d920958-b596-4b91-af67-9bafc707820b">0d920958-b596-4b91-af67-9bafc707820b</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-cdl-bundle-creation-note.html"
+                  title="Bundle/cdl-bundle-creation-note">cdl-bundle-creation-note</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Other </h3>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -274,63 +312,21 @@ alimenter le cahier de liaison.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-cdl-ext-is-emergency.html"
+                  title="StructureDefinition/cdl-ext-is-emergency">CdL_isEmergency</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-cdl-document-reference.html"
                   title="StructureDefinition/cdl-document-reference">DocumentReference Cahier de Liaison</a>
             </td>
             <td>
 <p>Profil de la ressource DocumentReference pour le cahier de liaison. Il regroupe les informations relatives à la note.</p>
 </td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="3"> </a>
-   <h3>Structures: Extension Definitions </h3>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-cdl-ext-is-emergency.html"
-                  title="StructureDefinition/cdl-ext-is-emergency">CdL_isEmergency</a>
-            </td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="4"> </a>
-   <h3>Terminology: Concept Maps </h3>
-    <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ConceptMap-ConceptMap-mos-cdl.html"
-                  title="ConceptMap/ConceptMap-mos-cdl">MOS to FHIR CDL</a>
-            </td>
-            <td>
-<p>Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne sont pas présents dans ce guide.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="5"> </a>
-   <h3>Example: Example Instances </h3>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-0d920958-b596-4b91-af67-9bafc707820b.html"
-                  title="Patient/0d920958-b596-4b91-af67-9bafc707820b">0d920958-b596-4b91-af67-9bafc707820b</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-cdl-bundle-creation-note.html"
-                  title="Bundle/cdl-bundle-creation-note">cdl-bundle-creation-note</a>
-            </td>
          </tr>
       </tbody>
    </table>
@@ -374,7 +370,7 @@ alimenter le cahier de liaison.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 6, 2025 17:11+0000">2025-02-06</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 11, 2025 12:48+0000">2025-02-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
