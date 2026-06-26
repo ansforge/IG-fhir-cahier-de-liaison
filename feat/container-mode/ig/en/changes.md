@@ -1,0 +1,12 @@
+# Historique des changements - Cahier De Liaison v3.0.0
+
+## Historique des changements
+
+**Release 3.0.0 de l'Implementation Guide cahier de liaison.**
+
+[Modifications apportées dans cette release](https://github.com/ansforge/IG-fhir-cahier-de-liaison/milestone/1?closed=1) :
+
+* Ajout des spécifications fonctionnelles [9](https://github.com/ansforge/IG-fhir-cahier-de-liaison/pull/9)
+* Ajout des spécifications techniques et profils [7](https://github.com/ansforge/IG-fhir-cahier-de-liaison/pull/7), [4](https://github.com/ansforge/IG-fhir-cahier-de-liaison/pull/4)
+* Ajout des dépendances FrCore, Annuaire, NOS [6](https://github.com/ansforge/IG-fhir-cahier-de-liaison/pull/6)
+
