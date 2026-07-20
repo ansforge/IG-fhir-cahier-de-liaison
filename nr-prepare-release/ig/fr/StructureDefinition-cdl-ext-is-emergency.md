@@ -61,7 +61,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cdl-ext-is-emer
   "version" : "3.0.1",
   "name" : "CdL_isEmergency",
   "status" : "active",
-  "date" : "2026-07-20T08:30:08+00:00",
+  "date" : "2026-07-20T08:39:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -74,7 +74,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cdl-ext-is-emer
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4d1636de-1fa5-4465-8245-6a46dc7a28d5-12",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4d1636de-1fa5-4465-8245-6a46dc7a28d5-12",
+  "id" : "6f8edf7f-7a9d-4e45-a8d2-f4a1d23bc5a2-12",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6f8edf7f-7a9d-4e45-a8d2-f4a1d23bc5a2-12",
   "name" : "IntersectionCdLBundleResultatRechercheNotesAndCdLBundleResultatRechercheNotes",
   "title" : "Intersection of Bundle résultat recherche notes And Bundle résultat recherche notes",
   "status" : "draft",
-  "date" : "2026-07-20T08:31:09+00:00",
+  "date" : "2026-07-20T08:40:00+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Bundle",

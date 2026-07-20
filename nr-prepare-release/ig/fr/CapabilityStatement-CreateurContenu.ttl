@@ -37,7 +37,7 @@
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
        fhir:Coding.code [ fhir:value "FR" ] ;
-       fhir:Coding.display [ fhir:value "FRANCE" ]
+       fhir:Coding.display [ fhir:value "France (la)" ]
      ]
   ] ;
   fhir:CapabilityStatement.kind [ fhir:value "requirements"] ;

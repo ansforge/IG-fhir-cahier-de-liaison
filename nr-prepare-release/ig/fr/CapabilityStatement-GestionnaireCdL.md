@@ -35,7 +35,7 @@ Le gestionnaire de cahier de liaison implémente le cahier de liaison
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "kind" : "requirements",

@@ -1,9 +1,9 @@
 {
   "codeSystems" : [{
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J110-StatutVisibiliteDocument-CISIS/FHIR/JDV-J110-StatutVisibiliteDocument-CISIS",
-    "version" : "1.5.0",
+    "version" : "20200424120000",
     "status" : "active",
-    "name" : "JDV_J110-StatutVisibiliteDocument-CISIS",
+    "name" : "JDV_J110_StatutVisibiliteDocument_CISIS",
     "title" : null,
     "description" : "Restriction d'audience applicable aux objets référencés liste - CISIS",
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_A07-StatutVisibiliteDocument/FHIR/TRE-A07-StatutVisibiliteDocument"],
@@ -15,9 +15,9 @@
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS",
-    "version" : "1.5.0",
+    "version" : "20200424120000",
     "status" : "active",
-    "name" : "JDV_J23-TypeNoteCahierLiaison-CISIS",
+    "name" : "JDV_J23_TypeNoteCahierLiaison_CISIS",
     "title" : null,
     "description" : "Type de note du cahier de liaison - CI-SIS",
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R234-TypeNote/FHIR/TRE-R234-TypeNote"],

@@ -1,22 +1,22 @@
 CDL : Validation Results
 =========================================
 
-err = 24, warn = 50, info = 1189
+err = 14, warn = 50, info = 1189
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.cdl#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/cdl)
  Build Errors : 0 / 7 / 0
  /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/Bundle-cdl-bundle-creation-note : 8 / 2 / 25
- /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-ConsommateurContenu : 1 / 1 / 25
- /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-CreateurContenu : 1 / 5 / 16
- /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-GestionnaireCdL : 1 / 1 / 24
- /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/ConceptMap-ConceptMap-mos-cdl : 7 / 27 / 7
- /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cdl : 1 / 2 / 3
+ /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-ConsommateurContenu : 0 / 1 / 25
+ /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-CreateurContenu : 0 / 5 / 16
+ /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/CapabilityStatement-GestionnaireCdL : 0 / 1 / 24
+ /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/ConceptMap-ConceptMap-mos-cdl : 6 / 27 / 7
+ /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cdl : 0 / 2 / 3
  /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/Patient-0d920958-b596-4b91-af67-9bafc707820b : 0 / 2 / 5
- /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note : 1 / 0 / 341
- /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note : 1 / 1 / 340
- /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes : 1 / 1 / 328
- /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-document-reference : 1 / 0 / 91
- /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency : 1 / 1 / 8
+ /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-creation-note : 0 / 0 / 341
+ /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note : 0 / 1 / 340
+ /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes : 0 / 1 / 328
+ /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-document-reference : 0 / 0 / 91
+ /__w/IG-fhir-cahier-de-liaison/IG-fhir-cahier-de-liaison/igSource/fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency : 0 / 1 / 8
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/cdl-ext-is-emergency.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -73,7 +73,6 @@ INFORMATION: CapabilityStatement.rest[0].resource[4].profile: Pinned the version
 INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[0].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Organization-identifier to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[5].profile: Pinned the version of http://hl7.org/fhir/StructureDefinition/Device to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[5].searchParam[0].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Device-identifier to 4.0.1
-ERROR: CapabilityStatement/ConsommateurContenu: CapabilityStatement.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: CapabilityStatement/ConsommateurContenu: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'http://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuides/ans.fhir.fr.cdl'
 INFORMATION: Resource: The resource CapabilityStatement/ConsommateurContenu could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CapabilityStatement-CreateurContenu.json ==
@@ -91,7 +90,6 @@ INFORMATION: CapabilityStatement.rest[1].resource[3].profile: Pinned the version
 INFORMATION: CapabilityStatement.rest[1].resource[5].profile: Pinned the version of http://hl7.org/fhir/StructureDefinition/Device to 4.0.1
 INFORMATION: CapabilityStatement.rest[1].resource[6].profile: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization to 1.0.1
 INFORMATION: CapabilityStatement.rest[1].resource[7].profile: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference to 3.0.1
-ERROR: CapabilityStatement/CreateurContenu: CapabilityStatement.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: CapabilityStatement/CreateurContenu: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'http://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuides/ans.fhir.fr.cdl'
 WARNING: CapabilityStatement/CreateurContenu: CapabilityStatement.rest[0].resource[4].profile: A definition could not be found for Canonical URL 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person'
 WARNING: CapabilityStatement/CreateurContenu: CapabilityStatement.rest[0].resource[5].supportedProfile[0]: A definition could not be found for Canonical URL 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization'
@@ -121,7 +119,6 @@ INFORMATION: CapabilityStatement.rest[0].resource[6].profile: Pinned the version
 INFORMATION: CapabilityStatement.rest[0].resource[6].searchParam[0].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/DocumentReference-date to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[6].searchParam[1].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/clinical-type to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[6].searchParam[2].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/DocumentReference-security-label to 4.0.1
-ERROR: CapabilityStatement/GestionnaireCdL: CapabilityStatement.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: CapabilityStatement/GestionnaireCdL: CapabilityStatement.implementationGuide[0]: A definition could not be found for Canonical URL 'http://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuides/ans.fhir.fr.cdl'
 INFORMATION: Resource: The resource CapabilityStatement/GestionnaireCdL could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ConceptMap-ConceptMap-mos-cdl.json ==
@@ -130,7 +127,6 @@ INFORMATION: ConceptMap.group[1].target: Pinned the version of https://hl7.fr/ig
 INFORMATION: ConceptMap.group[3].target: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization to 2.0.1
 INFORMATION: ConceptMap.group[4].target: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient to 2.0.1
 INFORMATION: ConceptMap.group[5].target: Pinned the version of http://hl7.org/fhir/StructureDefinition/Device to 4.0.1
-ERROR: ConceptMap/ConceptMap-mos-cdl: ConceptMap.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ConceptMap/ConceptMap-mos-cdl: ConceptMap.source.ofType(uri): No definition could be found for URL value 'https://mos.esante.gouv.fr'
 WARNING: ConceptMap/ConceptMap-mos-cdl: ConceptMap.group[0].source: No definition could be found for URL value 'https://mos.esante.gouv.fr/12.html'
 WARNING: ConceptMap/ConceptMap-mos-cdl: ConceptMap.group[1].source: No definition could be found for URL value 'https://mos.esante.gouv.fr/12.html'
@@ -167,7 +163,6 @@ WARNING: ConceptMap/ConceptMap-mos-cdl: ConceptMap.group[5].element[1].target[0]
 INFORMATION: Resource: The resource ConceptMap/ConceptMap-mos-cdl could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cdl.json ==
 INFORMATION: ImplementationGuide.definition.resource[4].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note to 3.0.1
-ERROR: ImplementationGuide/ans.fhir.fr.cdl: ImplementationGuide.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ImplementationGuide/ans.fhir.fr.cdl: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package ans.fhir.fr.annuaire#1.0.1 released on 2024-04-25, but the most recent appropriate version is 1.1.0. This reference is getting old and the more recent version should be considered
 WARNING: ImplementationGuide/ans.fhir.fr.cdl: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.fr.core#2.0.1 released on 2024-04-16, but the most recent appropriate version is 2.2.0. This reference is getting old and the more recent version should be considered
 INFORMATION: Resource: The resource ImplementationGuide/ans.fhir.fr.cdl could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
@@ -517,7 +512,6 @@ INFORMATION: StructureDefinition.differential.element[21].constraint[0].source: 
 INFORMATION: StructureDefinition.differential.element[24].type[0].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person to 2.0.1
 INFORMATION: StructureDefinition.differential.element[25].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note to 3.0.1
 INFORMATION: StructureDefinition.differential.element[29].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note to 3.0.1
-ERROR: StructureDefinition/cdl-bundle-creation-note: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 INFORMATION: StructureDefinition/cdl-bundle-creation-note: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 INFORMATION: Resource: The resource StructureDefinition/cdl-bundle-creation-note could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-cdl-bundle-maj-note.json ==
@@ -859,7 +853,6 @@ INFORMATION: StructureDefinition.differential.element[21].constraint[0].source: 
 INFORMATION: StructureDefinition.differential.element[24].type[0].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person to 2.0.1
 INFORMATION: StructureDefinition.differential.element[25].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note to 3.0.1
 INFORMATION: StructureDefinition.differential.element[29].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note to 3.0.1
-ERROR: StructureDefinition/cdl-bundle-maj-note: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 INFORMATION: Resource: The resource StructureDefinition/cdl-bundle-maj-note could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cdl-bundle-resultat-recherche-notes.json ==
@@ -1189,7 +1182,6 @@ INFORMATION: StructureDefinition.differential.element[14].type[0].profile[0]: Pi
 INFORMATION: StructureDefinition.differential.element[19].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole to 1.0.1
 INFORMATION: StructureDefinition.differential.element[24].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization to 1.0.1
 INFORMATION: StructureDefinition.differential.element[29].type[0].profile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person to 2.0.1
-ERROR: StructureDefinition/cdl-bundle-resultat-recherche-notes: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 INFORMATION: Resource: The resource StructureDefinition/cdl-bundle-resultat-recherche-notes could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-resultat-recherche-notes'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cdl-document-reference.json ==
@@ -1216,7 +1208,7 @@ INFORMATION: StructureDefinition.snapshot.element[11].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[12].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[13].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[14].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[14].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS to 1.5.0
+INFORMATION: StructureDefinition.snapshot.element[14].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS to 20200424120000
 INFORMATION: StructureDefinition.snapshot.element[15].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[16].type[0].targetProfile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient to 2.0.1
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1239,7 +1231,7 @@ INFORMATION: StructureDefinition.snapshot.element[25].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[26].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[28].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[28].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J110-StatutVisibiliteDocument-CISIS/FHIR/JDV-J110-StatutVisibiliteDocument-CISIS to 1.5.0
+INFORMATION: StructureDefinition.snapshot.element[28].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J110-StatutVisibiliteDocument-CISIS/FHIR/JDV-J110-StatutVisibiliteDocument-CISIS to 20200424120000
 INFORMATION: StructureDefinition.snapshot.element[29].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[31].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[31].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
@@ -1272,7 +1264,7 @@ INFORMATION: StructureDefinition.snapshot.element[53].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[54].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[55].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[2].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-ext-is-emergency to 3.0.1
-INFORMATION: StructureDefinition.differential.element[6].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS to 1.5.0
+INFORMATION: StructureDefinition.differential.element[6].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS to 20200424120000
 INFORMATION: StructureDefinition.differential.element[7].type[0].targetProfile[0]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient to 2.0.1
 INFORMATION: StructureDefinition.differential.element[9].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Device to 4.0.1
 INFORMATION: StructureDefinition.differential.element[9].type[0].targetProfile[1]: Pinned the version of https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person to 2.0.1
@@ -1280,8 +1272,7 @@ INFORMATION: StructureDefinition.differential.element[9].type[0].targetProfile[2
 INFORMATION: StructureDefinition.differential.element[9].type[0].targetProfile[3]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner to 1.0.1
 INFORMATION: StructureDefinition.differential.element[9].type[0].targetProfile[4]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole to 1.0.1
 INFORMATION: StructureDefinition.differential.element[9].type[0].targetProfile[5]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization to 1.0.1
-INFORMATION: StructureDefinition.differential.element[14].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J110-StatutVisibiliteDocument-CISIS/FHIR/JDV-J110-StatutVisibiliteDocument-CISIS to 1.5.0
-ERROR: StructureDefinition/cdl-document-reference: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
+INFORMATION: StructureDefinition.differential.element[14].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J110-StatutVisibiliteDocument-CISIS/FHIR/JDV-J110-StatutVisibiliteDocument-CISIS to 20200424120000
 INFORMATION: Resource: The resource StructureDefinition/cdl-document-reference could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 INFORMATION: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference'): The Implementation Guide contains no explicitly linked examples for this profile
 == fsh-generated/resources/StructureDefinition-cdl-ext-is-emergency.json ==
@@ -1291,6 +1282,5 @@ INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinne
 INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-ERROR: StructureDefinition/cdl-ext-is-emergency: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 INFORMATION: Resource: The resource StructureDefinition/cdl-ext-is-emergency could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-ext-is-emergency'): The Implementation Guide contains no examples for this extension

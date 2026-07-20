@@ -14,7 +14,7 @@
   "name" : "CDL",
   "title" : "Cahier De Liaison",
   "status" : "active",
-  "date" : "2026-07-20T08:30:08+00:00",
+  "date" : "2026-07-20T08:39:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -27,7 +27,7 @@
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "packageId" : "ans.fhir.fr.cdl",
@@ -66,10 +66,10 @@
     "version" : "2.0.1"
   },
   {
-    "id" : "ans_fr_nos",
-    "uri" : "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos",
-    "packageId" : "ans.fr.nos",
-    "version" : "1.5.0"
+    "id" : "ans_fr_terminologies",
+    "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
+    "packageId" : "ans.fr.terminologies",
+    "version" : "1.11.1"
   }],
   "definition" : {
     "extension" : [{

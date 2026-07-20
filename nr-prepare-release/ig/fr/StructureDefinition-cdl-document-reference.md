@@ -119,7 +119,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cdl-document-re
   "name" : "CdLDocumentReference",
   "title" : "DocumentReference Cahier de Liaison",
   "status" : "active",
-  "date" : "2026-07-20T08:30:08+00:00",
+  "date" : "2026-07-20T08:39:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -133,7 +133,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cdl-document-re
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -247,7 +247,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cdl-document-re
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS|1.5.0"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS|20200424120000"
       },
       "mapping" : [{
         "identity" : "cdl-documentreference-to-mos-note",
@@ -333,7 +333,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cdl-document-re
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J110-StatutVisibiliteDocument-CISIS/FHIR/JDV-J110-StatutVisibiliteDocument-CISIS|1.5.0"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J110-StatutVisibiliteDocument-CISIS/FHIR/JDV-J110-StatutVisibiliteDocument-CISIS|20200424120000"
       },
       "mapping" : [{
         "identity" : "cdl-documentreference-to-mos-note",

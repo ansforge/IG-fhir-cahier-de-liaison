@@ -19,7 +19,7 @@ Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne s
   "title" : "MOS to FHIR CDL",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-20T08:30:08+00:00",
+  "date" : "2026-07-20T08:39:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -33,7 +33,7 @@ Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne s
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "purpose" : "Donner un indice fonctionnel du mapping entre FHIR et MOS.",

@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-maj-no
   "name" : "CdLBundleMAJNote",
   "title" : "Bundle de mise à jour d'une note",
   "status" : "active",
-  "date" : "2026-07-20T08:30:08+00:00",
+  "date" : "2026-07-20T08:39:03+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-maj-no
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",

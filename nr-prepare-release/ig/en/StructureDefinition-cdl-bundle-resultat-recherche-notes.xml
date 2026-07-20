@@ -63,7 +63,7 @@
   <name value="CdLBundleResultatRechercheNotes"/>
   <title value="Bundle résultat recherche notes"/>
   <status value="active"/>
-  <date value="2026-07-20T08:30:08+00:00"/>
+  <date value="2026-07-20T08:39:03+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -77,7 +77,7 @@
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="FR"/>
-      <display value="FRANCE"/>
+      <display value="France (la)"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
