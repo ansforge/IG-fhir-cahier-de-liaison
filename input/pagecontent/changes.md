@@ -1,3 +1,10 @@
+**Release 3.0.1 de l'Implementation Guide cahier de liaison.**
+
+[Modifications apportées dans cette release](https://github.com/ansforge/IG-fhir-cahier-de-liaison/milestone/2?closed=1) :
+
+* Suppression d'un backslash [12](https://github.com/ansforge/IG-fhir-cahier-de-liaison/pull/12)
+* Adoption du mode conteneur pour le workflow CI-build [13](https://github.com/ansforge/IG-fhir-cahier-de-liaison/pull/13)
+
 **Release 3.0.0 de l'Implementation Guide cahier de liaison.**
 
 [Modifications apportées dans cette release](https://github.com/ansforge/IG-fhir-cahier-de-liaison/milestone/1?closed=1) :
