@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "fa1e256e-c08e-4a83-93fa-ed4d1d937f1c-21",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/fa1e256e-c08e-4a83-93fa-ed4d1d937f1c-21",
+  "id" : "4d1636de-1fa5-4465-8245-6a46dc7a28d5-21",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/4d1636de-1fa5-4465-8245-6a46dc7a28d5-21",
   "name" : "IntersectionDocumentClassValueSetAndDocumentClassValueSet",
   "title" : "Intersection of Document Class Value Set And Document Class Value Set",
   "status" : "active",
-  "date" : "2026-07-20T08:29:55+00:00",
+  "date" : "2026-07-20T08:31:09+00:00",
   "compose" : {
     "include" : [{
       "concept" : [{

@@ -19,7 +19,7 @@ Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne s
   "title" : "MOS to FHIR CDL",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-20T08:28:57+00:00",
+  "date" : "2026-07-20T08:30:08+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

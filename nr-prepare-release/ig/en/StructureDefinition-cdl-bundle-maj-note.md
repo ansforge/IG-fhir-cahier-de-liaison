@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-maj-no
   "name" : "CdLBundleMAJNote",
   "title" : "Bundle de mise à jour d'une note",
   "status" : "active",
-  "date" : "2026-07-20T08:28:57+00:00",
+  "date" : "2026-07-20T08:30:08+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

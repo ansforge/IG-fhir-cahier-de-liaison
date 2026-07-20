@@ -119,7 +119,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cdl-document-re
   "name" : "CdLDocumentReference",
   "title" : "DocumentReference Cahier de Liaison",
   "status" : "active",
-  "date" : "2026-07-20T08:28:57+00:00",
+  "date" : "2026-07-20T08:30:08+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
