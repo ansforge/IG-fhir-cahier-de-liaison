@@ -1,0 +1,19 @@
+{
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl",
+  "name" : "CDL",
+  "title" : "Cahier De Liaison",
+  "description" : "",
+  "status" : "active",
+  "package-id" : "ans.fhir.fr.cdl",
+  "ig-ver" : "3.0.1",
+  "date" : "Mon, 20 Jul, 2026 08:28:57 +0000",
+  "dateISO8601" : "2026-07-20T08:28:57+00:00",
+  "errs" : 24,
+  "warnings" : 50,
+  "hints" : 1189,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 3908337296
+}

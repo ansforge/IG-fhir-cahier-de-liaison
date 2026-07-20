@@ -1,0 +1,47 @@
+# ans.fhir.fr.cdl#3.0.1: Cahier De Liaison(fr)
+
+## Pages
+
+* [Accueil](fr/index.md)
+* [Suppression d'une note](fr/suppr_note.md)
+* [Création d'une note](fr/creation_note.md)
+* [Construction Des Flux](fr/construction_des_flux.md)
+* [M-à-j d'une note](fr/maj_note.md)
+* [Specifications Techniques](fr/specifications_techniques.md)
+* [Recherche d'une note](fr/recherche_note.md)
+* [Historique des changements](fr/changes.md)
+* [Informations sur la traduction](fr/translationinfo.md)
+* [Spécifications fonctionnelles](fr/specifications_fonctionnelles.md)
+* [Résumé des artefacts](fr/artifacts.md)
+
+## Resources
+
+### Resource Profiles
+
+* [Bundle de création d'une note](fr/StructureDefinition-cdl-bundle-creation-note.md)
+* [Bundle de mise à jour d'une note](fr/StructureDefinition-cdl-bundle-maj-note.md)
+* [Bundle résultat recherche notes](fr/StructureDefinition-cdl-bundle-resultat-recherche-notes.md)
+* [DocumentReference Cahier de Liaison](fr/StructureDefinition-cdl-document-reference.md)
+
+### Extensions
+
+* [CdL_isEmergency](fr/StructureDefinition-cdl-ext-is-emergency.md)
+
+### CapabilityStatements
+
+* [CI-SIS Cahier-de-Liaison - ConsommateurContenu](fr/CapabilityStatement-ConsommateurContenu.md)
+* [CI-SIS Cahier-de-Liaison - CreateurContenu](fr/CapabilityStatement-CreateurContenu.md)
+* [CI-SIS Cahier-de-Liaison - GestionnaireCdL](fr/CapabilityStatement-GestionnaireCdL.md)
+
+### ConceptMaps
+
+* [MOS to FHIR CDL](fr/ConceptMap-ConceptMap-mos-cdl.md)
+
+### ImplementationGuides
+
+* [Cahier De Liaison](fr/ImplementationGuide-ans.fhir.fr.cdl.md)
+
+### Examples
+
+* [cdl-bundle-creation-note (Bundle)](fr/Bundle-cdl-bundle-creation-note.md)
+* [0d920958-b596-4b91-af67-9bafc707820b (Patient)](fr/Patient-0d920958-b596-4b91-af67-9bafc707820b.md)

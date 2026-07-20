@@ -1,0 +1,250 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/cdl/Bundle/cdl-bundle-creation-note> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cdl-bundle-creation-note"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:Bundle.type [ fhir:value "transaction"] ;
+  fhir:Bundle.entry [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:04886b69-ef36-4584-819e-4590cd3888a4" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:04886b69-ef36-4584-819e-4590cd3888a4> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f380b0fd-23c2-415a-b367-53e707ef91e2" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:f380b0fd-23c2-415a-b367-53e707ef91e2> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:85652218-ea45-426f-916e-6ca5ea8dd5e1" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:85652218-ea45-426f-916e-6ca5ea8dd5e1> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:0d920958-b596-4b91-af67-9bafc707820b" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:0d920958-b596-4b91-af67-9bafc707820b> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "Patient/0d920958-b596-4b91-af67-9bafc707820b" ]
+     ]
+  ] .
+
+<urn:uuid:04886b69-ef36-4584-819e-4590cd3888a4> a fhir:DocumentReference ;
+  fhir:Resource.id [ fhir:value "04886b69-ef36-4584-819e-4590cd3888a4"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:DocumentReference.status [ fhir:value "current"] ;
+  fhir:DocumentReference.type [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R234-TypeNote/FHIR/TRE-R234-TypeNote" ] ;
+       fhir:Coding.code [ fhir:value "DEM-AVIS" ] ;
+       fhir:Coding.display [ fhir:value "Demande d'avis" ]
+     ]
+  ] ;
+  fhir:DocumentReference.subject [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/Patient/0d920958-b596-4b91-af67-9bafc707820b> ;
+     fhir:Reference.reference [ fhir:value "Patient/0d920958-b596-4b91-af67-9bafc707820b" ] ;
+     fhir:Reference.display [ fhir:value "Michel ROUBINOWITZ" ]
+  ] ;
+  fhir:DocumentReference.date [ fhir:value "2019-03-04T08:30:00+11:00"^^xsd:dateTime] ;
+  fhir:DocumentReference.author [
+     fhir:index -1 ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1" ]
+  ], [
+     fhir:index -1 ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2" ] ;
+     fhir:Reference.display [ fhir:value "Mme Sophie Brooks (infirmier)" ]
+  ] ;
+  fhir:DocumentReference.content [
+     fhir:index -1 ;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "text/plain" ] ;
+       fhir:Attachment.language [ fhir:value "fr" ] ;
+       fhir:Attachment.data [ fhir:value "TWFtYW4gZXN0IGZhdGlndellLiBFbGxlIG4nYSBwYXMgdm91bHUgc29ydGlyIGNlIG1hdGluLg=="^^xsd:base64Binary ]
+     ]
+  ] .
+
+<urn:uuid:f380b0fd-23c2-415a-b367-53e707ef91e2> a fhir:PractitionerRole ;
+  fhir:Resource.id [ fhir:value "f380b0fd-23c2-415a-b367-53e707ef91e2"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1" ] ;
+     fhir:Reference.display [ fhir:value "Mme Sophie Brooks" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante" ] ;
+       fhir:Coding.code [ fhir:value "60" ] ;
+       fhir:Coding.display [ fhir:value "Infirmier" ]
+     ]
+  ] .
+
+<urn:uuid:85652218-ea45-426f-916e-6ca5ea8dd5e1> a fhir:Practitioner ;
+  fhir:Resource.id [ fhir:value "85652218-ea45-426f-916e-6ca5ea8dd5e1"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner" ;
+       fhir:index -1 ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:Practitioner.name [
+     fhir:index -1 ;
+     fhir:HumanName.family [ fhir:value "Brooks" ] ;
+     fhir:HumanName.given [
+       fhir:value "Sophie" ;
+       fhir:index -1
+     ] ;
+     fhir:HumanName.prefix [
+       fhir:value "MME" ;
+       fhir:index -1
+     ]
+  ] .
+
+<urn:uuid:0d920958-b596-4b91-af67-9bafc707820b> a fhir:Patient ;
+  fhir:Resource.id [ fhir:value "0d920958-b596-4b91-af67-9bafc707820b"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins" ;
+       fhir:index -1 ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "identityStatus" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445" ] ;
+         fhir:Coding.code [ fhir:value "VALI" ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ] ;
+     fhir:Extension.valueAddress [
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code" ] ;
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune" ] ;
+           fhir:Coding.code [ fhir:value "60500" ]
+         ]
+       ] ;
+       fhir:Address.city [ fhir:value "Chantilly" ]
+     ]
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "INS-NIR" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.250.1.213.1.4.8" ] ;
+     fhir:Identifier.value [ fhir:value "123456789012244" ]
+  ] ;
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Patient.name [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name" ] ;
+       fhir:Extension.valueString [ fhir:value "Michel" ]
+     ] ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "ROUBINOWITZ" ] ;
+     fhir:HumanName.given [
+       fhir:value "Michel" ;
+       fhir:index -1
+     ]
+  ] ;
+  fhir:Patient.telecom [
+     fhir:index -1 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+33635256986" ] ;
+     fhir:ContactPoint.use [ fhir:value "mobile" ] ;
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "male"] ;
+  fhir:Patient.birthDate [ fhir:value "1975-03-11"^^xsd:date] ;
+  fhir:Patient.address [
+     fhir:index -1 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.type [ fhir:value "both" ] ;
+     fhir:Address.line [
+       fhir:value "10 Rue Guillaume Bertrand" ;
+       fhir:index -1
+     ] ;
+     fhir:Address.city [ fhir:value "Paris" ] ;
+     fhir:Address.postalCode [ fhir:value "75011" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/cdl/Bundle/cdl-bundle-creation-note.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
