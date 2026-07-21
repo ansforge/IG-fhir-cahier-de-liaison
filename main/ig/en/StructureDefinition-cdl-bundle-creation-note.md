@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
   "name" : "CdLBundleCreationNote",
   "title" : "Bundle de création d'une note",
   "status" : "active",
-  "date" : "2026-07-21T12:38:43+00:00",
+  "date" : "2026-07-21T13:00:31+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

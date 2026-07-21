@@ -18,7 +18,7 @@
   fhir:StructureDefinition.name [ fhir:value "CdLDocumentReference"] ;
   fhir:StructureDefinition.title [ fhir:value "DocumentReference Cahier de Liaison"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-21T12:38:43+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-21T13:00:31+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "ANS"] ;
   fhir:StructureDefinition.contact [
      fhir:index -1 ;
