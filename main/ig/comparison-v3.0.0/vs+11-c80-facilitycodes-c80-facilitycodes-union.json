@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "badfbb98-349d-4e03-be93-e56308e1b083-32",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/badfbb98-349d-4e03-be93-e56308e1b083-32",
+  "id" : "52713d9a-1bca-4d24-8de4-f558d917a258-32",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/52713d9a-1bca-4d24-8de4-f558d917a258-32",
   "name" : "UnionFacilityTypeCodeValueSetAndFacilityTypeCodeValueSet",
   "title" : "Union of Facility Type Code Value Set And Facility Type Code Value Set",
   "status" : "active",
-  "date" : "2026-07-21T13:22:38+00:00",
+  "date" : "2026-07-21T13:27:48+00:00",
   "compose" : {
     "include" : [{
       "concept" : [{

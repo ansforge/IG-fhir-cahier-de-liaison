@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "CDL"] ;
   fhir:ImplementationGuide.title [ fhir:value "Cahier De Liaison"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-21T13:21:42+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-21T13:26:50+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "ANS"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "badfbb98-349d-4e03-be93-e56308e1b083-15",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/badfbb98-349d-4e03-be93-e56308e1b083-15",
+  "id" : "52713d9a-1bca-4d24-8de4-f558d917a258-15",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/52713d9a-1bca-4d24-8de4-f558d917a258-15",
   "name" : "IntersectionCdLDocumentReferenceAndCdLDocumentReference",
   "title" : "Intersection of DocumentReference Cahier de Liaison And DocumentReference Cahier de Liaison",
   "status" : "draft",
-  "date" : "2026-07-21T13:22:38+00:00",
+  "date" : "2026-07-21T13:27:48+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "DocumentReference",
@@ -566,7 +566,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/badfbb98-349d-4e03-be93-e56308e1b083-18"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/52713d9a-1bca-4d24-8de4-f558d917a258-18"
       },
       "mapping" : [{
         "identity" : "cdl-documentreference-to-mos-note",
@@ -1213,7 +1213,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/badfbb98-349d-4e03-be93-e56308e1b083-24"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/52713d9a-1bca-4d24-8de4-f558d917a258-24"
       },
       "mapping" : [{
         "identity" : "cdl-documentreference-to-mos-note",
