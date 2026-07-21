@@ -2,16 +2,16 @@
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ans.fhir.fr.cdl"/>
-  <language value="en"/>
+  <language value="fr"/>
   <text>
-    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.cdl</b></p><a name="ans.fhir.fr.cdl"> </a><a name="hcans.fhir.fr.cdl"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.fhir.fr.cdl</b></p><a name="ans.fhir.fr.cdl"> </a><a name="hcans.fhir.fr.cdl"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><h2>CDL</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.cdl</b></p><a name="en-ans.fhir.fr.cdl"> </a><a name="en-hcans.fhir.fr.cdl"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: fr</p></div><h2>CDL</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl</pre></div></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuide/ans.fhir.fr.cdl"/>
-  <version value="3.0.0"/>
+  <version value="3.0.1"/>
   <name value="CDL"/>
   <title value="Cahier De Liaison"/>
-  <status value="draft"/>
-  <date value="2026-07-20T07:40:33+00:00"/>
+  <status value="active"/>
+  <date value="2026-07-21T12:38:43+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -24,7 +24,7 @@
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="FR"/>
-      <display value="FRANCE"/>
+      <display value="France (la)"/>
     </coding>
   </jurisdiction>
   <packageId value="ans.fhir.fr.cdl"/>
@@ -56,10 +56,10 @@
     <packageId value="hl7.fhir.fr.core"/>
     <version value="2.0.1"/>
   </dependsOn>
-  <dependsOn id="ans_fr_nos">
-    <uri value="https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"/>
-    <packageId value="ans.fr.nos"/>
-    <version value="1.5.0"/>
+  <dependsOn id="ans_fr_terminologies">
+    <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
+    <packageId value="ans.fr.terminologies"/>
+    <version value="1.11.1"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -84,6 +84,102 @@
       </extension>
       <extension url="value">
         <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../expansion-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-all"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="tx"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="generate"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="init"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="progress"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="fr"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="translation-sources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/translations/en"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -168,14 +264,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="apply-context"/>
       </extension>
       <extension url="value">
@@ -185,14 +273,6 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueString value="apply-copyright"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -270,13 +350,10 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="i18n-default-lang"/>
-      </extension>
-      <extension url="value">
-        <valueString value="en"/>
-      </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters">
+      <valueReference>
+        <reference value="Parameters/expansion-parameters"/>
+      </valueReference>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
       <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
@@ -303,6 +380,102 @@
       </extension>
       <extension url="value">
         <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../expansion-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-all"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="tx"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="generate"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="init"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="progress"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="fr"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="translation-sources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/translations/en"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -387,14 +560,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueCode value="apply-context"/>
       </extension>
       <extension url="value">
@@ -404,14 +569,6 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueCode value="apply-copyright"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -489,14 +646,6 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="i18n-default-lang"/>
-      </extension>
-      <extension url="value">
-        <valueString value="en"/>
-      </extension>
-    </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
@@ -548,7 +697,7 @@
         <reference value="Bundle/cdl-bundle-creation-note"/>
       </reference>
       <name value="cdl-bundle-creation-note"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -692,6 +841,14 @@
         </extension>
         <nameUrl value="changes.html"/>
         <title value="Historique des changements"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="translationinfo.html"/>
+        </extension>
+        <nameUrl value="translationinfo.html"/>
+        <title value="Informations sur la traduction"/>
         <generation value="markdown"/>
       </page>
     </page>

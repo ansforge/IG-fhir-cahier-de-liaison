@@ -1,4 +1,4 @@
-# CI-SIS Cahier-de-Liaison - CreateurContenu - Cahier De Liaison v3.0.0
+# CI-SIS Cahier-de-Liaison - CreateurContenu - Cahier De Liaison v3.0.1
 
 ## CapabilityStatement: CI-SIS Cahier-de-Liaison - CreateurContenu 
 
@@ -16,7 +16,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
   "resourceType" : "CapabilityStatement",
   "id" : "CreateurContenu",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/CreateurContenu",
-  "version" : "3.0.0",
+  "version" : "3.0.1",
   "name" : "CreateurContenu",
   "title" : "CI-SIS Cahier-de-Liaison - CreateurContenu",
   "status" : "active",
@@ -35,7 +35,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "kind" : "requirements",
@@ -51,14 +51,14 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     "resource" : [{
       "type" : "Bundle",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1",
       "interaction" : [{
         "code" : "create"
       }]
     },
     {
       "type" : "Patient",
-      "profile" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+      "profile" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1",
       "interaction" : [{
         "code" : "create"
       },
@@ -68,7 +68,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     {
       "type" : "Practitioner",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1",
       "interaction" : [{
         "code" : "create"
       },
@@ -78,7 +78,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     {
       "type" : "PractitionerRole",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1",
       "interaction" : [{
         "code" : "create"
       },
@@ -98,7 +98,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     {
       "type" : "Organization",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.0.1",
       "supportedProfile" : ["http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"],
       "interaction" : [{
         "code" : "create"
@@ -109,7 +109,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     {
       "type" : "Device",
-      "profile" : "http://hl7.org/fhir/StructureDefinition/Device",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
       "interaction" : [{
         "code" : "create"
       },
@@ -119,7 +119,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     {
       "type" : "DocumentReference",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference|3.0.1",
       "interaction" : [{
         "code" : "update"
       },
@@ -153,14 +153,14 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     "resource" : [{
       "type" : "Bundle",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1",
       "interaction" : [{
         "code" : "create"
       }]
     },
     {
       "type" : "Patient",
-      "profile" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+      "profile" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1",
       "interaction" : [{
         "code" : "create"
       },
@@ -170,7 +170,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     {
       "type" : "Practitioner",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1",
       "interaction" : [{
         "code" : "create"
       },
@@ -180,7 +180,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     {
       "type" : "PractitionerRole",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1",
       "interaction" : [{
         "code" : "create"
       },
@@ -200,7 +200,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     {
       "type" : "Device",
-      "profile" : "http://hl7.org/fhir/StructureDefinition/Device",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
       "interaction" : [{
         "code" : "create"
       },
@@ -210,7 +210,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     {
       "type" : "Organization",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.0.1",
       "supportedProfile" : ["http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"],
       "interaction" : [{
         "code" : "create"
@@ -221,7 +221,7 @@ Le créateur de contenu est une personne, un équipement ou une entité qui alim
     },
     {
       "type" : "DocumentReference",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference|3.0.1",
       "interaction" : [{
         "code" : "update"
       },

@@ -1,4 +1,4 @@
-# ans.fhir.fr.cdl#3.0.0: Cahier De Liaison(en)
+# ans.fhir.fr.cdl#3.0.1: Cahier De Liaison(en)
 
 ## Pages
 
@@ -10,6 +10,7 @@
 * [Specifications Techniques](specifications_techniques.md)
 * [Recherche d'une note](recherche_note.md)
 * [Historique des changements](changes.md)
+* [Informations sur la traduction](translationinfo.md)
 * [Spécifications fonctionnelles](specifications_fonctionnelles.md)
 * [Artifacts Summary](artifacts.md)
 

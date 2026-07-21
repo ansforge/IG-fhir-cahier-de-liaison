@@ -1,4 +1,4 @@
-# MOS to FHIR CDL - Cahier De Liaison v3.0.0
+# MOS to FHIR CDL - Cahier De Liaison v3.0.1
 
 ## ConceptMap: MOS to FHIR CDL (Experimental) 
 
@@ -14,12 +14,12 @@ Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne s
   "resourceType" : "ConceptMap",
   "id" : "ConceptMap-mos-cdl",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/ConceptMap/ConceptMap-mos-cdl",
-  "version" : "3.0.0",
+  "version" : "3.0.1",
   "name" : "ConceptMapMOS2CDL",
   "title" : "MOS to FHIR CDL",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-20T07:40:33+00:00",
+  "date" : "2026-07-21T12:38:43+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -33,7 +33,7 @@ Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne s
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "purpose" : "Donner un indice fonctionnel du mapping entre FHIR et MOS.",
@@ -42,6 +42,7 @@ Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne s
   "group" : [{
     "source" : "https://mos.esante.gouv.fr/12.html",
     "target" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
+    "targetVersion" : "2.0.1",
     "element" : [{
       "code" : "Contact.IdContact",
       "display" : "Contact.IdContact",
@@ -91,6 +92,7 @@ Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne s
   {
     "source" : "https://mos.esante.gouv.fr/12.html",
     "target" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
+    "targetVersion" : "2.0.1",
     "element" : [{
       "code" : "Professionnel.idPP",
       "display" : "Professionnel.idPP",
@@ -153,6 +155,7 @@ Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne s
   {
     "source" : "https://mos.esante.gouv.fr/12.html",
     "target" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
+    "targetVersion" : "2.0.1",
     "element" : [{
       "code" : "EntiteGeographique.numFINESS",
       "display" : "EntiteGeographique.numFINESS",
@@ -202,6 +205,7 @@ Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne s
   {
     "source" : "https://mos.esante.gouv.fr/12.html",
     "target" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+    "targetVersion" : "2.0.1",
     "element" : [{
       "code" : "PersonnePriseEnCharge.idPersonnePriseEnCharge",
       "display" : "PersonnePriseEnCharge.idPersonnePriseEnCharge",
@@ -278,6 +282,7 @@ Mapping entre le MOS et les profils cahiers de liaison pour les profils qui ne s
   {
     "source" : "https://mos.esante.gouv.fr/12.html",
     "target" : "http://hl7.org/fhir/StructureDefinition/Device",
+    "targetVersion" : "4.0.1",
     "element" : [{
       "code" : "RessourceMaterielle.libelle",
       "display" : "RessourceMaterielle.libelle",

@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MOS to FHIR CDL - JSON Representation - Cahier De Liaison v3.0.0</title>
+    <title>MOS to FHIR CDL - JSON Representation - Cahier De Liaison v3.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,8 +52,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.9"}
-    h3,h4,h5,h6{--heading-prefix:"5.9"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.9"}
+    h3,h4,h5,h6{--heading-prefix:"6.9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -73,13 +73,13 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">Cahier De Liaison</span>
             <br/>
-            <span style="display:inline-block;">3.0.0 - trial-use
+            <span style="display:inline-block;">3.0.1 - trial-use
 
 
 
 
 
-  <img alt="France flag" src="../assets/images/fra.svg" height="16" title="France"/>
+  <img alt=" flag" src="../assets/images/fra.svg" height="16" title=""/>
 
 
             </span>
@@ -149,6 +149,21 @@
 
               
 
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+
+    <div><a href="../fr/ConceptMap-ConceptMap-mos-cdl.json.html"><img class="flag" src="assets/images/lang-fr.png" alt="flag fr"/>Français</a></div>
+
+  </div>
+</div>
+
+
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
       <!-- /HEADER CONTENT -->
@@ -183,7 +198,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Cahier De Liaison - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/cdl/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Cahier De Liaison - Local Development build (v3.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/cdl/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -243,7 +258,7 @@
           
 
             as of 
-2026-07-20
+2026-07-21
 
           
         
@@ -266,15 +281,15 @@
   "<a href="http://hl7.org/fhir/R4/resource.html#ConceptMap.language">language</a>" : "en",
   "<a href="http://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap ConceptMap-mos-cdl&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ConceptMap-mos-cdl\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcConceptMap-mos-cdl\&quot;&gt; &lt;/a&gt;&lt;p&gt;Mapping from https://mos.esante.gouv.fr to https://hl7.fr/ig/fhir/core&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;a href=\&quot;https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-related-person.html\&quot;&gt;FR Core Related Person Profile&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Contact.IdContact&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;RelatedPerson.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Contact.adresse&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;RelatedPerson.address&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Contact.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;RelatedPerson.telecom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.nomFamille&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;RelatedPerson.name.family&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.prenomUsuel&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;RelatedPerson.name.given&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 2 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;a href=\&quot;https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-practitioner.html\&quot;&gt;FR Core Practitioner Profile&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Professionnel.idPP&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Practitioner.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Professionnel.adresseCorrespondance&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Practitioner.address&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Professionnel.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Practitioner.telecom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.nomFamille&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Practitioner.name.family&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.prenomUsuel&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Practitioner.name.given&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 3 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;code&gt;https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role&lt;/code&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ExerciceProfessionnel.profession&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PractitionerRole.code&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 4 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;a href=\&quot;https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-organization.html\&quot;&gt;FR Core Organization Profile&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EntiteGeographique.numFINESS&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Organization.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EntiteGeographique.secteurActivite&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Organization.type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EntiteGeographique.adresseEG&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Organization.address&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EntiteGeographique.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Organization.telecom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EntiteGeographique.denominationEG&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Organization.name&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 5 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;a href=\&quot;https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html\&quot;&gt;FR Core Patient Profile&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePriseEnCharge.idPersonnePriseEnCharge&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePriseEnCharge.adresseCorrespondance&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.address&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePriseEnCharge.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.telecom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Patient.idPatient&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Patient.adresseCorrespondance&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.address&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Patient.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.telecom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.nomFamille&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name.family&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name.given&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 6 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;a href=\&quot;http://hl7.org/fhir/R4/device.html\&quot;&gt;Device&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RessourceMaterielle.libelle&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Device.deviceName.name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RessourceMaterielle.reference&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Device.modelNumber&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;English&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap ConceptMap-mos-cdl&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;en-ConceptMap-mos-cdl\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;en-hcConceptMap-mos-cdl\&quot;&gt; &lt;/a&gt;&lt;p&gt;Mapping from https://mos.esante.gouv.fr to https://hl7.fr/ig/fhir/core&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;a href=\&quot;https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-related-person.html\&quot;&gt;FR Core Related Person Profileversion: 2.0.1)&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Contact.IdContact&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;RelatedPerson.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Contact.adresse&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;RelatedPerson.address&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Contact.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;RelatedPerson.telecom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.nomFamille&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;RelatedPerson.name.family&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.prenomUsuel&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;RelatedPerson.name.given&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 2 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;a href=\&quot;https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-practitioner.html\&quot;&gt;FR Core Practitioner Profileversion: 2.0.1)&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Professionnel.idPP&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Practitioner.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Professionnel.adresseCorrespondance&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Practitioner.address&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Professionnel.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Practitioner.telecom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.nomFamille&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Practitioner.name.family&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.prenomUsuel&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Practitioner.name.given&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 3 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;code&gt;https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role&lt;/code&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ExerciceProfessionnel.profession&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PractitionerRole.code&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 4 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;a href=\&quot;https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-organization.html\&quot;&gt;FR Core Organization Profileversion: 2.0.1)&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EntiteGeographique.numFINESS&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Organization.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EntiteGeographique.secteurActivite&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Organization.type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EntiteGeographique.adresseEG&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Organization.address&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EntiteGeographique.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Organization.telecom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;EntiteGeographique.denominationEG&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Organization.name&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 5 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;a href=\&quot;https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html\&quot;&gt;FR Core Patient Profileversion: 2.0.1)&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePriseEnCharge.idPersonnePriseEnCharge&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePriseEnCharge.adresseCorrespondance&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.address&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePriseEnCharge.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.telecom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Patient.idPatient&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Patient.adresseCorrespondance&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.address&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Patient.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.telecom&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.nomFamille&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name.family&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PersonnePhysique.telecommunication&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name.given&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 6 &lt;/b&gt;Mapping from &lt;code&gt;https://mos.esante.gouv.fr/12.html&lt;/code&gt; to &lt;a href=\&quot;http://hl7.org/fhir/R4/device.html\&quot;&gt;Deviceversion: 4.0.1)&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RessourceMaterielle.libelle&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Device.deviceName.name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RessourceMaterielle.reference&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Device.modelNumber&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">url</a>" : "https://interop.esante.gouv.fr/ig/fhir/cdl/ConceptMap/ConceptMap-mos-cdl",
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a>" : "3.0.0",
+  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a>" : "3.0.1",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.name">name</a>" : "ConceptMapMOS2CDL",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">title</a>" : "MOS to FHIR CDL",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.experimental">experimental</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">date</a>" : "2026-07-20T07:40:33+00:00",
+  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">date</a>" : "2026-07-21T12:38:43+00:00",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">publisher</a>" : "ANS",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">contact</a>" : [
     {
@@ -294,7 +309,7 @@
         {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "FR",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "FRANCE"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "France (la)"
         }
       ]
     }
@@ -306,6 +321,7 @@
     {
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>" : "https://mos.esante.gouv.fr/12.html",
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
+      "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.targetVersion">targetVersion</a>" : "2.0.1",
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a>" : "Contact.IdContact",
@@ -367,6 +383,7 @@
     {
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>" : "https://mos.esante.gouv.fr/12.html",
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
+      "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.targetVersion">targetVersion</a>" : "2.0.1",
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a>" : "Professionnel.idPP",
@@ -445,6 +462,7 @@
     {
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>" : "https://mos.esante.gouv.fr/12.html",
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
+      "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.targetVersion">targetVersion</a>" : "2.0.1",
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a>" : "EntiteGeographique.numFINESS",
@@ -506,6 +524,7 @@
     {
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>" : "https://mos.esante.gouv.fr/12.html",
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+      "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.targetVersion">targetVersion</a>" : "2.0.1",
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a>" : "PersonnePriseEnCharge.idPersonnePriseEnCharge",
@@ -600,6 +619,7 @@
     {
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">source</a>" : "https://mos.esante.gouv.fr/12.html",
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">target</a>" : "http://hl7.org/fhir/StructureDefinition/Device",
+      "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.targetVersion">targetVersion</a>" : "4.0.1",
       "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">element</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">code</a>" : "RessourceMaterielle.libelle",
@@ -678,10 +698,10 @@
 
 
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
-          Package ans.fhir.fr.cdl#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package ans.fhir.fr.cdl#3.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-20 07:40:00 +0000">
-    2026-07-20
+  <span title="2026-07-21 12:38:00 +0000">
+    2026-07-21
   </span>
 
           <br/>

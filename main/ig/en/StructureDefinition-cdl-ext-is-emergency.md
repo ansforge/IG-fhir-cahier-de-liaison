@@ -1,4 +1,4 @@
-# CdL_isEmergency - Cahier De Liaison v3.0.0
+# CdL_isEmergency - Cahier De Liaison v3.0.1
 
 ## Extension: 
 
@@ -29,10 +29,10 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-ext-is-emerge
   "resourceType" : "StructureDefinition",
   "id" : "cdl-ext-is-emergency",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-ext-is-emergency",
-  "version" : "3.0.0",
+  "version" : "3.0.1",
   "name" : "CdL_isEmergency",
-  "status" : "draft",
-  "date" : "2026-07-20T07:40:33+00:00",
+  "status" : "active",
+  "date" : "2026-07-21T12:38:43+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-ext-is-emerge
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -61,7 +61,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-ext-is-emerge
     "expression" : "DocumentReference"
   }],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{

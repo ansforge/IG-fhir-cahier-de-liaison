@@ -1,4 +1,4 @@
-# Bundle de création d'une note - Cahier De Liaison v3.0.0
+# Bundle de création d'une note - Cahier De Liaison v3.0.1
 
 ## Resource Profile: Bundle de création d'une note 
 
@@ -29,11 +29,11 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
   "resourceType" : "StructureDefinition",
   "id" : "cdl-bundle-creation-note",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note",
-  "version" : "3.0.0",
+  "version" : "3.0.1",
   "name" : "CdLBundleCreationNote",
   "title" : "Bundle de création d'une note",
-  "status" : "draft",
-  "date" : "2026-07-20T07:40:33+00:00",
+  "status" : "active",
+  "date" : "2026-07-21T12:38:43+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
   "kind" : "resource",
   "abstract" : false,
   "type" : "Bundle",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -111,7 +111,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
       "min" : 1,
       "type" : [{
         "code" : "DocumentReference",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference|3.0.1"]
       }]
     },
     {
@@ -137,7 +137,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
       "min" : 1,
       "type" : [{
         "code" : "Patient",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1"]
       }]
     },
     {
@@ -148,7 +148,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
         "severity" : "error",
         "human" : "POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà",
         "expression" : "value='POST' or value='PUT'",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1"
       }]
     },
     {
@@ -169,7 +169,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
       "min" : 1,
       "type" : [{
         "code" : "Practitioner",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1"]
       }]
     },
     {
@@ -180,7 +180,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
         "severity" : "error",
         "human" : "POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà",
         "expression" : "value='POST' or value='PUT'",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1"
       }]
     },
     {
@@ -201,7 +201,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
       "min" : 1,
       "type" : [{
         "code" : "PractitionerRole",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1"]
       }]
     },
     {
@@ -212,7 +212,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
         "severity" : "error",
         "human" : "POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà",
         "expression" : "value='POST' or value='PUT'",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1"
       }]
     },
     {
@@ -233,7 +233,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
       "min" : 1,
       "type" : [{
         "code" : "Organization",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.0.1"]
       }]
     },
     {
@@ -244,7 +244,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
         "severity" : "error",
         "human" : "POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà",
         "expression" : "value='POST' or value='PUT'",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1"
       }]
     },
     {
@@ -265,7 +265,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
       "min" : 1,
       "type" : [{
         "code" : "RelatedPerson",
-        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person"]
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.0.1"]
       }]
     },
     {
@@ -276,7 +276,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
         "severity" : "error",
         "human" : "POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà",
         "expression" : "value='POST' or value='PUT'",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1"
       }]
     },
     {
@@ -307,7 +307,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-bundle-creati
         "severity" : "error",
         "human" : "POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà",
         "expression" : "value='POST' or value='PUT'",
-        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1"
       }]
     },
     {

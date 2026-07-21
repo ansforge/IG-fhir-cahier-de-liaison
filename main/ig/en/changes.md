@@ -1,6 +1,18 @@
-# Historique des changements - Cahier De Liaison v3.0.0
+# Historique des changements - Cahier De Liaison v3.0.1
 
 ## Historique des changements
+
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
+
+**Release 3.0.1 de l'Implementation Guide cahier de liaison.**
+
+[Modifications apportées dans cette release](https://github.com/ansforge/IG-fhir-cahier-de-liaison/milestone/2?closed=1) :
+
+* Suppression d'un backslash [12](https://github.com/ansforge/IG-fhir-cahier-de-liaison/pull/12)
+* Adoption du mode conteneur pour le workflow CI-build [13](https://github.com/ansforge/IG-fhir-cahier-de-liaison/pull/13)
+* Passage au template 2 [14](https://github.com/ansforge/IG-fhir-cahier-de-liaison/pull/14)
+* Remplacement de la dépendance `ans.fr.nos` par `ans.fr.terminologies` [14](https://github.com/ansforge/IG-fhir-cahier-de-liaison/pull/14)
 
 **Release 3.0.0 de l'Implementation Guide cahier de liaison.**
 

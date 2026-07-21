@@ -1,4 +1,4 @@
-# DocumentReference Cahier de Liaison - Cahier De Liaison v3.0.0
+# DocumentReference Cahier de Liaison - Cahier De Liaison v3.0.1
 
 ## Resource Profile: DocumentReference Cahier de Liaison 
 
@@ -29,11 +29,11 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-document-refe
   "resourceType" : "StructureDefinition",
   "id" : "cdl-document-reference",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference",
-  "version" : "3.0.0",
+  "version" : "3.0.1",
   "name" : "CdLDocumentReference",
   "title" : "DocumentReference Cahier de Liaison",
-  "status" : "draft",
-  "date" : "2026-07-20T07:40:33+00:00",
+  "status" : "active",
+  "date" : "2026-07-21T12:38:43+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-document-refe
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -94,7 +94,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-document-refe
   "kind" : "resource",
   "abstract" : false,
   "type" : "DocumentReference",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/DocumentReference|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -125,7 +125,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-document-refe
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-ext-is-emergency"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-ext-is-emergency|3.0.1"]
       }],
       "mustSupport" : true,
       "mapping" : [{
@@ -161,7 +161,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-document-refe
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J23-TypeNoteCahierLiaison-CISIS/FHIR/JDV-J23-TypeNoteCahierLiaison-CISIS|20200424120000"
       },
       "mapping" : [{
         "identity" : "cdl-documentreference-to-mos-note",
@@ -174,7 +174,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-document-refe
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"]
+        "targetProfile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1"]
       }],
       "mustSupport" : true,
       "mapping" : [{
@@ -198,12 +198,12 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-document-refe
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device",
-        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
-        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
-        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner",
-        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
-        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.0.1",
+        "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1",
+        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1",
+        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1",
+        "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.0.1"]
       }],
       "mustSupport" : true,
       "mapping" : [{
@@ -247,7 +247,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-document-refe
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J110-StatutVisibiliteDocument-CISIS/FHIR/JDV-J110-StatutVisibiliteDocument-CISIS"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J110-StatutVisibiliteDocument-CISIS/FHIR/JDV-J110-StatutVisibiliteDocument-CISIS|20200424120000"
       },
       "mapping" : [{
         "identity" : "cdl-documentreference-to-mos-note",

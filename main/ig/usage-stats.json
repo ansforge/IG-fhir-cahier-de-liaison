@@ -1,6 +1,6 @@
 {
   "package": "ans.fhir.fr.cdl",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
@@ -60,6 +60,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
+      "ImplementationGuide.definition"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
     ],
@@ -88,7 +91,7 @@
       "Bundle.entry.resource.name",
       "Patient.name"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-ext-is-emergency": [
+    "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-ext-is-emergency|3.0.1": [
       "DocumentReference"
     ]
   }

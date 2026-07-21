@@ -1,4 +1,4 @@
-# CI-SIS Cahier-de-Liaison - ConsommateurContenu - Cahier De Liaison v3.0.0
+# CI-SIS Cahier-de-Liaison - ConsommateurContenu - Cahier De Liaison v3.0.1
 
 ## CapabilityStatement: CI-SIS Cahier-de-Liaison - ConsommateurContenu 
 
@@ -16,7 +16,7 @@ Le consommateur de contenu qui interroge le cahier de liaison
   "resourceType" : "CapabilityStatement",
   "id" : "ConsommateurContenu",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/ConsommateurContenu",
-  "version" : "3.0.0",
+  "version" : "3.0.1",
   "name" : "ConsommateurContenu",
   "title" : "CI-SIS Cahier-de-Liaison - ConsommateurContenu",
   "status" : "active",
@@ -35,7 +35,7 @@ Le consommateur de contenu qui interroge le cahier de liaison
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "kind" : "requirements",
@@ -51,7 +51,7 @@ Le consommateur de contenu qui interroge le cahier de liaison
     },
     "resource" : [{
       "type" : "DocumentReference",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference|3.0.1",
       "interaction" : [{
         "code" : "read"
       },
@@ -60,38 +60,38 @@ Le consommateur de contenu qui interroge le cahier de liaison
       }],
       "searchParam" : [{
         "name" : "date",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-date|4.0.1",
         "type" : "date",
         "documentation" : "date de création de la note"
       },
       {
         "name" : "type",
-        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-type",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-type|4.0.1",
         "type" : "token",
         "documentation" : "type de la note"
       },
       {
         "name" : "security-label",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-security-label",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-security-label|4.0.1",
         "type" : "token",
         "documentation" : "degré de restriction de l'audience de la note"
       },
       {
         "name" : "subject",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-subject",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-subject|4.0.1",
         "type" : "reference",
         "documentation" : "Sujet de la note"
       },
       {
         "name" : "author",
-        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-author",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-author|4.0.1",
         "type" : "reference",
         "documentation" : "Sujet de la note"
       }]
     },
     {
       "type" : "Patient",
-      "profile" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+      "profile" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1",
       "interaction" : [{
         "code" : "read"
       },
@@ -100,32 +100,32 @@ Le consommateur de contenu qui interroge le cahier de liaison
       }],
       "searchParam" : [{
         "name" : "identifier",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Patient-identifier",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Patient-identifier|4.0.1",
         "type" : "token",
         "documentation" : "Identifiant du patient"
       },
       {
         "name" : "family",
-        "definition" : "http://hl7.org/fhir/SearchParameter/individual-family",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-family|4.0.1",
         "type" : "string",
         "documentation" : "Nom de famille du patient"
       },
       {
         "name" : "given",
-        "definition" : "http://hl7.org/fhir/SearchParameter/individual-given",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-given|4.0.1",
         "type" : "string",
         "documentation" : "Prénom du patient"
       },
       {
         "name" : "name",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Patient-name",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Patient-name|4.0.1",
         "type" : "string",
         "documentation" : "Nom du patient"
       }]
     },
     {
       "type" : "RelatedPerson",
-      "profile" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+      "profile" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1",
       "interaction" : [{
         "code" : "read"
       },
@@ -134,20 +134,20 @@ Le consommateur de contenu qui interroge le cahier de liaison
       }],
       "searchParam" : [{
         "name" : "identifier",
-        "definition" : "http://hl7.org/fhir/SearchParameter/RelatedPerson-identifier",
+        "definition" : "http://hl7.org/fhir/SearchParameter/RelatedPerson-identifier|4.0.1",
         "type" : "token",
         "documentation" : "Identifiant de la personne de confiance"
       },
       {
         "name" : "name",
-        "definition" : "http://hl7.org/fhir/SearchParameter/RelatedPerson-name",
+        "definition" : "http://hl7.org/fhir/SearchParameter/RelatedPerson-name|4.0.1",
         "type" : "string",
         "documentation" : "Nom de la personne de confiance"
       }]
     },
     {
       "type" : "Practitioner",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1",
       "interaction" : [{
         "code" : "read"
       },
@@ -156,32 +156,32 @@ Le consommateur de contenu qui interroge le cahier de liaison
       }],
       "searchParam" : [{
         "name" : "identifier",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Practitioner-identifier",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Practitioner-identifier|4.0.1",
         "type" : "token",
         "documentation" : "Identifiant du Praticien"
       },
       {
         "name" : "family",
-        "definition" : "http://hl7.org/fhir/SearchParameter/individual-family",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-family|4.0.1",
         "type" : "string",
         "documentation" : "Nom de famille du patient"
       },
       {
         "name" : "given",
-        "definition" : "http://hl7.org/fhir/SearchParameter/individual-given",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-given|4.0.1",
         "type" : "string",
         "documentation" : "Prénom du patient"
       },
       {
         "name" : "name",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Practitioner-name",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Practitioner-name|4.0.1",
         "type" : "string",
         "documentation" : "Nom du patient"
       }]
     },
     {
       "type" : "Organization",
-      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization",
+      "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.0.1",
       "interaction" : [{
         "code" : "read"
       },
@@ -190,14 +190,14 @@ Le consommateur de contenu qui interroge le cahier de liaison
       }],
       "searchParam" : [{
         "name" : "identifier",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Organization-identifier",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Organization-identifier|4.0.1",
         "type" : "token",
         "documentation" : "Identifiant de l'organisation"
       }]
     },
     {
       "type" : "Device",
-      "profile" : "http://hl7.org/fhir/StructureDefinition/Device",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
       "interaction" : [{
         "code" : "read"
       },
@@ -206,7 +206,7 @@ Le consommateur de contenu qui interroge le cahier de liaison
       }],
       "searchParam" : [{
         "name" : "identifier",
-        "definition" : "http://hl7.org/fhir/SearchParameter/Device-identifier",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Device-identifier|4.0.1",
         "type" : "token",
         "documentation" : "Identifiant de l'équipement"
       }]

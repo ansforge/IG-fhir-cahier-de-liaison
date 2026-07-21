@@ -1,6 +1,9 @@
-# Accueil - Cahier De Liaison v3.0.0
+# Accueil - Cahier De Liaison v3.0.1
 
 ## Accueil
+
+ 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
 ### INTRODUCTION
 
@@ -29,6 +32,7 @@ Des ressources FHIR ont été profilées pour le contexte français et sont util
 Dans l’ensemble de ce guide, lorsqu’il est fait référence aux ressources Patient, RelatedPerson et Organization, il est entendu que le profil français (respectivement, FrPatient, FrRelatedPerson et FrOrganization) doit être utilisé. De même, lorsqu’il est fait référence à la ressource Practitioner, PractitionerRole, les profils français « AsProfessionalRole », « AsPractitioner » doivent être utilisés.
 
 ### Dépendances
+
 
 
 

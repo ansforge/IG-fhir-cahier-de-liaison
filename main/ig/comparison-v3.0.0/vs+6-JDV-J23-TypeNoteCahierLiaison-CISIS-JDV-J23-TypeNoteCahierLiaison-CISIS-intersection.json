@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "f7e8a0ba-1e67-41af-b8c8-f5ca8c285d14-18",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f7e8a0ba-1e67-41af-b8c8-f5ca8c285d14-18",
+  "name" : "IntersectionJDV_J23-TypeNoteCahierLiaison-CISISAndJDV_J23_TypeNoteCahierLiaison_CISIS",
+  "title" : "Intersection of null And null",
+  "status" : "active",
+  "date" : "2026-07-21T12:39:43+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "DEM-AVIS",
+        "display" : "Demande d'avis"
+      },
+      {
+        "code" : "GEN",
+        "display" : "Note générale"
+      },
+      {
+        "code" : "INST",
+        "display" : "Instruction"
+      },
+      {
+        "code" : "INTERV",
+        "display" : "Note d'intervention"
+      },
+      {
+        "code" : "OBS",
+        "display" : "Note d'observation"
+      }]
+    }]
+  }
+}
