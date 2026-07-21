@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3f95c402-d773-4e60-81dc-bb4f030603a2-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3f95c402-d773-4e60-81dc-bb4f030603a2-3",
+  "id" : "badfbb98-349d-4e03-be93-e56308e1b083-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/badfbb98-349d-4e03-be93-e56308e1b083-3",
   "name" : "IntersectionCdLBundleCreationNoteAndCdLBundleCreationNote",
   "title" : "Intersection of Bundle de création d'une note And Bundle de création d'une note",
   "status" : "draft",
-  "date" : "2026-07-21T13:01:26+00:00",
+  "date" : "2026-07-21T13:22:38+00:00",
   "snapshot" : {
     "element" : [{
       "path" : "Bundle",

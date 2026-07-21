@@ -14,7 +14,7 @@
   "name" : "CDL",
   "title" : "Cahier De Liaison",
   "status" : "active",
-  "date" : "2026-07-21T13:00:31+00:00",
+  "date" : "2026-07-21T13:21:42+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -90,7 +90,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "trial-use"
+        "valueString" : "ci-build"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -496,7 +496,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "trial-use"
+        "valueString" : "ci-build"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

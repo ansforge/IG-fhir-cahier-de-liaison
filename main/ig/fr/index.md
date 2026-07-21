@@ -2,6 +2,8 @@
 
 ## Accueil
 
+> Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/fhir/cdl
+
 ### INTRODUCTION
 
 Ce document présente les spécifications techniques d’interopérabilité de mise en œuvre du volet cahier de liaison du CI-SIS. Sa production est basée sur l’étude métier et l’étude des normes et standards de ce volet et les complètent (cf. CI-SIS Etude métier – Cahier de liaison, CI-SIS Etude normes et standards – Cahier de liaison).

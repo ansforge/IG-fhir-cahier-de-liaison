@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-cdl-ext-is-emerge
   "version" : "3.0.1",
   "name" : "CdL_isEmergency",
   "status" : "active",
-  "date" : "2026-07-21T13:00:31+00:00",
+  "date" : "2026-07-21T13:21:42+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
