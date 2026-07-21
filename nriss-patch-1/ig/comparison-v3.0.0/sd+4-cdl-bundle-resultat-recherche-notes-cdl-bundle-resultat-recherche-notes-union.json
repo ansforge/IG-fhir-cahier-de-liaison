@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "bd4f1abb-0e6c-404d-a152-282b066bb275-11",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/bd4f1abb-0e6c-404d-a152-282b066bb275-11",
+  "id" : "24f70338-1b8c-40b8-86a8-691b23900ae2-11",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/24f70338-1b8c-40b8-86a8-691b23900ae2-11",
   "name" : "UnionCdLBundleResultatRechercheNotesAndCdLBundleResultatRechercheNotes",
   "title" : "Union of Bundle résultat recherche notes And Bundle résultat recherche notes",
   "status" : "draft",
-  "date" : "2026-07-21T12:41:24+00:00",
+  "date" : "2026-07-21T13:22:41+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -233,7 +233,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/bd4f1abb-0e6c-404d-a152-282b066bb275-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/24f70338-1b8c-40b8-86a8-691b23900ae2-5"
       }
     },
     {
