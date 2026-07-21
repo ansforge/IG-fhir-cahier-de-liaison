@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "bd4f1abb-0e6c-404d-a152-282b066bb275-30",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/bd4f1abb-0e6c-404d-a152-282b066bb275-30",
+  "name" : "IntersectionActCodeAndActCode",
+  "title" : "Intersection of v3 Code System ActCode And v3 Code System ActCode",
+  "status" : "active",
+  "date" : "2026-07-21T12:41:24+00:00"
+}

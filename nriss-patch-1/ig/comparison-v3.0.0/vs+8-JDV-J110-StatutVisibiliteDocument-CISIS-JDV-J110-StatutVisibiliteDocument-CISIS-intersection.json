@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "bd4f1abb-0e6c-404d-a152-282b066bb275-24",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/bd4f1abb-0e6c-404d-a152-282b066bb275-24",
+  "name" : "IntersectionJDV_J110-StatutVisibiliteDocument-CISISAndJDV_J110_StatutVisibiliteDocument_CISIS",
+  "title" : "Intersection of null And null",
+  "status" : "active",
+  "date" : "2026-07-21T12:41:24+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "INVISIBLE_PATIENT",
+        "display" : "Non visible par le patient"
+      },
+      {
+        "code" : "INVISIBLE_REPRESENTANTS_LEGAUX",
+        "display" : "Non visible par les représentants légaux du patient"
+      },
+      {
+        "code" : "MASQUE_PS",
+        "display" : "Masqué aux professionnels de santé"
+      },
+      {
+        "code" : "MASQUE_PSOCIAL",
+        "display" : "Masqué aux professionnels du domaine social"
+      },
+      {
+        "code" : "MASQUE_PT",
+        "display" : "Masqué aux personnes tierces"
+      }]
+    }]
+  }
+}

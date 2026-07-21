@@ -1,0 +1,184 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "cdl-bundle-creation-note",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note"]
+  },
+  "language" : "en",
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:04886b69-ef36-4584-819e-4590cd3888a4",
+    "resource" : {
+      "resourceType" : "DocumentReference",
+      "id" : "04886b69-ef36-4584-819e-4590cd3888a4",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "current",
+      "type" : {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R234-TypeNote/FHIR/TRE-R234-TypeNote",
+          "code" : "DEM-AVIS",
+          "display" : "Demande d'avis"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/0d920958-b596-4b91-af67-9bafc707820b",
+        "display" : "Michel ROUBINOWITZ"
+      },
+      "date" : "2019-03-04T08:30:00+11:00",
+      "author" : [{
+        "reference" : "Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1"
+      },
+      {
+        "reference" : "PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2",
+        "display" : "Mme Sophie Brooks (infirmier)"
+      }],
+      "content" : [{
+        "attachment" : {
+          "contentType" : "text/plain",
+          "language" : "fr",
+          "data" : "TWFtYW4gZXN0IGZhdGlndellLiBFbGxlIG4nYSBwYXMgdm91bHUgc29ydGlyIGNlIG1hdGluLg=="
+        }
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "DocumentReference/04886b69-ef36-4584-819e-4590cd3888a4"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f380b0fd-23c2-415a-b367-53e707ef91e2",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "f380b0fd-23c2-415a-b367-53e707ef91e2",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "active" : true,
+      "practitioner" : {
+        "reference" : "Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1",
+        "display" : "Mme Sophie Brooks"
+      },
+      "code" : [{
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+          "code" : "60",
+          "display" : "Infirmier"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "PractitionerRole/f380b0fd-23c2-415a-b367-53e707ef91e2"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:85652218-ea45-426f-916e-6ca5ea8dd5e1",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "85652218-ea45-426f-916e-6ca5ea8dd5e1",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "name" : [{
+        "family" : "Brooks",
+        "given" : ["Sophie"],
+        "prefix" : ["MME"]
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Practitioner/85652218-ea45-426f-916e-6ca5ea8dd5e1"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:0d920958-b596-4b91-af67-9bafc707820b",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "0d920958-b596-4b91-af67-9bafc707820b",
+      "meta" : {
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "identityStatus",
+          "valueCoding" : {
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+            "code" : "VALI"
+          }
+        }],
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress" : {
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
+            "valueCoding" : {
+              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune",
+              "code" : "60500"
+            }
+          }],
+          "city" : "Chantilly"
+        }
+      }],
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+            "code" : "INS-NIR"
+          }]
+        },
+        "system" : "urn:oid:1.2.250.1.213.1.4.8",
+        "value" : "123456789012244"
+      }],
+      "active" : true,
+      "name" : [{
+        "extension" : [{
+          "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
+          "valueString" : "Michel"
+        }],
+        "use" : "official",
+        "family" : "ROUBINOWITZ",
+        "given" : ["Michel"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "+33635256986",
+        "use" : "mobile",
+        "rank" : 1
+      }],
+      "gender" : "male",
+      "birthDate" : "1975-03-11",
+      "address" : [{
+        "use" : "home",
+        "type" : "both",
+        "line" : ["10 Rue Guillaume Bertrand"],
+        "city" : "Paris",
+        "postalCode" : "75011"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Patient/0d920958-b596-4b91-af67-9bafc707820b"
+    }
+  }]
+}

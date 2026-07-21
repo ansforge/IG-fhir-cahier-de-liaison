@@ -1,0 +1,347 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/CreateurContenu> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "CreateurContenu"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : CapabilityStatement CreateurContenu</b></p><a name=\"CreateurContenu\"> </a><a name=\"hcCreateurContenu\"> </a><h2 id=\"title\">CI-SIS Cahier-de-Liaison - CreateurContenu</h2><ul><li>Version du guide d'implémentation : 3.0.1 </li><li>Version de FHIR : 4.0.1 </li><li>Formats supportés : <code>application/fhir+xml</code>, <code>application/fhir+json</code></li><li>Publié sur : 2023-02-15 14:22:10+0100 </li><li>Publié par : ANS </li></ul><blockquote class=\"impl-note\"><p><strong>Note aux implémenteurs : capacités FHIR</strong></p><p>Toute capacité FHIR peut être 'autorisée' par le système sauf si elle est explicitement marquée comme 'SHALL NOT'. Quelques éléments sont marqués comme MAY dans le guide d'implémentation pour souligner leur pertinence potentielle pour le cas d'usage.</p></blockquote><h3 id=\"shallIGs\">DOIT prendre en charge les guides d’implémentation suivants.</h3><ul><li>http://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuides/ans.fhir.fr.cdl</li></ul><h2 id=\"rest\">Capacités RESTful FHIR</h2><h3 id=\"rest1\">Configuration REST : 1 </h3><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"mode1\" class=\"panel-title\">Mode: <code>client</code></h4></div><div class=\"panel-body\"><div><p>Alimente le cahier de liaison avec une nouvelle note</p>\n</div><div class=\"lead\"><em>Security</em></div><blockquote><div><p>L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S\n) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes\nd’information de santé (CI-SIS)</p>\n</div></blockquote><div class=\"lead\"><em>Résumé des interactions au niveau du système</em></div><ul><li>Supporte le/la <code>transaction</code>Les interactions sont décrites comme suit :<div><p>https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note</p>\n</div></li><li>Supporte le/la <code>transaction</code>Les interactions sont décrites comme suit :<div><p>https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note</p>\n</div></li></ul></div></div><h4 id=\"resourcesCap1\">Capacités par ressource/profil</h4><h5 id=\"resourcesSummary1\">Résumé</h5><p>Le tableau récapitulatif liste les ressources faisant partie de cette configuration, et pour chaque ressource, il liste :</p><ul><li>Les profils pertinents (le cas échéant)</li><li>Les interactions supportées par chaque ressource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>les types sont seulement présents si au moins une des ressources les prend en charge.</li><li><span>Les paramètres de recherche (SearchParameters) requis, recommandés, optionnels (le cas échéant). </span></li><li>Les ressources liées activées pour <code>_include</code></li><li>Les autres ressources activées pour <code>_revinclude</code></li><li>Les opérations sur la ressource (le cas échéant)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Type de Ressource</b></th><th><b>Profil</b></th><th class=\"text-center\"><b title=\"GET d'une ressource (interaction read)\">R</b></th><th class=\"text-center\"><b title=\"GET de l'ensemble des ressources du type (interaction search)\">S</b></th><th class=\"text-center\"><b title=\"PUT d'une nouvelle version de ressource (interaction update)\">U</b></th><th class=\"text-center\"><b title=\"POST d'une nouvelle ressource (interaction create)\">C</b></th><th class=\"text-center\"><b title=\"DELETE d'une nouvelle ressource (interaction delete)\">D</b></th><th><b title=\"Paramètres de recherche requis et recommandés\">Recherches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Opérations</b></th></tr></thead><tbody><tr><td><a href=\"#Bundle1-1\">Bundle</a></td><td><a href=\"StructureDefinition-cdl-bundle-creation-note.html\">https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#Patient1-2\">Patient</a></td><td><a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html\">https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#Practitioner1-3\">Practitioner</a></td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitioner.html\">https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#PractitionerRole1-4\">PractitionerRole</a></td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitionerrole.html\">https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#RelatedPerson1-5\">RelatedPerson</a></td><td>http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#Organization1-6\">Organization</a></td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-organization.html\">https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.0.1</a><br/><em>Profils additionnels supportés :</em><br/>  <code>http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization</code></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#Device1-7\">Device</a></td><td><a href=\"http://hl7.org/fhir/R4/device.html\">http://hl7.org/fhir/StructureDefinition/Device|4.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#DocumentReference1-8\">DocumentReference</a></td><td><a href=\"StructureDefinition-cdl-document-reference.html\">https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference|3.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y<span title=\"MAY\">y?</span></td><td/><td/><td/><td/></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"Bundle1-1\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Bundle</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"StructureDefinition-cdl-bundle-creation-note.html\">Bundle de création d'une noteversion : 3.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"Patient1-2\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Patient</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html\">FR Core Patient Profileversion : 2.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"Practitioner1-3\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Practitioner</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitioner.html\">AS Practitioner Profileversion : 1.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"PractitionerRole1-4\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>PractitionerRole</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitionerrole.html\">AS PractitionerRole Profileversion : 1.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"RelatedPerson1-5\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>RelatedPerson</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><code>http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person</code></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"Organization1-6\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Organization</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-organization.html\">AS Organization Profileversion : 1.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-6\"><span class=\"lead\">Profils supportés</span><p><code>http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization</code></p></div><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"Device1-7\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Device</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"http://hl7.org/fhir/R4/device.html\">Deviceversion : 4.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"DocumentReference1-8\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>DocumentReference</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"StructureDefinition-cdl-document-reference.html\">DocumentReference Cahier de Liaisonversion : 3.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li><strong>MAY</strong> support <code>delete</code>.</li><li>Supporte <code>update</code>, <code>delete</code>.</li></ul></div></div><p/></div></div></div><h3 id=\"rest2\">Configuration REST : 2 </h3><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"mode2\" class=\"panel-title\">Mode: <code>client</code></h4></div><div class=\"panel-body\"><div><p>Alimente le cahier de liaison avec une nouvelle note</p>\n</div><div class=\"lead\"><em>Security</em></div><blockquote><div><p>L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S\n) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes\nd’information de santé (CI-SIS)</p>\n</div></blockquote><div class=\"lead\"><em>Résumé des interactions au niveau du système</em></div><ul><li>Supporte le/la <code>transaction</code>Les interactions sont décrites comme suit :<div><p>https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note</p>\n</div></li><li>Supporte le/la <code>transaction</code>Les interactions sont décrites comme suit :<div><p>https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note</p>\n</div></li></ul></div></div><h4 id=\"resourcesCap2\">Capacités par ressource/profil</h4><h5 id=\"resourcesSummary2\">Résumé</h5><p>Le tableau récapitulatif liste les ressources faisant partie de cette configuration, et pour chaque ressource, il liste :</p><ul><li>Les profils pertinents (le cas échéant)</li><li>Les interactions supportées par chaque ressource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>les types sont seulement présents si au moins une des ressources les prend en charge.</li><li><span>Les paramètres de recherche (SearchParameters) requis, recommandés, optionnels (le cas échéant). </span></li><li>Les ressources liées activées pour <code>_include</code></li><li>Les autres ressources activées pour <code>_revinclude</code></li><li>Les opérations sur la ressource (le cas échéant)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Type de Ressource</b></th><th><b>Profil</b></th><th class=\"text-center\"><b title=\"GET d'une ressource (interaction read)\">R</b></th><th class=\"text-center\"><b title=\"GET de l'ensemble des ressources du type (interaction search)\">S</b></th><th class=\"text-center\"><b title=\"PUT d'une nouvelle version de ressource (interaction update)\">U</b></th><th class=\"text-center\"><b title=\"POST d'une nouvelle ressource (interaction create)\">C</b></th><th class=\"text-center\"><b title=\"DELETE d'une nouvelle ressource (interaction delete)\">D</b></th><th><b title=\"Paramètres de recherche requis et recommandés\">Recherches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Opérations</b></th></tr></thead><tbody><tr><td><a href=\"#Bundle2-1\">Bundle</a></td><td><a href=\"StructureDefinition-cdl-bundle-creation-note.html\">https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#Patient2-2\">Patient</a></td><td><a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html\">https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#Practitioner2-3\">Practitioner</a></td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitioner.html\">https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#PractitionerRole2-4\">PractitionerRole</a></td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitionerrole.html\">https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#RelatedPerson2-5\">RelatedPerson</a></td><td>http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#Device2-6\">Device</a></td><td><a href=\"http://hl7.org/fhir/R4/device.html\">http://hl7.org/fhir/StructureDefinition/Device|4.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#Organization2-7\">Organization</a></td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-organization.html\">https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.0.1</a><br/><em>Profils additionnels supportés :</em><br/>  <code>http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization</code></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#DocumentReference2-8\">DocumentReference</a></td><td><a href=\"StructureDefinition-cdl-document-reference.html\">https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference|3.0.1</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y<span title=\"MAY\">y?</span></td><td/><td/><td/><td/></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"Bundle2-1\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Bundle</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"StructureDefinition-cdl-bundle-creation-note.html\">Bundle de création d'une noteversion : 3.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"Patient2-2\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Patient</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html\">FR Core Patient Profileversion : 2.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"Practitioner2-3\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Practitioner</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitioner.html\">AS Practitioner Profileversion : 1.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"PractitionerRole2-4\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>PractitionerRole</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitionerrole.html\">AS PractitionerRole Profileversion : 1.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"RelatedPerson2-5\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>RelatedPerson</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><code>http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person</code></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"Device2-6\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Device</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"http://hl7.org/fhir/R4/device.html\">Deviceversion : 4.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"Organization2-7\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Organization</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-organization.html\">AS Organization Profileversion : 1.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-6\"><span class=\"lead\">Profils supportés</span><p><code>http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization</code></p></div><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>.</li></ul></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h5 id=\"DocumentReference2-8\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>DocumentReference</h5></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"StructureDefinition-cdl-document-reference.html\">DocumentReference Cahier de Liaisonversion : 3.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li><strong>MAY</strong> support <code>delete</code>.</li><li>Supporte <code>update</code>, <code>delete</code>.</li></ul></div></div><p/></div></div></div></div>"
+  ] ;
+  fhir:CapabilityStatement.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/CreateurContenu"] ;
+  fhir:CapabilityStatement.version [ fhir:value "3.0.1"] ;
+  fhir:CapabilityStatement.name [ fhir:value "CreateurContenu"] ;
+  fhir:CapabilityStatement.title [ fhir:value "CI-SIS Cahier-de-Liaison - CreateurContenu"] ;
+  fhir:CapabilityStatement.status [ fhir:value "active"] ;
+  fhir:CapabilityStatement.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CapabilityStatement.date [ fhir:value "2023-02-15T14:22:10+01:00"^^xsd:dateTime] ;
+  fhir:CapabilityStatement.publisher [ fhir:value "ANS"] ;
+  fhir:CapabilityStatement.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "ANS" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ] ;
+  fhir:CapabilityStatement.description [ fhir:value "Le créateur de contenu est une personne, un équipement ou une entité qui alimente le cahier de liaison par des informations \nqui ont vocation à être partagées. Le créateur de contenu peut être un logiciel métier\ninstallé sur un ordinateur, une application installée sur un téléphone mobile ou une \ntablette ainsi que tout autre dispositif utilisé par une personne ou une entité pour \nalimenter le cahier de liaison. "] ;
+  fhir:CapabilityStatement.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:CapabilityStatement.kind [ fhir:value "requirements"] ;
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:CapabilityStatement.format [
+     fhir:value "application/fhir+xml" ;
+     fhir:index -1
+  ], [
+     fhir:value "application/fhir+json" ;
+     fhir:index -1
+  ] ;
+  fhir:CapabilityStatement.implementationGuide [
+     fhir:value "http://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuides/ans.fhir.fr.cdl" ;
+     fhir:index -1 ;
+     fhir:link <http://interop.esante.gouv.fr/ig/fhir/cdl/ImplementationGuides/ans.fhir.fr.cdl>
+  ] ;
+  fhir:CapabilityStatement.rest [
+     fhir:index -1 ;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "client" ] ;
+     fhir:CapabilityStatement.rest.documentation [ fhir:value "Alimente le cahier de liaison avec une nouvelle note" ] ;
+     fhir:CapabilityStatement.rest.security [
+       fhir:CapabilityStatement.rest.security.cors [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.security.description [ fhir:value "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S\n) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes\nd’information de santé (CI-SIS)" ]
+     ] ;
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Bundle" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Patient" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1" ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Practitioner" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "PractitionerRole" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "RelatedPerson" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person" ;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Organization" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.0.1" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization" ;
+         fhir:index -1 ;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Device" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://hl7.org/fhir/StructureDefinition/Device|4.0.1" ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Device|4.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "DocumentReference" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference|3.0.1" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference|3.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ] ;
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
+         ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "single" ]
+     ] ;
+     fhir:CapabilityStatement.rest.interaction [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.interaction.code [ fhir:value "transaction" ] ;
+       fhir:CapabilityStatement.rest.interaction.documentation [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.interaction.code [ fhir:value "transaction" ] ;
+       fhir:CapabilityStatement.rest.interaction.documentation [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "client" ] ;
+     fhir:CapabilityStatement.rest.documentation [ fhir:value "Alimente le cahier de liaison avec une nouvelle note" ] ;
+     fhir:CapabilityStatement.rest.security [
+       fhir:CapabilityStatement.rest.security.cors [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.security.description [ fhir:value "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S\n) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes\nd’information de santé (CI-SIS)" ]
+     ] ;
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Bundle" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note|3.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Patient" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1" ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Practitioner" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "PractitionerRole" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "RelatedPerson" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person" ;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Device" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "http://hl7.org/fhir/StructureDefinition/Device|4.0.1" ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Device|4.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Organization" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.0.1" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization" ;
+         fhir:index -1 ;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "DocumentReference" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference|3.0.1" ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-document-reference|3.0.1>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index -1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ] ;
+           fhir:Extension.valueCode [ fhir:value "MAY" ]
+         ] ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "single" ]
+     ] ;
+     fhir:CapabilityStatement.rest.interaction [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.interaction.code [ fhir:value "transaction" ] ;
+       fhir:CapabilityStatement.rest.interaction.documentation [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-creation-note" ]
+     ], [
+       fhir:index -1 ;
+       fhir:CapabilityStatement.rest.interaction.code [ fhir:value "transaction" ] ;
+       fhir:CapabilityStatement.rest.interaction.documentation [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/cdl/StructureDefinition/cdl-bundle-maj-note" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/cdl/CapabilityStatement/CreateurContenu.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
